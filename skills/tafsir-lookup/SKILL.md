@@ -47,6 +47,18 @@ Disiplin Mode MATERI:
 - Lampiran verbatim disusun **per sub-bagian** memakai judul dari `--toc` (`### <judul> — juz X hal Y`), bukan potongan per 60 paragraf dengan header berulang. Paging hanya cara membaca, bukan struktur jawaban.
 - Batasi satu jawaban ±40–60 ribu karakter: kirim Bagian 1 (uraian lengkap + lampiran sub-bagian terpenting), tutup dengan daftar sub-bagian yang belum dilampirkan dan tawaran eksplisit "ketik *lanjut* untuk Bagian 2" — pengguna yang memutuskan, bukan Anda yang memangkas diam-diam.
 
+## Protokol Bagian — untuk semua model, termasuk paket gratis tanpa subagent
+
+Banyak pengguna memakai model dengan batas keluaran kecil dan tanpa subagent, tetapi meminta materi panjang. Karena itu:
+
+1. **Rencana dulu, lalu Bagian 1.** Pada mode MATERI, jawaban pertama memuat *Daftar Bagian* (dari `--toc`: Bagian 1 uraian, Bagian 2 lampiran kitab A bagian …, dst.) dan langsung Bagian 1.
+2. **Ukuran bagian aman**: ≤12.000 karakter per jawaban (≈4–5 ribu token). Bila batas keluaran Anda kecil (model gratis), pakai ≤8.000. Pengguna boleh meminta "bagian panjang".
+3. **Baca-tulis mengalir**: baca satu bagian (`--seg --paras`), tulis, baru baca berikutnya. Jangan menumpuk semua bacaan lalu menulis sekaligus.
+4. **Penutup baku tiap bagian** (tulis persis):
+   > — Bagian N dari M selesai. Ketik **lanjut** untuk Bagian N+1 (‹judul bagian berikutnya›). *Ini batas keluaran per jawaban, bukan akhir materi.*
+5. **Baris status** di baris terakhir: `[lanjut: ref=<S:A> seg=<id> berikutnya=<paragraf/sub-judul>; bagian=<N+1>/<M>]` — saat pengguna mengetik "lanjut", baca baris ini, jalankan script dari titik itu, tanpa mengulang yang sudah dikirim.
+6. Subagent/paralel hanya bila tersedia; protokol ini tidak bergantung padanya.
+
 ## Format Jawaban (konsisten, hemat token)
 
 `# <QS S:A — judul>` → **Ringkasan (parafrase saya, bukan kutipan)** 3–5 baris → `## <kitab>` per sumber: baris segmen/label, paragraf verbatim utuh (jangan disingkat dengan `…`/`[...]` di tengah paragraf; kurangi jumlah paragraf, bukan memotongnya), `— Sumber: juz X hal Y · URL`; sumber absen satu baris "tidak tersedia di sumber ini" → **Catatan** (label rentang, potongan, saran `--max-chars 0`). Tanpa tabel perbandingan/glosarium kecuali diminta.

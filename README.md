@@ -47,6 +47,7 @@ Tempel isi `skills/tafsir-lookup/SKILL.md` ke instruksi agen (mis. `AGENTS.md`) 
 3. **Yang tidak ada dikatakan tidak ada** — tidak ditambal dari kitab lain atau dari ingatan AI.
 4. **Ringkasan AI selalu ditandai** dan dipisah dari kutipan asli.
 5. **Dua mode** — *Rujukan* (jawaban ringkas + kutipan terpilih) dan *Materi lengkap* (AI membaca seluruh bab bagian demi bagian, lalu menyusun uraian runtut + lampiran kutipan per sub-bab).
+6. **Ramah paket gratis** — materi panjang dikirim per bagian; tiap bagian ditutup dengan "Ketik **lanjut** untuk Bagian berikutnya" karena setiap model punya batas panjang jawaban. Cukup ketik *lanjut*, materi berlanjut tanpa mengulang.
 
 ## Sumber, atribusi, lisensi
 
