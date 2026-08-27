@@ -16,7 +16,7 @@ Skills that let AI assistants (Claude, ChatGPT, and other agents) quote classica
 
 The agent follows [INSTALL.md](INSTALL.md), runs the installer (`python install.py`, no git needed), downloads the database once (~18 MB), and you simply ask, e.g. "Tafsīr of Q 2:255 according to al-Ṭabarī, Arabic text with page citation."
 
-**claude.ai / Claude apps:** download `tafsir-lookup.skill` ([tafsir-v1](https://github.com/B-ngoen/sirah-tafsir-skills/releases/tag/tafsir-v1)) and/or `sirah-lookup.skill` ([sirah-v1](https://github.com/B-ngoen/sirah-tafsir-skills/releases/tag/sirah-v1)) → Settings → Capabilities → Skills → Upload. The database downloads automatically inside Claude's sandbox on first use.
+**claude.ai / Claude apps:** download [tafsir-lookup.skill](https://github.com/B-ngoen/sirah-tafsir-skills/raw/main/release/tafsir-lookup.skill) and/or [sirah-lookup.skill](https://github.com/B-ngoen/sirah-tafsir-skills/raw/main/release/sirah-lookup.skill) → Settings → Capabilities → Skills → Upload. The database downloads automatically inside Claude's sandbox on first use.
 
 **ChatGPT:** use the published Custom GPT (link to be added), or build your own in ~5 minutes with [chatgpt/README-GPT.md](chatgpt/README-GPT.md) (paste `instructions.md`, upload `lookup.py` + `tafsir_full.db.xz`, enable Code Interpreter).
 

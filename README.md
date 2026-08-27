@@ -28,7 +28,7 @@ Asisten akan membaca [INSTALL.md](INSTALL.md), menjalankan pemasang, mengunduh b
 Ingin tanpa AI? Jalankan sendiri: `python install.py` (unduh berkasnya dari repo ini) — tidak perlu git.
 
 ### 2) claude.ai (web) dan aplikasi Claude
-1. Unduh berkas **`tafsir-lookup.skill`** ([rilis tafsir-v1](https://github.com/B-ngoen/sirah-tafsir-skills/releases/tag/tafsir-v1)) dan/atau **`sirah-lookup.skill`** ([rilis sirah-v1](https://github.com/B-ngoen/sirah-tafsir-skills/releases/tag/sirah-v1)).
+1. Unduh berkas skill (klik langsung): **[tafsir-lookup.skill](https://github.com/B-ngoen/sirah-tafsir-skills/raw/main/release/tafsir-lookup.skill)** · **[sirah-lookup.skill](https://github.com/B-ngoen/sirah-tafsir-skills/raw/main/release/sirah-lookup.skill)** (juga tersedia di halaman [Releases](https://github.com/B-ngoen/sirah-tafsir-skills/releases)).
 2. Di claude.ai: **Settings → Capabilities → Skills → Upload skill**, pilih berkas itu (ulangi untuk skill kedua).
 3. Mulai percakapan baru dan bertanya seperti biasa. Basis data diunduh otomatis di dalam sandbox Claude saat pertama dipakai (±1 menit).
 

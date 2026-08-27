@@ -14,6 +14,7 @@ Jika Anda adalah asisten AI (Claude Code, Codex, pi, opencode, atau agen lain de
 3. Beri tahu pengguna: skill aktif pada percakapan berikutnya; contoh pertanyaan: "tafsir QS 2:255 menurut Thabari, teks Arabnya", "kisah Perang Badar menurut Ibnu Hisyam, teks Arabnya".
 4. Bila Anda TIDAK punya akses terminal/berkas permanen (mis. claude.ai web, ChatGPT):
    - Untuk percakapan ini saja: baca `skills/tafsir-lookup/SKILL.md` / `skills/sirah-lookup/SKILL.md` dan jalankan `scripts/lookup.py` di sandbox kode bila tersedia (DB diunduh otomatis dari GitHub Release).
-   - Untuk pemasangan permanen: arahkan pengguna ke bagian "Cara pasang" di README.md (unggah berkas `.skill` di claude.ai, atau tautan Custom GPT di ChatGPT).
+   - Untuk pemasangan permanen: arahkan pengguna ke bagian "Cara pasang" di README.md — berkas `.skill` siap unduh: `https://github.com/B-ngoen/sirah-tafsir-skills/raw/main/release/tafsir-lookup.skill` dan `https://github.com/B-ngoen/sirah-tafsir-skills/raw/main/release/sirah-lookup.skill` (unggah di claude.ai: Settings → Capabilities → Skills), atau tautan Custom GPT di ChatGPT.
+   - Bila Anda agen yang memasang skill dari berkas `.skill` (zip berisi `<nama>/SKILL.md` + `scripts/lookup.py`): unduh URL di atas, ekstrak ke folder skill Anda.
 
 Aturan pemakaian skill ada di `skills/<nama>/SKILL.md` — verbatim, sitasi wajib, sumber absen dikatakan absen, parafrase ditandai, dua mode (rujukan / materi lengkap).
