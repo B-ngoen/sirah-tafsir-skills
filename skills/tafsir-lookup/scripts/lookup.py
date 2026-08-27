@@ -94,7 +94,6 @@ CACHE_MIN_BYTES = 100 * 1024 * 1024  # cache hasil ekstrak dianggap valid bila >
 AUTO_DL_URLS = (
     "https://github.com/B-ngoen/sirah-tafsir-skills/releases/download/tafsir-v1/tafsir_full.db.xz",
     "https://github.com/B-ngoen/refdb/releases/download/v1/tafsir_full.db.xz",
-    "http://87.106.165.0:8447/0494205b9b5577de58e6b1eefa427588dd3557584c6cd256/tafsir_full.db.xz",
 )
 AUTO_DL_TIMEOUT = 15  # detik, timeout koneksi
 AUTO_DL_XZ = CACHE_DIR / "tafsir_full.db.xz"  # unduhan sementara (dihapus usai ekstrak)

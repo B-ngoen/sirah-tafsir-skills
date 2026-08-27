@@ -42,7 +42,7 @@ cd memory/projects/tafsir-verbatim-pipeline/pc_local
 bash sync_vps_to_pc.sh
 ```
 
-VPS2 = `deploy@167.86.86.81` (alias SSH: `vps2-hermes`). Kalau `rsync` tidak
+VPS2 = `<user>@<vps>` (alias SSH: `<vps2>`). Kalau `rsync` tidak
 ada (Git Bash Windows), script otomatis fallback `tar czf - | ssh`.
 Estimasi: 2.1GB via SSH → 5-10 menit tergantung bandwidth.
 
@@ -103,7 +103,7 @@ acak (seed tetap). Output: `data/tafsir_full.db`.
 
 ```bash
 # contoh (rsync hasil grouping + DB ke VPS2):
-rsync -avz --progress data/ deploy@167.86.86.81:/home/deploy/tafsir-pipeline/data_pc/
+rsync -avz --progress data/ <user>@<vps>:/home/deploy/tafsir-pipeline/data_pc/
 ```
 
 ---
