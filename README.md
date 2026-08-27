@@ -55,7 +55,7 @@ Tempel isi `skills/tafsir-lookup/SKILL.md` ke instruksi agen (mis. `AGENTS.md`) 
 - Edisi publik **tidak memuat** karya modern berhak cipta (mis. terjemah Dorar EN).
 - Kode (skrip, skill): **MIT** — lihat [LICENSE](LICENSE). Basis data: wakaf non-komersial; dilarang diperjualbelikan.
 
-## Keterbatasan yang jujur
+## Keterbatasan
 
 - Shafwat at-Tafasir: edisi elektronik terpotong (surah 114 tidak ada). Ibnu Katsir ط ابن الجوزي: akhir mushaf terpotong (113–114 hanya pembuka gabungan).
 - Batas segmen dibentuk dari judul bab (aturan + AI); bila kutipan berlabel rentang ayat ("249–280"), AI akan menjelaskannya.
