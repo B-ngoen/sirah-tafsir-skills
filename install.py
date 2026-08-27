@@ -16,6 +16,11 @@ Stdlib saja. Aman diulang (idempoten).
 import argparse, io, json, lzma, os, sys, urllib.request
 from pathlib import Path
 
+try:  # Windows console cp1252: hindari UnicodeEncodeError
+    sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+except Exception:
+    pass
+
 REPO = "B-ngoen/sirah-tafsir-skills"
 BRANCH = "main"
 SKILLS = {
@@ -25,6 +30,7 @@ SKILLS = {
         "db_name": "tafsir_full.db", "cache": "tafsir-lookup",
     },
     "sirah-lookup": {
+        "released": False,
         "files": ["SKILL.md", "scripts/lookup.py"],
         "db_url": f"https://github.com/{REPO}/releases/download/sirah-v1/sirah_full.db.xz",
         "db_name": "sirah_full.db", "cache": "sirah-lookup",
@@ -92,7 +98,7 @@ def install_skill(name, targets, want_db):
             p = dst / f
             p.parent.mkdir(parents=True, exist_ok=True)
             io.open(p, "w", encoding="utf-8", newline="\n").write(content)
-        print(f"  ✓ {name} dipasang ke {label}: {dst}")
+        print(f"  OK {name} dipasang ke {label}: {dst}")
         if label == "Codex":
             agents = Path.home() / ".codex" / "AGENTS.md"
             note = f"\n\n## Skill {name}\nBaca dan ikuti `{dst / 'SKILL.md'}` setiap kali pengguna bertanya topik terkait; jalankan `python {dst / 'scripts' / 'lookup.py'} ...`.\n"
@@ -100,16 +106,16 @@ def install_skill(name, targets, want_db):
                 cur = io.open(agents, encoding="utf-8").read() if agents.exists() else ""
                 if name not in cur:
                     io.open(agents, "a", encoding="utf-8").write(note)
-                    print(f"  ✓ catatan ditambahkan ke {agents}")
+                    print(f"  OK catatan ditambahkan ke {agents}")
             except OSError:
                 pass
     if want_db:
         cdir = cache_dir(meta["cache"])
         db = cdir / meta["db_name"]
         if db.exists() and db.stat().st_size > 50 * 1024 * 1024:
-            print(f"  ✓ basis data sudah ada: {db}")
+            print(f"  OK basis data sudah ada: {db}")
         else:
-            print(f"  … mengunduh basis data (±20–35 MB) ke {cdir} — sekali saja")
+            print(f"  ... mengunduh basis data (±20–35 MB) ke {cdir} — sekali saja")
             try:
                 raw = fetch(meta["db_url"], binary=True)
                 with lzma.open(io.BytesIO(raw)) as src, open(db, "wb") as out:
@@ -118,7 +124,7 @@ def install_skill(name, targets, want_db):
                         if not chunk:
                             break
                         out.write(chunk)
-                print(f"  ✓ basis data siap: {db} ({db.stat().st_size / 1e6:.0f} MB)")
+                print(f"  OK basis data siap: {db} ({db.stat().st_size / 1e6:.0f} MB)")
             except Exception as e:
                 print(f"  ! unduh DB gagal ({type(e).__name__}); skill tetap terpasang dan akan mengunduh saat pertama dipakai")
     return True
@@ -130,13 +136,18 @@ def main():
     ap.add_argument("--target", help="claude | codex | dir:<folder>")
     ap.add_argument("--no-db", action="store_true")
     a = ap.parse_args()
-    names = [ALIAS.get(s, s) for s in a.skills] or list(SKILLS)
+    names = [ALIAS.get(s, s) for s in a.skills] or [n for n, m in SKILLS.items() if m.get("released", True)]
     targets = detect_targets(a.target)
     print("Target:", ", ".join(f"{l} ({p})" for l, p in targets))
     ok = 0
     for n in names:
         if n not in SKILLS:
             print(f"  ! skill tidak dikenal: {n}")
+            continue
+        if not SKILLS[n].get("released", True) and not a.skills:
+            continue
+        if not SKILLS[n].get("released", True):
+            print(f"[{n}] belum dirilis — nantikan di README")
             continue
         print(f"[{n}]")
         ok += bool(install_skill(n, targets, not a.no_db))

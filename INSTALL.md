@@ -7,9 +7,10 @@ Jika Anda adalah asisten AI (Claude Code, Codex, pi, opencode, atau agen lain de
    python -c "import urllib.request;exec(urllib.request.urlopen('https://raw.githubusercontent.com/B-ngoen/sirah-tafsir-skills/main/install.py').read().decode())"
    ```
    atau, bila repo sudah di-clone: `python install.py`
+   - Saat ini hanya `tafsir-lookup` yang dirilis; `sirah-lookup` menyusul (installer melewatinya otomatis).
    - Pemasang mendeteksi folder skill Anda (Claude Code: `~/.claude/skills/`; Codex: `~/.codex/skills/` + catatan di `AGENTS.md`). Paksa lokasi lain dengan `--target dir:<folder>`.
    - Basis data (±18 MB terkompresi) diunduh sekali ke cache permanen.
-2. Verifikasi: `python ~/.claude/skills/tafsir-lookup/scripts/lookup.py 2:255 -s tabari --max-chars 300` harus mencetak teks Arab + sitasi juz/halaman.
+2. Verifikasi (sesuaikan path; Windows: `%USERPROFILE%\.claude\skills\...`): `python ~/.claude/skills/tafsir-lookup/scripts/lookup.py 2:255 -s tabari --max-chars 300` harus mencetak teks Arab + sitasi juz/halaman. Di Windows, bila muncul `UnicodeEncodeError`, jalankan dengan `PYTHONIOENCODING=utf-8` (PowerShell: `$env:PYTHONIOENCODING='utf-8'`).
 3. Beri tahu pengguna: skill aktif pada percakapan berikutnya; contoh pertanyaan: "tafsir QS 2:255 menurut Thabari, teks Arabnya".
 4. Bila Anda TIDAK punya akses terminal/berkas permanen (mis. claude.ai web, ChatGPT):
    - Untuk percakapan ini saja: baca `skills/tafsir-lookup/SKILL.md` dan jalankan `scripts/lookup.py` di sandbox kode bila tersedia (DB diunduh otomatis dari GitHub Release).
