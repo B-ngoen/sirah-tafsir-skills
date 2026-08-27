@@ -51,13 +51,19 @@ Disiplin Mode MATERI:
 
 Banyak pengguna memakai model dengan batas keluaran kecil dan tanpa subagent, tetapi meminta materi panjang. Karena itu:
 
+**Deteksi kemampuan (lakukan dulu, tanpa bertanya ke pengguna):**
+- **Punya tool subagent?** (Claude Code: tool `Agent`/`Task` ada di daftar tool; Codex/agen lain: kemampuan spawn sub-task.) → **Jalur MAKSIMAL**: untuk mode MATERI multi-kitab, luncurkan satu *pembaca* per kitab secara paralel (tiap pembaca: `--toc` → `--subbab` terpilih → berkas ekstrak ≤45.000 karakter, verbatim + sitasi + 1–2 kalimat isi), lalu Anda menyusun narasi dari berkas ekstrak. Bagian boleh sampai ±40.000 karakter.
+- **Tanpa subagent tetapi keluaran besar** (Claude Code/Codex tanpa Agent tool): jalur tunggal, Bagian ≤25.000 karakter, baca-tulis mengalir.
+- **Sandbox chat / model gratis / batas keluaran kecil** (claude.ai web, ChatGPT, atau Anda tahu batas Anda kecil): Bagian ≤12.000 (≤8.000 bila sangat kecil).
+Kalau ragu, ambil jalur di bawahnya — lebih baik dua bagian rapi daripada satu jawaban gagal di tengah. Sebutkan jalur yang dipakai dalam satu kalimat di Catatan.
+
 1. **Rencana dulu, lalu Bagian 1.** Pada mode MATERI, jawaban pertama memuat *Daftar Bagian* (dari `--toc`: Bagian 1 uraian, Bagian 2 lampiran kitab A bagian …, dst.) dan langsung Bagian 1.
-2. **Ukuran bagian aman**: ≤12.000 karakter per jawaban (≈4–5 ribu token). Bila batas keluaran Anda kecil (model gratis), pakai ≤8.000. Pengguna boleh meminta "bagian panjang".
+2. **Ukuran bagian** mengikuti hasil deteksi di atas (40k / 25k / 12k / 8k karakter). Pengguna boleh meminta "bagian panjang" atau "bagian pendek".
 3. **Baca-tulis mengalir**: baca satu bagian (`--seg --paras`), tulis, baru baca berikutnya. Jangan menumpuk semua bacaan lalu menulis sekaligus.
 4. **Penutup baku tiap bagian** (tulis persis):
    > — Bagian N dari M selesai. Ketik **lanjut** untuk Bagian N+1 (‹judul bagian berikutnya›). *Ini batas keluaran per jawaban, bukan akhir materi.*
 5. **Baris status** di baris terakhir: `[lanjut: ref=<S:A> seg=<id> berikutnya=<paragraf/sub-judul>; bagian=<N+1>/<M>]` — saat pengguna mengetik "lanjut", baca baris ini, jalankan script dari titik itu, tanpa mengulang yang sudah dikirim.
-6. Subagent/paralel hanya bila tersedia; protokol ini tidak bergantung padanya.
+6. Jalur paralel (subagent) dipakai otomatis bila terdeteksi; protokol bagian tetap berlaku di semua jalur.
 
 ## Format Jawaban (konsisten, hemat token)
 
