@@ -30,7 +30,6 @@ SKILLS = {
         "db_name": "tafsir_full.db", "cache": "tafsir-lookup",
     },
     "sirah-lookup": {
-        "released": False,
         "files": ["SKILL.md", "scripts/lookup.py"],
         "db_url": f"https://github.com/{REPO}/releases/download/sirah-v1/sirah_full.db.xz",
         "db_name": "sirah_full.db", "cache": "sirah-lookup",
@@ -115,7 +114,7 @@ def install_skill(name, targets, want_db):
         if db.exists() and db.stat().st_size > 50 * 1024 * 1024:
             print(f"  OK basis data sudah ada: {db}")
         else:
-            print(f"  ... mengunduh basis data (±20–35 MB) ke {cdir} — sekali saja")
+            print(f"  ... mengunduh basis data (±17 MB) ke {cdir} — sekali saja")
             try:
                 raw = fetch(meta["db_url"], binary=True)
                 with lzma.open(io.BytesIO(raw)) as src, open(db, "wb") as out:
