@@ -1,61 +1,66 @@
 # sirah-tafsir-skills
 
-**ID** · Skill untuk Claude (Code / claude.ai / aplikasi), ChatGPT (Custom GPT), dan agen lain agar mengutip **teks Arab VERBATIM** kitab tafsir dan sirah klasik — lengkap dengan sitasi juz/halaman cetak + tautan Maktabah Syamilah — tanpa halusinasi. Wakaf, gratis, non-komersial. *Semoga menjadi amal jariyah bagi siapa pun yang menyusun, merawat, dan memakainya.*
+*English version: [README-EN.md](README-EN.md)*
 
-**EN** · Skills that let Claude, ChatGPT (Custom GPT), and other agents quote classical **Arabic tafsir and sīrah sources VERBATIM** with exact printed volume/page citations and Maktabah Shamela links — zero hallucination. Free, non-commercial waqf.
+Skill agar asisten AI (Claude, ChatGPT, dan agen lain) **mengutip teks Arab asli, apa adanya (verbatim)** dari kitab tafsir dan sirah klasik — lengkap dengan juz/halaman cetak dan tautan Maktabah Syamilah — bukan dari "ingatan" AI yang sering keliru. Gratis, wakaf, non-komersial. *Semoga menjadi amal jariyah bagi siapa pun yang menyusun, merawat, membagikan, dan memakainya.*
 
-| Skill | Status | Sumber / Sources | DB |
-|---|---|---|---|
-| [`skills/tafsir-lookup`](skills/tafsir-lookup) | ✅ rilis | Tafsir ath-Thabari · al-Maraghi · Shafwat at-Tafasir (ash-Shabuni) · Ibnu Katsir (2 edisi) — 6.236/6.236 ayat | [`tafsir_full.db.xz`](https://github.com/B-ngoen/sirah-tafsir-skills/releases/tag/tafsir-v1) ±18 MB |
-| `skills/sirah-lookup` | 🔜 segera | Sirah Ibnu Hisyam (2 edisi) · Ibnu Ishaq · Thabaqat Ibnu Sa'd · Tarikh ath-Thabari · al-Ishabah · Usud al-Ghabah (2 edisi) · al-Isti'ab — 175 peristiwa/tahun + 9.700 shahabat | menyusul |
+| Skill | Status | Kitab |
+|---|---|---|
+| **tafsir-lookup** | ✅ siap | Tafsir ath-Thabari · al-Maraghi · Shafwat at-Tafasir (ash-Shabuni) · Tafsir Ibnu Katsir (2 edisi) — 6.236/6.236 ayat |
+| **sirah-lookup** | 🔜 segera | Sirah Ibnu Hisyam (2 edisi) · Ibnu Ishaq · Thabaqat Ibnu Sa'd · Tarikh ath-Thabari · al-Ishabah · Usud al-Ghabah (2 edisi) · al-Isti'ab — 175 peristiwa/tahun & ±9.700 shahabat |
 
-## Cara pakai / How to use
+---
 
-**Claude Code** — salin folder skill ke `~/.claude/skills/` (Windows: `%USERPROFILE%\.claude\skills\`):
-```bash
-git clone https://github.com/B-ngoen/sirah-tafsir-skills.git
-cp -r sirah-tafsir-skills/skills/tafsir-lookup ~/.claude/skills/
-```
-Lalu bertanya seperti biasa ("tafsir QS 2:255 menurut Thabari, teks Arabnya"). DB (±18 MB) terunduh otomatis dari Release saat pertama dipakai dan di-cache permanen.
+## Cara pasang (pilih yang paling mudah untuk Anda)
 
-**claude.ai / aplikasi Claude** — unggah file `tafsir-lookup.skill` dari [Releases](https://github.com/B-ngoen/sirah-tafsir-skills/releases) di *Settings → Capabilities → Skills*. DB juga terunduh otomatis di sandbox.
+### 1) Cukup satu kalimat — untuk Claude Code, Codex, dan asisten ber-terminal lain
+Buka asisten Anda, tempel kalimat ini:
 
-**ChatGPT (Custom GPT + Code Interpreter)** — ikuti [`chatgpt/README-GPT.md`](chatgpt/README-GPT.md): tempel `chatgpt/instructions.md`, unggah `chatgpt/lookup.py` + `tafsir_full.db.xz` sebagai Knowledge.
+> **Tolong pelajari https://github.com/B-ngoen/sirah-tafsir-skills dan install sebagai skill.**
 
-**Codex / pi / opencode / agen lain** — jalankan `python skills/tafsir-lookup/scripts/lookup.py 2:255` dan tempel isi `SKILL.md` ke instruksi agen (AGENTS.md).
+Asisten akan membaca [INSTALL.md](INSTALL.md), menjalankan pemasang, mengunduh basis data (±18 MB, sekali saja), lalu memberi tahu Anda sudah siap. Setelah itu tinggal bertanya biasa, contoh:
+- "Tafsir QS Al-Baqarah 255 menurut Thabari dan Ibnu Katsir, teks Arabnya."
+- "Buatkan materi kajian tafsir QS Al-Fatihah yang lengkap dari semua kitab."
 
-```
-python lookup.py 2:255                       # semua kitab, markdown
-python lookup.py 2:255 -s tabari,maraghi     # pilih kitab
-python lookup.py 2:255 --toc                 # daftar segmen + sub-judul (mode materi lengkap)
-python lookup.py 2:255 --seg 7928 --paras 0-60   # baca satu segmen bagian demi bagian
-python lookup.py 1 --intro                   # pembuka surah
-python lookup.py --coverage 2                # cakupan surah per kitab
-```
+Ingin tanpa AI? Jalankan sendiri: `python install.py` (unduh berkasnya dari repo ini) — tidak perlu git.
 
-## Prinsip
+### 2) claude.ai (web) dan aplikasi Claude
+1. Unduh berkas **`tafsir-lookup.skill`** dari halaman [Releases](https://github.com/B-ngoen/sirah-tafsir-skills/releases/tag/tafsir-v1).
+2. Di claude.ai: **Settings → Capabilities → Skills → Upload skill**, pilih berkas itu.
+3. Mulai percakapan baru dan bertanya seperti biasa. Basis data diunduh otomatis di dalam sandbox Claude saat pertama dipakai (±1 menit).
 
-1. **Verbatim** — teks tidak diubah satu huruf pun (tasykil, catatan kaki muhaqqiq, sanad ikut).
-2. **Sitasi wajib** — kitab + edisi, juz/halaman cetak, URL shamela per kutipan.
-3. **Absen dikatakan absen** — tidak diisi dari kitab lain atau ingatan model.
-4. **Parafrase ditandai** — ringkasan AI selalu terpisah dari blok verbatim.
-5. **Dua mode** — *Rujukan* (ringkas) dan *Materi/Lengkap* (`--toc` → baca segmen penuh bagian demi bagian).
+Belum bisa lewat satu kalimat di sini karena Claude web tidak bisa memasang skill dari dalam percakapan; tetapi Anda bisa menempel tautan repo ini di chat dan berkata "pelajari dan pakai untuk percakapan ini" — Claude akan memakainya sementara.
+
+### 3) ChatGPT
+Cara termudah: pakai **Custom GPT** yang sudah jadi (tautan akan dicantumkan di sini setelah diterbitkan).  
+Ingin membuat sendiri? Ikuti panduan bergambar-langkah di [chatgpt/README-GPT.md](chatgpt/README-GPT.md): tempel `instructions.md`, unggah `lookup.py` + `tafsir_full.db.xz`, nyalakan *Code Interpreter*. ±5 menit.
+
+### 4) Agen lain (pi, opencode, dsb.)
+Tempel isi `skills/tafsir-lookup/SKILL.md` ke instruksi agen (mis. `AGENTS.md`) dan jalankan `python skills/tafsir-lookup/scripts/lookup.py 2:255`.
+
+---
+
+## Yang membedakan skill ini
+
+1. **Verbatim** — teks kitab tidak diubah satu huruf pun (harakat, catatan kaki muhaqqiq, sanad ikut).
+2. **Sitasi wajib** — nama kitab + edisi, juz/halaman cetak, tautan shamela.ws pada setiap kutipan.
+3. **Yang tidak ada dikatakan tidak ada** — tidak ditambal dari kitab lain atau dari ingatan AI.
+4. **Ringkasan AI selalu ditandai** dan dipisah dari kutipan asli.
+5. **Dua mode** — *Rujukan* (jawaban ringkas + kutipan terpilih) dan *Materi lengkap* (AI membaca seluruh bab bagian demi bagian, lalu menyusun uraian runtut + lampiran kutipan per sub-bab).
 
 ## Sumber, atribusi, lisensi
 
-- Teks diambil dari **Maktabah Syamilah (shamela.ws)**, 18 Agustus 2026, halaman demi halaman (tabel `pages`), dengan nomor juz/halaman edisi cetak yang dipakai Syamilah:
-  Tafsir ath-Thabari (ط دار التربية والتراث) · Tafsir al-Maraghi · Shafwat at-Tafasir · Tafsir Ibnu Katsir (ط أولاد الشيخ) · Tafsir Ibnu Katsir (ط دار ابن الجوزي). Jazahumullah khairan para muhaqqiq dan tim Syamilah.
-- **Teks kitab klasik adalah milik umum.** Apparatus muhaqqiq (catatan kaki) disertakan apa adanya demi keaslian edisi; bila pemegang hak edisi tertentu berkeberatan, hubungi kami — bagian itu akan dihapus dari rilis berikutnya.
-- Edisi publik **tidak memuat** sumber berhak cipta modern (mis. terjemah Dorar EN).
-- Kode (skrip, skill, pipeline): **MIT** — lihat [LICENSE](LICENSE). Basis data: dibagikan sebagai wakaf non-komersial; dilarang diperjualbelikan.
-- Dibangun dengan Claude Code + GLM/MiniMax via `pi`; pipeline lengkap (scrape → parse → grouping → build) ada di [`pipeline/`](pipeline/) agar bisa direproduksi.
+- Teks bersumber dari **Maktabah Syamilah (shamela.ws)**, diambil halaman demi halaman (18 Agustus 2026) beserta nomor juz/halaman edisi cetak yang dipakai Syamilah: Tafsir ath-Thabari (ط دار التربية والتراث) · Tafsir al-Maraghi · Shafwat at-Tafasir · Tafsir Ibnu Katsir (ط أولاد الشيخ) · Tafsir Ibnu Katsir (ط دار ابن الجوزي). Jazahumullah khairan para muhaqqiq dan tim Syamilah.
+- **Teks kitab klasik adalah milik umum.** Catatan kaki muhaqqiq disertakan apa adanya demi keaslian edisi; bila pemegang hak suatu edisi berkeberatan, sampaikan lewat *Issues* — bagian itu akan dihapus pada rilis berikutnya.
+- Edisi publik **tidak memuat** karya modern berhak cipta (mis. terjemah Dorar EN).
+- Kode (skrip, skill): **MIT** — lihat [LICENSE](LICENSE). Basis data: wakaf non-komersial; dilarang diperjualbelikan.
 
 ## Keterbatasan yang jujur
 
-- Shafwat at-Tafasir: edisi elektronik terpotong (surah 114 absen). Ibnu Katsir ط ابن الجوزي: akhir mushaf terpotong (113–114 hanya pembuka gabungan).
-- Batas segmen dibentuk dari heading (rule-based + LLM) — label rentang ayat ("249–280") dijelaskan di output.
-- Sirah: registry 175 peristiwa masih draf; tautan entitas antar-kamus shahabat ±78% (status/confidence tersimpan per entri).
+- Shafwat at-Tafasir: edisi elektronik terpotong (surah 114 tidak ada). Ibnu Katsir ط ابن الجوزي: akhir mushaf terpotong (113–114 hanya pembuka gabungan).
+- Batas segmen dibentuk dari judul bab (aturan + AI); bila kutipan berlabel rentang ayat ("249–280"), AI akan menjelaskannya.
+- Sirah (segera): daftar 175 peristiwa masih draf; tautan nama shahabat antar-kamus ±78 % (status tersimpan per entri dan disampaikan AI).
 
 ## Kontribusi
 
-Koreksi batas segmen, registry peristiwa, atau tautan shahabat sangat diterima lewat *Issues/PR*. Mohon jaga tiga hal: verbatim, sitasi, non-komersial.
+Koreksi batas segmen, daftar peristiwa, atau tautan shahabat sangat diterima lewat *Issues/PR*. Mohon jaga tiga hal: verbatim, sitasi, non-komersial.

@@ -1,0 +1,147 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""install.py — pasang skill tafsir-lookup / sirah-lookup dengan SATU perintah (tanpa git).
+
+    python install.py                 # pasang semua skill yang tersedia ke folder skill agen yang terdeteksi
+    python install.py tafsir          # hanya tafsir-lookup
+    python install.py --target claude # paksa target: claude | codex | dir:<folder>
+    python install.py --no-db         # jangan pra-unduh basis data (akan diunduh saat pertama dipakai)
+
+Yang dilakukan:
+1. Mengunduh isi folder skills/<nama>/ dari GitHub (raw), tanpa git.
+2. Menyalin ke folder skill agen: Claude Code -> ~/.claude/skills/<nama>/ ; Codex -> ~/.codex/skills/<nama>/ (+ catatan AGENTS.md).
+3. Pra-unduh basis data (.xz) ke cache permanen agar pemakaian pertama tidak menunggu.
+Stdlib saja. Aman diulang (idempoten).
+"""
+import argparse, io, json, lzma, os, sys, urllib.request
+from pathlib import Path
+
+REPO = "B-ngoen/sirah-tafsir-skills"
+BRANCH = "main"
+SKILLS = {
+    "tafsir-lookup": {
+        "files": ["SKILL.md", "scripts/lookup.py"],
+        "db_url": f"https://github.com/{REPO}/releases/download/tafsir-v1/tafsir_full.db.xz",
+        "db_name": "tafsir_full.db", "cache": "tafsir-lookup",
+    },
+    "sirah-lookup": {
+        "files": ["SKILL.md", "scripts/lookup.py"],
+        "db_url": f"https://github.com/{REPO}/releases/download/sirah-v1/sirah_full.db.xz",
+        "db_name": "sirah_full.db", "cache": "sirah-lookup",
+    },
+}
+ALIAS = {"tafsir": "tafsir-lookup", "sirah": "sirah-lookup"}
+UA = {"User-Agent": "sirah-tafsir-skills-installer/1"}
+
+
+def fetch(url, binary=False):
+    req = urllib.request.Request(url, headers=UA)
+    with urllib.request.urlopen(req, timeout=60) as r:
+        data = r.read()
+    return data if binary else data.decode("utf-8")
+
+
+def detect_targets(force=None):
+    home = Path.home()
+    if force:
+        if force == "claude":
+            return [("Claude Code", home / ".claude" / "skills")]
+        if force == "codex":
+            return [("Codex", home / ".codex" / "skills")]
+        if force.startswith("dir:"):
+            return [("Folder", Path(force[4:]))]
+        sys.exit(f"target tidak dikenal: {force}")
+    out = []
+    if (home / ".claude").is_dir():
+        out.append(("Claude Code", home / ".claude" / "skills"))
+    if (home / ".codex").is_dir():
+        out.append(("Codex", home / ".codex" / "skills"))
+    if not out:  # default: Claude Code (folder dibuat)
+        out.append(("Claude Code", home / ".claude" / "skills"))
+    return out
+
+
+def cache_dir(name):
+    cands = []
+    if os.environ.get("LOCALAPPDATA"):
+        cands.append(Path(os.environ["LOCALAPPDATA"]) / name)
+    xdg = os.environ.get("XDG_DATA_HOME") or (Path.home() / ".local" / "share")
+    cands.append(Path(xdg) / name)
+    for c in cands:
+        try:
+            c.mkdir(parents=True, exist_ok=True)
+            return c
+        except OSError:
+            continue
+    return cands[-1]
+
+
+def install_skill(name, targets, want_db):
+    meta = SKILLS[name]
+    base = f"https://raw.githubusercontent.com/{REPO}/{BRANCH}/skills/{name}/"
+    files = {}
+    for f in meta["files"]:
+        try:
+            files[f] = fetch(base + f)
+        except Exception as e:
+            print(f"  ! gagal mengunduh {f}: {type(e).__name__} — skill {name} mungkin belum dirilis")
+            return False
+    for label, root in targets:
+        dst = root / name
+        for f, content in files.items():
+            p = dst / f
+            p.parent.mkdir(parents=True, exist_ok=True)
+            io.open(p, "w", encoding="utf-8", newline="\n").write(content)
+        print(f"  ✓ {name} dipasang ke {label}: {dst}")
+        if label == "Codex":
+            agents = Path.home() / ".codex" / "AGENTS.md"
+            note = f"\n\n## Skill {name}\nBaca dan ikuti `{dst / 'SKILL.md'}` setiap kali pengguna bertanya topik terkait; jalankan `python {dst / 'scripts' / 'lookup.py'} ...`.\n"
+            try:
+                cur = io.open(agents, encoding="utf-8").read() if agents.exists() else ""
+                if name not in cur:
+                    io.open(agents, "a", encoding="utf-8").write(note)
+                    print(f"  ✓ catatan ditambahkan ke {agents}")
+            except OSError:
+                pass
+    if want_db:
+        cdir = cache_dir(meta["cache"])
+        db = cdir / meta["db_name"]
+        if db.exists() and db.stat().st_size > 50 * 1024 * 1024:
+            print(f"  ✓ basis data sudah ada: {db}")
+        else:
+            print(f"  … mengunduh basis data (±20–35 MB) ke {cdir} — sekali saja")
+            try:
+                raw = fetch(meta["db_url"], binary=True)
+                with lzma.open(io.BytesIO(raw)) as src, open(db, "wb") as out:
+                    while True:
+                        chunk = src.read(4 * 1024 * 1024)
+                        if not chunk:
+                            break
+                        out.write(chunk)
+                print(f"  ✓ basis data siap: {db} ({db.stat().st_size / 1e6:.0f} MB)")
+            except Exception as e:
+                print(f"  ! unduh DB gagal ({type(e).__name__}); skill tetap terpasang dan akan mengunduh saat pertama dipakai")
+    return True
+
+
+def main():
+    ap = argparse.ArgumentParser(description="Pasang skill tafsir-lookup / sirah-lookup.")
+    ap.add_argument("skills", nargs="*", help="tafsir | sirah (kosong = semua yang tersedia)")
+    ap.add_argument("--target", help="claude | codex | dir:<folder>")
+    ap.add_argument("--no-db", action="store_true")
+    a = ap.parse_args()
+    names = [ALIAS.get(s, s) for s in a.skills] or list(SKILLS)
+    targets = detect_targets(a.target)
+    print("Target:", ", ".join(f"{l} ({p})" for l, p in targets))
+    ok = 0
+    for n in names:
+        if n not in SKILLS:
+            print(f"  ! skill tidak dikenal: {n}")
+            continue
+        print(f"[{n}]")
+        ok += bool(install_skill(n, targets, not a.no_db))
+    print(f"Selesai: {ok} skill terpasang. Mulai percakapan baru, lalu bertanya seperti biasa (mis. 'tafsir QS 2:255 menurut Thabari, teks Arabnya').")
+
+
+if __name__ == "__main__":
+    main()
