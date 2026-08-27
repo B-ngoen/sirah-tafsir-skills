@@ -1,0 +1,4 @@
+release/*.xz
+release/*.db
+__pycache__/
+*.pyc

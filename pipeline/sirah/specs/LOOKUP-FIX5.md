@@ -1,0 +1,6 @@
+# lookup.py perbaikan 5 — navigasi sub-bab & penanda jenis paragraf (masukan dari uji Uhud)
+1. `--toc`: tiap sub-heading tambahkan (a) rentang paragraf `[A–B]` (sampai sub-heading berikutnya), (b) estimasi ukuran `~N kchar`, (c) penanda jenis: `[syair]` bila ≥60% paragraf dalam rentang mengandung pola bait (` ... ` pemisah shathr, atau baris pendek berima berurutan), `[nasab]` bila ≥60% paragraf diawali nama + `بن` berulang (daftar orang), `[catatan]` bila mayoritas paragraf catatan kaki `^\(\d+\)`/`^\[\d+\]`. Heuristik sederhana, tidak perlu sempurna.
+2. Opsi baru `--subbab <para_idx|teks judul>` (bersama `--seg`): ambil paragraf dari sub-heading itu sampai sub-heading berikutnya (bila teks: cocokkan awalan judul ter-norm, ambigu → daftar kandidat exit 2). Boleh diulang (`--subbab 79 --subbab 95`).
+3. Opsi `--exclude-poetry` untuk `--seg/--paras/--subbab`: lewati paragraf berpola bait syair; cetak satu baris `(… N bait syair dilewati, paragraf X–Y)` di tempatnya agar jujur.
+4. `--toc` tampilkan juga total estimasi kchar per segmen dan jumlah paragraf syair/nasab.
+5. Help & docstring. Uji: `event ghazwah_uhud -s hisyam_saqqa --toc` (rentang, ~kchar, penanda), `event ghazwah_uhud -s hisyam_saqqa --seg 44 --subbab "مقتل حمزة"`, `--subbab 79 --exclude-poetry`, JSON untuk keduanya; regresi FIX1–FIX4 tetap lulus.

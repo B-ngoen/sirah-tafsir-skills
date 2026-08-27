@@ -1,0 +1,5 @@
+# B3 perbaikan link_candidates.py (wajib sebelum batch diproses LLM)
+1. Kandidat dari `person_links.jsonl` kolom `candidates` ronde sebelumnya WAJIB disertakan (letakkan paling atas, tandai `*`). Contoh gagal: istiab#6 "أبي بن كعب…" punya candidates [31, 32] "أبي بن كعب" di person_links tetapi batch hanya memuat كعب بن عمرو dst.
+2. Token pertama `أبي`/`ابي` yang DIIKUTI `بن` adalah NAMA DIRI (Ubayy), bukan kunya. Kunya hanya bila `أبو|أبي|أم` diikuti token selain `بن/ابن`.
+3. Skor: token nama diri (token pertama) harus sama (toleransi edit ≤1) untuk masuk kandidat, kecuali entri kunya/lakab. Kandidat yang hanya cocok token tengah/akhir (كعب, مالك, النجار) boleh muncul hanya bila slot masih kosong.
+4. Tulis ulang semua batch + INDEX.json. Verifikasi & cetak blok: istiab#6 (harus memuat [31] & [32] di atas), istiab#1633 (Abu Bakr: harus memuat [4835] عبد الله بن عثمان بن عامر — pakai lakab الصديق/kunya أبو بكر + alias_map dari resolve_persons), tabaqat#46 (idem), istiab#1878 bila masih ada.

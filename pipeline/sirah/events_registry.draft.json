@@ -1,0 +1,4078 @@
+[
+ {
+  "id": "nasab_nabi",
+  "name_ar": "نسب النبي محمد إلى آدم",
+  "name_id": "Nasab Nabi Muhammad hingga Nabi Adam",
+  "aliases_ar": [
+   "سرد النسب الزكي",
+   "نسب رسول الله",
+   "سلسلة النسب النبوي"
+  ],
+  "era": "pra_bitsah",
+  "year_h": null,
+  "year_note": "Pembuka kitab Sirah Ibnu Hisyam; silsilah Nabi.",
+  "hisyam_pages": [
+   24,
+   27
+  ],
+  "tabari_pages": [
+   902,
+   905
+  ],
+  "hisyam_titles": [
+   "ذكر سرد النسب الزكي من محمد صلى الله عليه وآله وسلم، إلى آدم عليه السلام"
+  ],
+  "tabari_titles": [
+   "ذكر رسول الله ص وأسبابه"
+  ]
+ },
+ {
+  "id": "kelahiran_nabi",
+  "name_ar": "ولادة النبي محمد صلى الله عليه وسلم",
+  "name_id": "Kelahiran Nabi Muhammad",
+  "aliases_ar": [
+   "مولد النبي",
+   "المولد النبوي",
+   "عام الفيل",
+   "يوم المولد"
+  ],
+  "era": "pra_bitsah",
+  "year_h": null,
+  "year_note": "9 atau 12 Rabiul awal, Tahun Gajah (±571 M); ibu Aminah binti Wahb.",
+  "hisyam_pages": [
+   181,
+   182
+  ],
+  "tabari_pages": [
+   908,
+   918
+  ],
+  "hisyam_titles": [
+   "ولادة رسول الله صلى الله عليه وسلم ورضاعته"
+  ],
+  "tabari_titles": [
+   "ذكر باقى الاخبار عن الكائن من امر رسول الله ص قبل ان ينبأ، وما كان بين مولده ووقت نبوته من الاحداث في بلده"
+  ]
+ },
+ {
+  "id": "wafat_aminah",
+  "name_ar": "وفاة آمنة بنت وهب",
+  "name_id": "Wafat Aminah, ibunda Nabi, di Abwa'",
+  "aliases_ar": [
+   "وفاة أم النبي",
+   "منية آمنة"
+  ],
+  "era": "pra_bitsah",
+  "year_h": null,
+  "year_note": "±576 M, usia Nabi ±6 tahun; dimakamkan di Abwa' (dalam perjalanan Yatsrib).",
+  "hisyam_pages": [
+   191,
+   192
+  ],
+  "tabari_pages": null,
+  "hisyam_titles": [
+   "وفاة آمنة وحال رسول الله صلى الله عليه وسلم مع جده عبد المطلب بعدها"
+  ],
+  "tabari_titles": []
+ },
+ {
+  "id": "wafat_abdul_muthalib",
+  "name_ar": "وفاة عبد المطلب",
+  "name_id": "Wafat Abdul Muthalib",
+  "aliases_ar": [
+   "وفاة عبد المطلب بن هاشم"
+  ],
+  "era": "pra_bitsah",
+  "year_h": null,
+  "year_note": "±578 M, usia Nabi ±8 tahun; nasihat agar Abu Thalib menjaga Nabi.",
+  "hisyam_pages": [
+   192,
+   193
+  ],
+  "tabari_pages": null,
+  "hisyam_titles": [
+   "وفاة عبد المطلب. وما رثى به من الشعر"
+  ],
+  "tabari_titles": []
+ },
+ {
+  "id": "kafalah_abu_thalib",
+  "name_ar": "كفالة أبي طالب للنبي",
+  "name_id": "Pengasuhan Nabi oleh Abu Thalib",
+  "aliases_ar": [
+   "كفالة أبى طالب"
+  ],
+  "era": "pra_bitsah",
+  "year_h": null,
+  "year_note": "±578 M, Nabi dibawa Abu Thalib (saudara Abdullah) setelah wafat Abdul Muthalib.",
+  "hisyam_pages": [
+   202,
+   203
+  ],
+  "tabari_pages": null,
+  "hisyam_titles": [
+   "كفالة أبى طالب لرسول الله صلى الله عليه وسلم"
+  ],
+  "tabari_titles": []
+ },
+ {
+  "id": "perjalanan_syam_bahira",
+  "name_ar": "قصة بحيرى الراهب",
+  "name_id": "Perjalanan dagang ke Syam & rahib Bahira",
+  "aliases_ar": [
+   "بحيرى",
+   "راهب بصرى",
+   "رحلة الشام مع أبي طالب"
+  ],
+  "era": "pra_bitsah",
+  "year_h": null,
+  "year_note": "±582 M, usia Nabi ±12 tahun; rahib Bahira di Bushra mengenali tanda kenabian.",
+  "hisyam_pages": [
+   203,
+   206
+  ],
+  "tabari_pages": null,
+  "hisyam_titles": [
+   "قصة بحيرى [٢]"
+  ],
+  "tabari_titles": []
+ },
+ {
+  "id": "harb_fijar",
+  "name_ar": "حرب الفجار",
+  "name_id": "Perang Fijar",
+  "aliases_ar": [
+   "يوم الفجار",
+   "حرب الفجار الرابعة"
+  ],
+  "era": "pra_bitsah",
+  "year_h": null,
+  "year_note": "±585-590 M; Quraisy-Kinanh melawan Qais Ailan di Ukaz; Nabi (belia) ikut menyaksikan.",
+  "hisyam_pages": [
+   207,
+   209
+  ],
+  "tabari_pages": null,
+  "hisyam_titles": [
+   "حرب الفجار [١]"
+  ],
+  "tabari_titles": []
+ },
+ {
+  "id": "hilful_fudhul",
+  "name_ar": "حلف الفضول",
+  "name_id": "Hilful Fudhul (perjanjian menolong yang dizalimi)",
+  "aliases_ar": [
+   "حلف المطيبين",
+   "الحلف الأول"
+  ],
+  "era": "pra_bitsah",
+  "year_h": null,
+  "year_note": "±590 M, usia Nabi ±15-20 tahun; kebanyakan riwayat: setelah Fijar; Nabi ikut serta.",
+  "hisyam_pages": null,
+  "tabari_pages": null,
+  "hisyam_titles": [],
+  "tabari_titles": []
+ },
+ {
+  "id": "pernikahan_khadijah",
+  "name_ar": "تزويج النبي خديجة بنت خويلد",
+  "name_id": "Pernikahan Nabi dengan Khadijah",
+  "aliases_ar": [
+   "زواج خديجة",
+   "زواجه بخديجة"
+  ],
+  "era": "pra_bitsah",
+  "year_h": null,
+  "year_note": "±595 M, usia Nabi 25 tahun, Khadijah ±40 tahun (riwayat lain 28).",
+  "hisyam_pages": [
+   210,
+   211
+  ],
+  "tabari_pages": [
+   905,
+   908
+  ],
+  "hisyam_titles": [
+   "حديث تزويج رسول الله صلى الله عليه وسلم خديجة رضى الله عنها"
+  ],
+  "tabari_titles": [
+   "ذكر تزويج النبي ص خديجه رضى الله عنها"
+  ]
+ },
+ {
+  "id": "bangunan_kaabah",
+  "name_ar": "بنيان الكعبة ووضع الحجر الأسود",
+  "name_id": "Pembangunan ulang Ka'bah & penempatan Hajar Aswad",
+  "aliases_ar": [
+   "بناء قريش الكعبة",
+   "حكم النبي في وضع الحجر"
+  ],
+  "era": "pra_bitsah",
+  "year_h": null,
+  "year_note": "±605 M, usia Nabi 35 tahun; celana (izar) pertama; hakim dalam penempatan Hajar Aswad.",
+  "hisyam_pages": [
+   215,
+   217
+  ],
+  "tabari_pages": null,
+  "hisyam_titles": [
+   "حديث بنيان الكعبة وحكم رسول الله صلى الله عليه وسلم بين قريش في وضع الحجر"
+  ],
+  "tabari_titles": []
+ },
+ {
+  "id": "kabar_para_peramal",
+  "name_ar": "إخبار الكهان والأحبار والرهبان بالنبوة",
+  "name_id": "Kabar para peramal & ahli kitab tentang kenabian",
+  "aliases_ar": [
+   "إخبار الكهان",
+   "إنذار يهود برسول الله"
+  ],
+  "era": "pra_bitsah",
+  "year_h": null,
+  "year_note": "Sebelum bi'tsah; peramal Arab, pendeta Yahudi, dan rahib Nasrani mengabarkan kedatangan nabi akhir zaman.",
+  "hisyam_pages": [
+   227,
+   235
+  ],
+  "tabari_pages": null,
+  "hisyam_titles": [
+   "إخبار الكهان من العرب، والأحبار من يهود والرهبان من النصارى",
+   "إنذار يهود برسول الله صلى الله عليه وسلم"
+  ],
+  "tabari_titles": []
+ },
+ {
+  "id": "kisah_salman",
+  "name_ar": "إسلام سلمان الفارسي",
+  "name_id": "Kisah Salman al-Farisi",
+  "aliases_ar": [
+   "سلمان الفارسي",
+   "قصة سلمان",
+   "بحث سلمان عن النبي"
+  ],
+  "era": "pra_bitsah",
+  "year_h": null,
+  "year_note": "Kisah pencarian nabi akhir zaman dari Maisan (Persia); masuk Islam di Quba awal 1 H.",
+  "hisyam_pages": [
+   237,
+   238
+  ],
+  "tabari_pages": null,
+  "hisyam_titles": [
+   "حديث إسلام سلمان رضى الله عنه"
+  ],
+  "tabari_titles": []
+ },
+ {
+  "id": "para_hanif",
+  "name_ar": "ذكر الأحناس: ورقة وزيد بن عمرو وأصحابه",
+  "name_id": "Para pencari kebenaran (hanif) & Waraqah bin Naufal",
+  "aliases_ar": [
+   "ورقة بن نوفل",
+   "زيد بن عمرو بن نفيل",
+   "الأحناف الأربعة"
+  ],
+  "era": "pra_bitsah",
+  "year_h": null,
+  "year_note": "Pra-bi'tsah; Waraqah lalu membenarkan wahyu pertama; Ubaidillah bin Jahsy & Utsman bin Huwairith.",
+  "hisyam_pages": [
+   245,
+   246
+  ],
+  "tabari_pages": null,
+  "hisyam_titles": [
+   "ذكر ورقة بن نوفل بن أسد بن عبد العزى وعبيد الله بن جحش وعثمان بن الحويرث وزيد بن عمرو بن نفيل [٢]"
+  ],
+  "tabari_titles": []
+ },
+ {
+  "id": "bitsah_wahyu_pertama",
+  "name_ar": "بدء الوحي وابتداء تنزيل القرآن",
+  "name_id": "Bi'tsah: wahyu pertama di Gua Hira",
+  "aliases_ar": [
+   "البعثة النبوية",
+   "بدء الوحي",
+   "نزول أول الوحي",
+   "غار حراء"
+  ],
+  "era": "makkah",
+  "year_h": null,
+  "year_note": "Ramadhan, usia Nabi 40 tahun (±610 M); \"Iqra'\" (QS Al-'Alaq 1-5); masa fatrah wahyu.",
+  "hisyam_pages": [
+   262,
+   263
+  ],
+  "tabari_pages": [
+   918,
+   1013
+  ],
+  "hisyam_titles": [
+   "ابتداء تنزيل القرآن"
+  ],
+  "tabari_titles": [
+   "ذكر اليوم الذى نبى فيه رسول الله ص من الشهر الذى نبئ فيه وما جاء في ذلك",
+   "ذكر الخبر عما كان من امر نبى الله ص عند ابتداء الله تعالى ذكره اياه بإكرامه بإرسال جبريل ع اليه بوحيه"
+  ]
+ },
+ {
+  "id": "islam_khadijah",
+  "name_ar": "إسلام خديجة بنت خويلد",
+  "name_id": "Islam Khadijah, orang pertama beriman",
+  "aliases_ar": [
+   "إسلام خديجة",
+   "أول من آمن"
+  ],
+  "era": "makkah",
+  "year_h": null,
+  "year_note": "Orang pertama membenarkan wahyu; validasi dengan Waraqah bin Naufal.",
+  "hisyam_pages": [
+   261,
+   264
+  ],
+  "tabari_pages": null,
+  "hisyam_titles": [
+   "(خديجة بين يدي ورقة تحدثه حديث رسول الله صلى الله عليه وسلم) :",
+   "(امتحان خديجة برهان الوحي) :",
+   "إسلام خديجة بنت خويلد"
+  ],
+  "tabari_titles": []
+ },
+ {
+  "id": "shalat_diwajibkan_pertama",
+  "name_ar": "ابتداء فرض الصلاة",
+  "name_id": "Disyariatkannya shalat permulaan",
+  "aliases_ar": [
+   "فرض الصلاة أول مرة"
+  ],
+  "era": "makkah",
+  "year_h": null,
+  "year_note": "Shalat awal (2 rakaat pagi-petang) sejak awal bi'tsah; 5 waktu baru diwajibkan malam Isra' Mi'raj.",
+  "hisyam_pages": [
+   266,
+   267
+  ],
+  "tabari_pages": null,
+  "hisyam_titles": [
+   "ابتداء فرض الصلاة [٢]"
+  ],
+  "tabari_titles": []
+ },
+ {
+  "id": "islam_ali_dan_zaid",
+  "name_ar": "إسلام علي بن أبي طالب وزيد بن حارثة",
+  "name_id": "Islam Ali bin Abi Thalib & Zaid bin Haritsah",
+  "aliases_ar": [
+   "إسلام علي أول ذكر",
+   "إسلام زيد بن حارثة"
+  ],
+  "era": "makkah",
+  "year_h": null,
+  "year_note": "Ali (±10 tahun) pemeluk Islam pertama dari anak-anak; Zaid bin Haritsah pemeluk kedua sesudah Khadijah.",
+  "hisyam_pages": [
+   268,
+   271
+  ],
+  "tabari_pages": null,
+  "hisyam_titles": [
+   "ذكر أن على بن أبى طالب رضى الله عنه أول ذكر أسلم",
+   "إسلام زيد بن حارثة ثانيا"
+  ],
+  "tabari_titles": []
+ },
+ {
+  "id": "islam_abu_bakr",
+  "name_ar": "إسلام أبي بكر الصديق",
+  "name_id": "Islam Abu Bakr ash-Shiddiq",
+  "aliases_ar": [
+   "إسلام أبى بكر",
+   "دعوة أبى بكر"
+  ],
+  "era": "makkah",
+  "year_h": null,
+  "year_note": "±610-611 M; melalui dakwahnya masuk: Utsman, Zubair, Abdurrahman bin Auf, Sa'd bin Abi Waqqash, Thalhah.",
+  "hisyam_pages": [
+   272,
+   275
+  ],
+  "tabari_pages": null,
+  "hisyam_titles": [
+   "إسلام أبى بكر الصديق رضى الله عنه وشأنه",
+   "ذكر من أسلم من الصحابة بدعوة أبى بكر رضى الله عنه"
+  ],
+  "tabari_titles": []
+ },
+ {
+  "id": "dakwah_sirriyah",
+  "name_ar": "مباداة النبي قومه بالدعوة سرا",
+  "name_id": "Dakwah sembunyi-sembunyi (sirriyah)",
+  "aliases_ar": [
+   "الدعوة السرية",
+   "أول من دعا سرا"
+  ],
+  "era": "makkah",
+  "year_h": null,
+  "year_note": "±3 tahun pertama bi'tsah; jamaah ±40 sahabat.",
+  "hisyam_pages": [
+   285,
+   286
+  ],
+  "tabari_pages": null,
+  "hisyam_titles": [
+   "مباداة رسول الله صلى الله عليه وسلم قومه، وما كان منهم"
+  ],
+  "tabari_titles": []
+ },
+ {
+  "id": "penolakan_quraisy",
+  "name_ar": "تكذيب قريش وتحير الوليد بن المغيرة",
+  "name_id": "Penolakan & celaan Quraisy atas Al-Qur'an",
+  "aliases_ar": [
+   "تحير الوليد بن المغيرة",
+   "موقف قريش من القرآن"
+  ],
+  "era": "makkah",
+  "year_h": null,
+  "year_note": "Tahun 4-6 bi'tsah; Al-Walid bin Mughirah ragu menentukan ejekan, lalu turun QS Al-Muddatstsir.",
+  "hisyam_pages": [
+   293,
+   294
+  ],
+  "tabari_pages": null,
+  "hisyam_titles": [
+   "تحير الوليد بن المغيرة فيما يصف به القرآن"
+  ],
+  "tabari_titles": []
+ },
+ {
+  "id": "dakwah_jahriyah",
+  "name_ar": "الجهر بالدعوة وأول من جهر بالقرآن",
+  "name_id": "Dakwah terang-terangan (jahriyah)",
+  "aliases_ar": [
+   "الصدع بما تؤمر",
+   "أول من جهر بالقرآن",
+   "الجهر بالدعوة"
+  ],
+  "era": "makkah",
+  "year_h": null,
+  "year_note": "Tahun ke-4 bi'tsah (±613 M); \"fashdash' bimâ tu'mar\"; Abdullah bin Mas'ud pertama mengeraskan bacaan di Ka'bah.",
+  "hisyam_pages": [
+   337,
+   339
+  ],
+  "tabari_pages": null,
+  "hisyam_titles": [
+   "أول من جهر بالقرآن",
+   "قصة استماع قريش إلى قراءة النبي صلى الله عليه وسلم"
+  ],
+  "tabari_titles": []
+ },
+ {
+  "id": "penyiksaan_kaum_muslimin",
+  "name_ar": "عدوان المشركين على المستضعفين",
+  "name_id": "Penyiksaan Quraisy terhadap kaum muslimin yang lemah",
+  "aliases_ar": [
+   "تعذيب بلال",
+   "آل ياسر",
+   "فتنة المستضعفين",
+   "سمية أول شهيدة"
+  ],
+  "era": "makkah",
+  "year_h": null,
+  "year_note": "Tahun 4-6 bi'tsah; Bilal, keluarga Yasir (Sumayyah syahidah pertama), Khabbab, Abu Fukaihah.",
+  "hisyam_pages": [
+   340,
+   341
+  ],
+  "tabari_pages": null,
+  "hisyam_titles": [
+   "ذكر عدوان المشركين على المستضعفين ممن أسلم بالأذى والفتنة"
+  ],
+  "tabari_titles": []
+ },
+ {
+  "id": "hijrah_habasyah_1",
+  "name_ar": "الهجرة الأولى إلى أرض الحبشة",
+  "name_id": "Hijrah ke Habasyah pertama",
+  "aliases_ar": [
+   "هجرة الحبشة الأولى",
+   "مهاجرون الحبشة الأولى"
+  ],
+  "era": "makkah",
+  "year_h": null,
+  "year_note": "Rajab tahun ke-5 bi'tsah (±615 M); 11/12 laki-laki & 4 perempuan (termasuk Utsman bin Affan).",
+  "hisyam_pages": [
+   344,
+   345
+  ],
+  "tabari_pages": null,
+  "hisyam_titles": [
+   "ذكر الهجرة الأولى إلى أرض الحبشة"
+  ],
+  "tabari_titles": []
+ },
+ {
+  "id": "islam_hamzah",
+  "name_ar": "إسلام حمزة بن عبد المطلب",
+  "name_id": "Islam Hamzah bin Abdul Muthalib",
+  "aliases_ar": [
+   "إسلام حمزة",
+   "إسلام سيد الشهداء"
+  ],
+  "era": "makkah",
+  "year_h": null,
+  "year_note": "Syawal-Dzulhijjah tahun ke-6 bi'tsah (±615/616 M), karena Amr bin Hisyam (Abu Jahal) melukai Nabi.",
+  "hisyam_pages": [
+   314,
+   315
+  ],
+  "tabari_pages": null,
+  "hisyam_titles": [
+   "إسلام حمزة رحمه الله [٢]"
+  ],
+  "tabari_titles": []
+ },
+ {
+  "id": "islam_umar",
+  "name_ar": "إسلام عمر بن الخطاب",
+  "name_id": "Islam Umar bin Khaththab",
+  "aliases_ar": [
+   "إسلام عمر",
+   "إسلام الفاروق"
+  ],
+  "era": "makkah",
+  "year_h": null,
+  "year_note": "±3 hari setelah Islam Hamzah, akhir tahun ke-6 bi'tsah (±616 M); Nabi berdoa agar salah satu Umar dibina Islam.",
+  "hisyam_pages": [
+   365,
+   366
+  ],
+  "tabari_pages": null,
+  "hisyam_titles": [
+   "إسلام عمر بن الخطاب رضى الله عنه"
+  ],
+  "tabari_titles": []
+ },
+ {
+  "id": "hijrah_habasyah_2",
+  "name_ar": "الهجرة الثانية إلى الحبشة",
+  "name_id": "Hijrah ke Habasyah kedua",
+  "aliases_ar": [
+   "هجرة الحبشة الثانية",
+   "عودة بعض مهاجري الحبشة"
+  ],
+  "era": "makkah",
+  "year_h": null,
+  "year_note": "Tahun ke-6-7 bi'tsah; sebagian pengungsi pulang karena kabar palsu (penduduk Makkah dianggap masuk Islam) lalu rombongan besar berhijrah lagi; ±83 laki-laki.",
+  "hisyam_pages": [
+   387,
+   388
+  ],
+  "tabari_pages": null,
+  "hisyam_titles": [
+   "ذكر من عاد من أرض الحبشة لما بلغهم إسلام أهل مكة"
+  ],
+  "tabari_titles": []
+ },
+ {
+  "id": "utusan_quraisy_ke_negus",
+  "name_ar": "إرسال قريش إلى الحبشة في طلب المهاجرين",
+  "name_id": "Utusan Quraisy menuntut pengungsi kepada Negus",
+  "aliases_ar": [
+   "رسالة قريش إلى النجاشي",
+   "خطاب جعفر بن أبي طالب",
+   "قصة النجاشي مع المسلمين"
+  ],
+  "era": "makkah",
+  "year_h": null,
+  "year_note": "Tahun ke-7 bi'tsah; Amr bin Ash & Abdullah bin Abi Rabi'ah; khutbah Ja'far; Negus (Ashamah) menolak menyerahkan kaum muslimin.",
+  "hisyam_pages": [
+   356,
+   363
+  ],
+  "tabari_pages": null,
+  "hisyam_titles": [
+   "إرسال قريش إلى الحبشة في طلب المهاجرين إليها",
+   "قصة تملك النجاشي على الحبشة"
+  ],
+  "tabari_titles": []
+ },
+ {
+  "id": "boikot_bani_hasyim",
+  "name_ar": "الصحيفة ومقاطعة بني هاشم في الشعب",
+  "name_id": "Boikot & pengepungan Bani Hasyim di Syi'ib Abi Thalib",
+  "aliases_ar": [
+   "حصار الشعب",
+   "صحيفة قريش",
+   "المقاطعة",
+   "نقض الصحيفة"
+  ],
+  "era": "makkah",
+  "year_h": null,
+  "year_note": "Tahun ke-7-10 bi'tsah, ±3 tahun; sahifah boikot digantung Ka'bah, akhirnya dimakan cacing dan dibatalkan.",
+  "hisyam_pages": [
+   373,
+   398
+  ],
+  "tabari_pages": null,
+  "hisyam_titles": [
+   "خبر الصحيفة",
+   "حديث نقض الصحيفة"
+  ],
+  "tabari_titles": []
+ },
+ {
+  "id": "penolakan_perlindungan",
+  "name_ar": "قصة رد الجوار",
+  "name_id": "Penolakan perlindungan klan oleh para sahabat",
+  "aliases_ar": [
+   "رد جوار عثمان بن مظعون",
+   "جوار أبى بكر عند ابن الدغنة",
+   "رد جوار أبى بكر"
+  ],
+  "era": "makkah",
+  "year_h": null,
+  "year_note": "Pasca-boikot; Utsman bin Mazh'un, Abu Salamah, dan Abu Bakr melepas perlindungan Quraisy demi Islam.",
+  "hisyam_pages": [
+   393,
+   396
+  ],
+  "tabari_pages": null,
+  "hisyam_titles": [
+   "قصة عثمان بن مظعون في رد جوار الوليد",
+   "قصة أبى سلمة رضى الله عنه في جواره",
+   "دخول أبى بكر في جوار ابن الدغنة ورد جواره عليه"
+  ],
+  "tabari_titles": []
+ },
+ {
+  "id": "islam_thufail_dausi",
+  "name_ar": "إسلام الطفيل بن عمرو الدوسي",
+  "name_id": "Islam Thufail bin Amr ad-Dausi",
+  "aliases_ar": [
+   "الطفيل بن عمرو الدوسي"
+  ],
+  "era": "makkah",
+  "year_h": null,
+  "year_note": "±akhir tahun ke-10 bi'tsah; pulang mendakwahi Daus; turun \"QS Al-Kafirun\" dalam riwayat.",
+  "hisyam_pages": [
+   405,
+   406
+  ],
+  "tabari_pages": null,
+  "hisyam_titles": [
+   "قصة إسلام الطفيل بن عمرو الدوسي"
+  ],
+  "tabari_titles": []
+ },
+ {
+  "id": "delegasi_nasraniah",
+  "name_ar": "وفد النصارى الذين أسلموا",
+  "name_id": "Delegasi Nasrani yang masuk Islam",
+  "aliases_ar": [
+   "وفد نصارى",
+   "وفد من نجران قبل الهجرة"
+  ],
+  "era": "makkah",
+  "year_h": null,
+  "year_note": "Akhir periode Makkah (±tahun ke-9-10 bi'tsah); rombongan Nasrani mendengarkan & beriman.",
+  "hisyam_pages": [
+   414,
+   415
+  ],
+  "tabari_pages": null,
+  "hisyam_titles": [
+   "أمر وفد النصارى الذين أسلموا"
+  ],
+  "tabari_titles": []
+ },
+ {
+  "id": "isra_miraj",
+  "name_ar": "الإسراء والمعراج",
+  "name_id": "Isra' & Mi'raj",
+  "aliases_ar": [
+   "الإسراء",
+   "المعراج",
+   "ليلة الإسراء",
+   "أسري برسول الله"
+  ],
+  "era": "makkah",
+  "year_h": null,
+  "year_note": "Tahun ke-10 atau 11 bi'tsah (±619-621 M; perbedaan pendapat kuat); perjalanan Masjidil Haram-Baitul Maqdis-Sidrah; 5 waktu diwajibkan.",
+  "hisyam_pages": [
+   419,
+   427
+  ],
+  "tabari_pages": null,
+  "hisyam_titles": [
+   "ذكر الإسراء والمعراج",
+   "قصة المعراج"
+  ],
+  "tabari_titles": []
+ },
+ {
+  "id": "amul_huzn",
+  "name_ar": "وفاة أبي طالب وخديجة (عام الحزن)",
+  "name_id": "'Amul Huzn: wafat Abu Thalib & Khadijah",
+  "aliases_ar": [
+   "عام الحزن",
+   "وفاة أبي طالب",
+   "وفاة خديجة"
+  ],
+  "era": "makkah",
+  "year_h": null,
+  "year_note": "Tahun ke-10 bi'tsah (±619 M); keduanya wafat berselang 2-3 hari (riwayat lain 35 hari).",
+  "hisyam_pages": [
+   438,
+   439
+  ],
+  "tabari_pages": null,
+  "hisyam_titles": [
+   "وفاة أبى طالب وخديجة"
+  ],
+  "tabari_titles": []
+ },
+ {
+  "id": "thaif_diminta_tolong",
+  "name_ar": "سعى النبي إلى ثقيف يطلب النصرة",
+  "name_id": "Nabi meminta pertolongan Tsaqif di Tha'if",
+  "aliases_ar": [
+   "رحلة الطائف",
+   "الطائف قبل الهجرة",
+   "عرض النبي نفسه على القبائل"
+  ],
+  "era": "makkah",
+  "year_h": null,
+  "year_note": "Syawal tahun ke-10 bi'tsah (±619 M); dilempari batu, Addas masuk Islam; lalu berkeliling menawarkan diri ke kabilah-kabilah.",
+  "hisyam_pages": [
+   442,
+   447
+  ],
+  "tabari_pages": null,
+  "hisyam_titles": [
+   "سعى الرسول إلى ثقيف يطلب النصرة",
+   "عرض رسول الله صلى الله عليه وسلم نفسه على القبائل"
+  ],
+  "tabari_titles": []
+ },
+ {
+  "id": "islam_ansor_awal",
+  "name_ar": "بدء إسلام الأنصار",
+  "name_id": "Islam pertama kaum Anshar (Khazraj)",
+  "aliases_ar": [
+   "إسلام الأنصار",
+   "إسلام إياس بن معاذ",
+   "أول لقاء بمنى"
+  ],
+  "era": "makkah",
+  "year_h": null,
+  "year_note": "Tahun ke-11 bi'tsah (±620 M); pertemuan dengan 6 orang Khazraj di Aqabah saat musim haji.",
+  "hisyam_pages": [
+   450,
+   452
+  ],
+  "tabari_pages": null,
+  "hisyam_titles": [
+   "إسلام إياس بن معاذ وقصة أبى الحيسر",
+   "بدء إسلام الأنصار"
+  ],
+  "tabari_titles": []
+ },
+ {
+  "id": "baiah_aqabah_pertama",
+  "name_ar": "بيعة العقبة الأولى",
+  "name_id": "Bai'at Aqabah pertama",
+  "aliases_ar": [
+   "العقبة الأولى",
+   "بيعة العقبة الأولى",
+   "أهل العقبة الأولى"
+  ],
+  "era": "makkah",
+  "year_h": null,
+  "year_note": "Tahun ke-12 bi'tsah (±621 M); 12 orang; Mus'ab bin Umair dikirim sebagai guru ke Yatsrib.",
+  "hisyam_pages": [
+   454,
+   455
+  ],
+  "tabari_pages": null,
+  "hisyam_titles": [
+   "العقبة الأولى ومصعب بن عمير"
+  ],
+  "tabari_titles": []
+ },
+ {
+  "id": "misi_musab_yatsrib",
+  "name_ar": "مصعب بن عمير أول سفير في المدينة وأول جمعة",
+  "name_id": "Misi Mus'ab bin Umair ke Yatsrib & jumat pertama",
+  "aliases_ar": [
+   "مصعب بن عمير",
+   "أول جمعة بالمدينة",
+   "أول سفير في الإسلام"
+  ],
+  "era": "makkah",
+  "year_h": null,
+  "year_note": "Tahun ke-12-13 bi'tsah; Mus'ab mengajarkan Al-Qur'an; As'ad bin Zurarah memimpin jumat pertama di Yatsrib.",
+  "hisyam_pages": [
+   458,
+   461
+  ],
+  "tabari_pages": null,
+  "hisyam_titles": [
+   "أول جمعة أقيمت بالمدينة"
+  ],
+  "tabari_titles": []
+ },
+ {
+  "id": "baiah_aqabah_kedua",
+  "name_ar": "بيعة العقبة الثانية (الكبرى)",
+  "name_id": "Bai'at Aqabah kedua (besar)",
+  "aliases_ar": [
+   "العقبة الثانية",
+   "بيعة العقبة الأخيرة",
+   "بيعة العقبة الثانية",
+   "بيعة الحرب"
+  ],
+  "era": "makkah",
+  "year_h": null,
+  "year_note": "Tahun ke-13 bi'sah (±622 M); 73 laki-laki & 2 perempuan; bai'at membel & melindungi Nabi bila berhijrah.",
+  "hisyam_pages": [
+   461,
+   478
+  ],
+  "tabari_pages": null,
+  "hisyam_titles": [
+   "أمر العقبة الثانية",
+   "شروط البيعة في العقبة الأخيرة",
+   "أسماء من شهد العقبة"
+  ],
+  "tabari_titles": []
+ },
+ {
+  "id": "izin_berperang",
+  "name_ar": "نزول الأمر لرسول الله في القتال",
+  "name_id": "Turunnya izin berperang",
+  "aliases_ar": [
+   "الأمر بالقتال",
+   "إذن القتال"
+  ],
+  "era": "makkah",
+  "year_h": null,
+  "year_note": "Setelah Aqabah kedua, menjelang hijrah; izin membel Islam (\"Udzina lilladzîna yuqâtalûn\").",
+  "hisyam_pages": [
+   490,
+   491
+  ],
+  "tabari_pages": null,
+  "hisyam_titles": [
+   "نزول الأمر لرسول الله صلى الله عليه وسلم في القتال"
+  ],
+  "tabari_titles": []
+ },
+ {
+  "id": "hijrah_kaum_muslimin",
+  "name_ar": "هجرة المسلمين إلى المدينة",
+  "name_id": "Hijrah kaum muslimin ke Madinah",
+  "aliases_ar": [
+   "مهاجرون إلى المدينة",
+   "هجرة الصحابة"
+  ],
+  "era": "madinah",
+  "year_h": 1,
+  "year_note": "Muharram-Rabiul awal 1 H; berangsur-angsur berhijrah; Umar & Ayasy; rumah-rumah Muhajirin disediakan Anshar.",
+  "hisyam_pages": [
+   491,
+   500
+  ],
+  "tabari_pages": null,
+  "hisyam_titles": [
+   "ذكر المهاجرين إلى المدينة",
+   "هجرة عمر وقصة عياش معه",
+   "منازل المهاجرين بالمدينة"
+  ],
+  "tabari_titles": []
+ },
+ {
+  "id": "hijrah_nabi",
+  "name_ar": "هجرة الرسول إلى المدينة",
+  "name_id": "Hijrah Nabi ke Madinah",
+  "aliases_ar": [
+   "الهجرة النبوية",
+   "هجرة النبي صلى الله عليه وسلم",
+   "يوم الهجرة",
+   "غار ثور"
+  ],
+  "era": "madinah",
+  "year_h": 1,
+  "year_note": "Rabiul awal 1 H (September 622 M); Gua Tsur, Suraqah, Ummu Ma'bad; tiba Quba 8 Rabiul awal, Masjid Quba.",
+  "hisyam_pages": [
+   503,
+   505
+  ],
+  "tabari_pages": [
+   1019,
+   1032
+  ],
+  "hisyam_titles": [
+   "هجرة الرسول صلى الله عليه وسلم"
+  ],
+  "tabari_titles": [
+   "ذكر ما كان من الأمور المذكوره في أول سنه من الهجره"
+  ]
+ },
+ {
+  "id": "muakhah_muhajirin_ansar",
+  "name_ar": "المؤاخاة بين المهاجرين والأنصار",
+  "name_id": "Muakhah (persaudaraan) Muhajirin & Anshar",
+  "aliases_ar": [
+   "المؤاخاة",
+   "الأخوة بين المهاجرين والأنصار"
+  ],
+  "era": "madinah",
+  "year_h": 1,
+  "year_note": "Awal 1 H di Madinah; Nabi mempersaudarakan Muhajirin dengan Anshar.",
+  "hisyam_pages": [
+   527,
+   530
+  ],
+  "tabari_pages": [
+   1019,
+   1032
+  ],
+  "hisyam_titles": [
+   "المؤاخاة بين المهاجرين والأنصار"
+  ],
+  "tabari_titles": [
+   "ذكر ما كان من الأمور المذكوره في أول سنه من الهجره"
+  ]
+ },
+ {
+  "id": "azan_disyariatkan",
+  "name_ar": "خبر الأذان",
+  "name_id": "Disyariatkannya azan",
+  "aliases_ar": [
+   "الأذان",
+   "أول أذان",
+   "رؤيا عبد الله بن زيد"
+  ],
+  "era": "madinah",
+  "year_h": 1,
+  "year_note": "Tahun 1 H; mimpi Abdullah bin Zaid; Bilal ditunjuk muadzin.",
+  "hisyam_pages": [
+   531,
+   532
+  ],
+  "tabari_pages": null,
+  "hisyam_titles": [
+   "خبر الأذان"
+  ],
+  "tabari_titles": []
+ },
+ {
+  "id": "perjanjian_yahudi_madinah",
+  "name_ar": "عهد النبي مع يهود المدينة",
+  "name_id": "Piagam Madinah & perjanjian dengan kaum Yahudi",
+  "aliases_ar": [
+   "صحيفة المدينة",
+   "موادعة يهود",
+   "إسلام عبد الله بن سلام",
+   "مخيريق"
+  ],
+  "era": "madinah",
+  "year_h": 1,
+  "year_note": "Awal 1 H; perjanjian hidup bersama Bani Qainuqa-Nadhir-Quraizhah; termasuk Islam Abdullah bin Salam & Mukhairiq.",
+  "hisyam_pages": [
+   536,
+   543
+  ],
+  "tabari_pages": null,
+  "hisyam_titles": [
+   "الأعداء من يهود",
+   "إسلام عبد الله بن سلام",
+   "حديث مخيريق",
+   "شهادة عن صفية",
+   "من اجتمع إلى يهود من منافقي الأنصار"
+  ],
+  "tabari_titles": []
+ },
+ {
+  "id": "munafikin_surah_baqarah",
+  "name_ar": "ذكر المنافقين وما نزل من البقرة",
+  "name_id": "Kemunculan kaum munafikin & turunnya (bagian) QS Al-Baqarah",
+  "aliases_ar": [
+   "أول ذكر المنافقين",
+   "من أسلم من أحبار يهود نفاقا",
+   "ما نزل من البقرة"
+  ],
+  "era": "madinah",
+  "year_h": 2,
+  "year_note": "Tahun 1-2 H; Abdullah bin Ubay & sekutunya; QS Al-Baqarah menyingkap munafikin-Yahudi.",
+  "hisyam_pages": [
+   550,
+   554
+  ],
+  "tabari_pages": null,
+  "hisyam_titles": [
+   "من أسلم من أحبار يهود نفاقا",
+   "ما نزل من البقرة في المنافقين ويهود"
+  ],
+  "tabari_titles": []
+ },
+ {
+  "id": "ghazwah_waddan",
+  "name_ar": "غزوة ودان (الأبواء)",
+  "name_id": "Ghazwah Waddan (Abwa)",
+  "aliases_ar": [
+   "غزوة الأبواء",
+   "أول غزوة"
+  ],
+  "era": "madinah",
+  "year_h": 2,
+  "year_note": "Safar 2 H; ghazwah pertama; menyusuri kafilai Quraisy; perjanjian dengan Bani Dhamrah.",
+  "hisyam_pages": [
+   614,
+   615
+  ],
+  "tabari_pages": null,
+  "hisyam_titles": [
+   "غزوة ودان وهي أول غزواته عليه الصلاة والسلام"
+  ],
+  "tabari_titles": []
+ },
+ {
+  "id": "sariyyah_ubaidah",
+  "name_ar": "سرية عبيدة بن الحارث",
+  "name_id": "Sariyyah Ubaidah bin Al-Harits",
+  "aliases_ar": [
+   "سرية عبيدة بن الحارث",
+   "أول راية عقدت"
+  ],
+  "era": "madinah",
+  "year_h": 2,
+  "year_note": "Safar 2 H; bendera pertama diikat; kontak dengan Quraisy di Ahzab/Thaniyatul Murra; Sa'd bin Abi Waqqash melepaskan panah pertama.",
+  "hisyam_pages": [
+   614,
+   615
+  ],
+  "tabari_pages": null,
+  "hisyam_titles": [
+   "سرية عبيدة بن الحارث وهي أول راية عقدها عليه الصلاة والسلام"
+  ],
+  "tabari_titles": []
+ },
+ {
+  "id": "sariyyah_hamzah",
+  "name_ar": "سرية حمزة إلى سيف البحر",
+  "name_id": "Sariyyah Hamzah ke Siful Bahr",
+  "aliases_ar": [
+   "سرية حمزة بن عبد المطلب",
+   "سيف البحر"
+  ],
+  "era": "madinah",
+  "year_h": 2,
+  "year_note": "Safar 2 H; 30 orang ke Siful Bahr; berhadapan Abu Jahal; Majdi bin Amr menengahi.",
+  "hisyam_pages": [
+   618,
+   620
+  ],
+  "tabari_pages": null,
+  "hisyam_titles": [
+   "سرية حمزة إلى سيف البحر"
+  ],
+  "tabari_titles": []
+ },
+ {
+  "id": "ghazwah_buwat",
+  "name_ar": "غزوة بواط",
+  "name_id": "Ghazwah Buwath",
+  "aliases_ar": [
+   "غزوة بواط"
+  ],
+  "era": "madinah",
+  "year_h": 2,
+  "year_note": "Rabiul awal 2 H; 200 orang mengejar kafilah Umayyah bin Khalaf.",
+  "hisyam_pages": [
+   621,
+   622
+  ],
+  "tabari_pages": null,
+  "hisyam_titles": [
+   "غزوة بواط"
+  ],
+  "tabari_titles": []
+ },
+ {
+  "id": "ghazwah_usyairah",
+  "name_ar": "غزوة العشيرة",
+  "name_id": "Ghazwah Al-Usyairah",
+  "aliases_ar": [
+   "غزوة العشيرة",
+   "العشيرة من ينبع"
+  ],
+  "era": "madinah",
+  "year_h": 2,
+  "year_note": "Jumadil awal 2 H; perjanjian persahabatan dengan Bani Mudhlij & Bani Dhamrah; sebagian menempatkannya sesudah Buwath.",
+  "hisyam_pages": [
+   621,
+   622
+  ],
+  "tabari_pages": null,
+  "hisyam_titles": [
+   "غزوة العشيرة"
+  ],
+  "tabari_titles": []
+ },
+ {
+  "id": "sariyyah_saad_kharrar",
+  "name_ar": "سرية سعد بن أبي وقاص إلى الخرار",
+  "name_id": "Sariyyah Sa'd bin Abi Waqqash ke Kharrar",
+  "aliases_ar": [
+   "سرية سعد بن أبى وقاص",
+   "غزوة الخرار"
+  ],
+  "era": "madinah",
+  "year_h": 2,
+  "year_note": "±Rabiul awal 2 H; 8 orang, berjalan malam; tidak terjadi kontak.",
+  "hisyam_pages": [
+   623,
+   624
+  ],
+  "tabari_pages": null,
+  "hisyam_titles": [
+   "سرية سعد بن أبى وقاص"
+  ],
+  "tabari_titles": []
+ },
+ {
+  "id": "ghazwah_badr_ula",
+  "name_ar": "غزوة صفوان (بدر الأولى)",
+  "name_id": "Ghazwah Shafwan (Badar pertama)",
+  "aliases_ar": [
+   "بدر الأولى",
+   "غزوة بدر الأولى",
+   "غزوة صفوان"
+  ],
+  "era": "madinah",
+  "year_h": 2,
+  "year_note": "Rabiul awal 2 H; mengejar Kurz bin Jabir yang menjarah Madinah.",
+  "hisyam_pages": [
+   624,
+   625
+  ],
+  "tabari_pages": null,
+  "hisyam_titles": [
+   "غزوة صفوان وهي غزوة بدر الأولى"
+  ],
+  "tabari_titles": []
+ },
+ {
+  "id": "sariyyah_nakhlah",
+  "name_ar": "سرية عبد الله بن جحش إلى نخلة",
+  "name_id": "Sariyyah Abdullah bin Jahsy ke Nakhlah",
+  "aliases_ar": [
+   "سرية نخلة",
+   "غزوة نخلة",
+   "عبد الله بن جحش"
+  ],
+  "era": "madinah",
+  "year_h": 2,
+  "year_note": "Rajab 2 H; Amr bin Al-Hadrami terbunuh di bulan haram; turun QS Al-Baqarah 217.",
+  "hisyam_pages": [
+   624,
+   625
+  ],
+  "tabari_pages": null,
+  "hisyam_titles": [
+   "سرية عبد الله بن جحش ونزول: يسئلونك عن الشهر الحرام ٢: ٢١٧"
+  ],
+  "tabari_titles": []
+ },
+ {
+  "id": "perpindahan_kiblat",
+  "name_ar": "صرف القبلة إلى الكعبة",
+  "name_id": "Perpindahan kiblat ke Ka'bah",
+  "aliases_ar": [
+   "تحويل القبلة",
+   "أمر القبلة"
+  ],
+  "era": "madinah",
+  "year_h": 2,
+  "year_note": "Sya'ban 2 H (pertengahan); dari Baitul Maqdis ke Ka'bah (QS Al-Baqarah 144).",
+  "hisyam_pages": [
+   629,
+   630
+  ],
+  "tabari_pages": null,
+  "hisyam_titles": [
+   "صرف القبلة إلى الكعبة"
+  ],
+  "tabari_titles": []
+ },
+ {
+  "id": "ghazwah_badr_kubra",
+  "name_ar": "غزوة بدر الكبرى",
+  "name_id": "Perang Badar (ghazwah Badar Kubra)",
+  "aliases_ar": [
+   "بدر الكبرى",
+   "يوم بدر",
+   "وقعة بدر",
+   "غزوة بدر",
+   "يوم الفرقان"
+  ],
+  "era": "madinah",
+  "year_h": 2,
+  "year_note": "17 Ramadhan 2 H; 313 muslimin vs ±1000 Quraisy; Abu Jahal terbunuh; 70 tawanan; QS Al-Anfal; syair & nasab peserta termasuk.",
+  "hisyam_pages": [
+   629,
+   753
+  ],
+  "tabari_pages": [
+   1032,
+   1112
+  ],
+  "hisyam_titles": [
+   "غزوة بدر الكبرى",
+   "ذكر رؤيا عاتكة بنت عبد المطلب",
+   "خروج زينب إلى المدينة",
+   "إسلام أبى العاص بن الربيع",
+   "إسلام عمير بن وهب",
+   "المطعمون من قريش",
+   "أسماء خيل المسلمين يوم بدر",
+   "نزول سورة الأنفال",
+   "من حضر بدرا من المسلمين",
+   "الأنصار ومن معهم",
+   "من استشهد من المسلمين يوم بدر",
+   "من قتل ببدر من المشركين",
+   "ذكر أسرى قريش يوم بدر",
+   "ما قيل من الشعر في يوم بدر"
+  ],
+  "tabari_titles": [
+   "السنه الثانيه من الهجره"
+  ]
+ },
+ {
+  "id": "bani_qainuqa",
+  "name_ar": "أمر بني قينقاع",
+  "name_id": "Pengusiran Bani Qainuqa",
+  "aliases_ar": [
+   "غزوة بني قينقاع",
+   "إجلاء بني قينقاع"
+  ],
+  "era": "madinah",
+  "year_h": 2,
+  "year_note": "Syawal 2 H (setelah Badar); tukang emas Madinah; menyerahkan diri, diasingkan ke Azruq & Syam.",
+  "hisyam_pages": [
+   784,
+   785
+  ],
+  "tabari_pages": null,
+  "hisyam_titles": [
+   "أمر بنى قينقاع"
+  ],
+  "tabari_titles": []
+ },
+ {
+  "id": "ghazwah_sawiq",
+  "name_ar": "غزوة السويق",
+  "name_id": "Ghazwah As-Sawiq",
+  "aliases_ar": [
+   "غزوة السويق",
+   "أبو سفيان بن حرب بعد بدر"
+  ],
+  "era": "madinah",
+  "year_h": 2,
+  "year_note": "Dzulhijjah 2 H; serangan balasan Abu Sufyan; 2 orang Anshar terbunuh; tenggelam makanan (sawiq).",
+  "hisyam_pages": [
+   781,
+   782
+  ],
+  "tabari_pages": null,
+  "hisyam_titles": [
+   "غزوة السويق"
+  ],
+  "tabari_titles": []
+ },
+ {
+  "id": "ghazwah_kudr",
+  "name_ar": "غزوة بني سليم بالكدر",
+  "name_id": "Ghazwah Bani Sulaim di Al-Kudr",
+  "aliases_ar": [
+   "غزوة الكدر",
+   "غزوة قرقرا الكدر"
+  ],
+  "era": "madinah",
+  "year_h": 3,
+  "year_note": "Safar 3 H; Bani Sulaim & Ghatfan di Al-Kudr; Ghurfatsul Himar; tawanan dibebaskan.",
+  "hisyam_pages": [
+   780,
+   781
+  ],
+  "tabari_pages": null,
+  "hisyam_titles": [
+   "غزوة بنى سليم بالكدر"
+  ],
+  "tabari_titles": []
+ },
+ {
+  "id": "maktal_kaab_ibn_asyraf",
+  "name_ar": "مقتل كعب بن الأشرف",
+  "name_id": "Pembunuhan Ka'b bin Al-Asyraf",
+  "aliases_ar": [
+   "قتل كعب بن الأشرف",
+   "أمر كعب بن الأشرف"
+  ],
+  "era": "madinah",
+  "year_h": 3,
+  "year_note": "Rabiul awal 3 H; penyair Yahudi Bani Nadhir yang menghasut; Muhammad bin Maslamah dkk.",
+  "hisyam_pages": [
+   788,
+   789
+  ],
+  "tabari_pages": null,
+  "hisyam_titles": [
+   "مقتل كعب بن الأشرف"
+  ],
+  "tabari_titles": []
+ },
+ {
+  "id": "ghazwah_dzi_amr",
+  "name_ar": "غزوة ذي أمر",
+  "name_id": "Ghazwah Dzi Amr",
+  "aliases_ar": [
+   "غزوة ذي أمر",
+   "غزوة غطفان"
+  ],
+  "era": "madinah",
+  "year_h": 3,
+  "year_note": "Rabiul awal 3 H; ke Dzi Amr mengejar Ghatfan; doa Nabi di bukit; tidak terjadi pertempuran besar.",
+  "hisyam_pages": [
+   783,
+   784
+  ],
+  "tabari_pages": null,
+  "hisyam_titles": [
+   "غزوة ذي أمر"
+  ],
+  "tabari_titles": []
+ },
+ {
+  "id": "sariyyah_qaradah",
+  "name_ar": "سرية زيد بن حارثة إلى القردة",
+  "name_id": "Sariyyah Zaid bin Haritsah ke Al-Qaradah",
+  "aliases_ar": [
+   "سرية القردة",
+   "غزوة القردة"
+  ],
+  "era": "madinah",
+  "year_h": 3,
+  "year_note": "Jumadil akhir 3 H menurut banyak penanggalan (urutan bab Ibnu Hisyam: sesudah Bani Qainuqa, 2 H); kafilai Quraisy pimpinan Safwan bin Umayyah dirampas.",
+  "hisyam_pages": [
+   787,
+   788
+  ],
+  "tabari_pages": null,
+  "hisyam_titles": [
+   "سرية زيد بن حارثة إلى القردة"
+  ],
+  "tabari_titles": []
+ },
+ {
+  "id": "ghazwah_buhran",
+  "name_ar": "غزوة الفرع من بحران",
+  "name_id": "Ghazwah Buhran (Al-Fur')",
+  "aliases_ar": [
+   "غزوة بحران",
+   "الفرع من بحران"
+  ],
+  "era": "madinah",
+  "year_h": 3,
+  "year_note": "±Rabiul akhir 3 H; ke Buhran mengejar Bani Sulaim; tidak terjadi kontak.",
+  "hisyam_pages": [
+   783,
+   784
+  ],
+  "tabari_pages": null,
+  "hisyam_titles": [
+   "غزوة الفرع من بحران"
+  ],
+  "tabari_titles": []
+ },
+ {
+  "id": "ghazwah_uhud",
+  "name_ar": "غزوة أحد",
+  "name_id": "Perang Uhud",
+  "aliases_ar": [
+   "أحد",
+   "يوم أحد",
+   "وقعة أحد",
+   "غزوة أحد"
+  ],
+  "era": "madinah",
+  "year_h": 3,
+  "year_note": "Syawal 3 H (Sabtu); 700 muslimin; Hamzah, Mus'ab & ±70 syahid; kepulangan Hindun; QS Ali Imran menyangkutkan Uhud; syair & daftar syuhada termasuk.",
+  "hisyam_pages": [
+   797,
+   868
+  ],
+  "tabari_pages": [
+   1112,
+   1163
+  ],
+  "hisyam_titles": [
+   "غزوة أحد",
+   "ذكر ما أنزل الله في أحد من القرآن",
+   "ذكر من استشهد بأحد من المهاجرين",
+   "ذكر من قتل من المشركين يوم أحد",
+   "ذكر ما قيل من الشعر يوم أحد"
+  ],
+  "tabari_titles": [
+   "السنه الثالثه من الهجره"
+  ]
+ },
+ {
+  "id": "sariyyah_rajih",
+  "name_ar": "يوم الرجيع",
+  "name_id": "Peristiwa Ar-Raji'",
+  "aliases_ar": [
+   "الرجيع",
+   "غزوة الرجيع",
+   "أصحاب الرجيع",
+   "خبيب بن عدي"
+  ],
+  "era": "madinah",
+  "year_h": 3,
+  "year_note": "Safar 3 H (judul bab: \"في سنة ثلاث\"; sebagian menempatkannya sesudah Uhud); Khubaib & Zaid bin Datsinah dibunuh Lihyan.",
+  "hisyam_pages": [
+   906,
+   907
+  ],
+  "tabari_pages": null,
+  "hisyam_titles": [
+   "ذكر يوم الرجيع في سنة ثلاث"
+  ],
+  "tabari_titles": []
+ },
+ {
+  "id": "sariyyah_bir_maunah",
+  "name_ar": "حديث بئر معونة",
+  "name_id": "Peristiwa Bi'ru Ma'unah",
+  "aliases_ar": [
+   "بئر معونة",
+   "أصحاب بئر معونة",
+   "يوم بئر معونة"
+  ],
+  "era": "madinah",
+  "year_h": 4,
+  "year_note": "Safar 4 H (judul bab); ±70 qurra' dibantai atas pengkhianatan Amir bin Thufail setelah perlindungan Abu Bara' Asyja'i.",
+  "hisyam_pages": [
+   920,
+   921
+  ],
+  "tabari_pages": null,
+  "hisyam_titles": [
+   "حديث بئر معونة في صفر سنة أربع"
+  ],
+  "tabari_titles": []
+ },
+ {
+  "id": "bani_nadhir",
+  "name_ar": "إجلاء بني النضير",
+  "name_id": "Pengusiran Bani Nadhir",
+  "aliases_ar": [
+   "غزوة بني النضير",
+   "إجلاء بني النضير",
+   "سورة الحشر"
+  ],
+  "era": "madinah",
+  "year_h": 4,
+  "year_note": "Rabiul awal 4 H; makar pembunuhan Nabi; diasingkan ke Khaibar & Syam; QS Al-Hasyr.",
+  "hisyam_pages": [
+   927,
+   928
+  ],
+  "tabari_pages": null,
+  "hisyam_titles": [
+   "أمر إجلاء بنى النضير في سنة أربع"
+  ],
+  "tabari_titles": []
+ },
+ {
+  "id": "ghazwah_dzaturriqa",
+  "name_ar": "غزوة ذات الرقاع",
+  "name_id": "Ghazwah Dzatur Riqi'",
+  "aliases_ar": [
+   "ذات الرقاع",
+   "غزوة ذات الرقاع"
+  ],
+  "era": "madinah",
+  "year_h": 4,
+  "year_note": "Tahun 4 H (judul bab; sebagian menempatkan 5 atau 6 H); ke Najd; shalat khauf; Juwairiyah tertawan; Abi Rukanah bergulat.",
+  "hisyam_pages": [
+   940,
+   941
+  ],
+  "tabari_pages": null,
+  "hisyam_titles": [
+   "غزوة ذات الرقاع في سنة أربع"
+  ],
+  "tabari_titles": []
+ },
+ {
+  "id": "ghazwah_badr_mauid",
+  "name_ar": "غزوة بدر الآخرة (الموعد)",
+  "name_id": "Ghazwah Badar kedua (janji Abu Sufyan)",
+  "aliases_ar": [
+   "بدر الآخرة",
+   "بدر الموعد",
+   "بدر الثانية"
+  ],
+  "era": "madinah",
+  "year_h": 4,
+  "year_note": "Sya'ban 4 H; Abu Sufyan tidak menepati nazarnya; umat Islam pulang dengan ghanimah dagang.",
+  "hisyam_pages": [
+   946,
+   947
+  ],
+  "tabari_pages": null,
+  "hisyam_titles": [
+   "غزوة بدر الآخرة في شعبان سنة أربع"
+  ],
+  "tabari_titles": []
+ },
+ {
+  "id": "ghazwah_dumah_khalid",
+  "name_ar": "غزوة دومة الجندل",
+  "name_id": "Ghazwah Dumatul Jandal (Khalid)",
+  "aliases_ar": [
+   "دومة الجندل",
+   "غزوة دومة الجندل الأولى"
+  ],
+  "era": "madinah",
+  "year_h": 5,
+  "year_note": "Rabiul awal 5 H; Khalid bin Walid; Aqra' bin Habis; tidak ada pertempuran.",
+  "hisyam_pages": [
+   950,
+   951
+  ],
+  "tabari_pages": null,
+  "hisyam_titles": [
+   "غزوة دومة الجندل في شهر ربيع الأول سنة خمس"
+  ],
+  "tabari_titles": []
+ },
+ {
+  "id": "ghazwah_khandaq",
+  "name_ar": "غزوة الخندق (الأحزاب)",
+  "name_id": "Perang Khandaq (Ahzab)",
+  "aliases_ar": [
+   "الخندق",
+   "الأحزاب",
+   "يوم الخندق",
+   "غزوة الأحزاب"
+  ],
+  "era": "madinah",
+  "year_h": 5,
+  "year_note": "Syawal-Dzulqa'dah 5 H (judul Ibnu Hisyam; Ibnu Ishaq/Thabari menempatkan Syawal 4 H); koalisi 10.000; parit atas usul Salman; Nu'aim bin Mas'ud; QS Al-Ahzab.",
+  "hisyam_pages": [
+   951,
+   952
+  ],
+  "tabari_pages": null,
+  "hisyam_titles": [
+   "غزوة الخندق [١] في شوال سنة خمس"
+  ],
+  "tabari_titles": []
+ },
+ {
+  "id": "bani_qurayzah",
+  "name_ar": "غزوة بني قريظة",
+  "name_id": "Hukuman Bani Quraizhah",
+  "aliases_ar": [
+   "بني قريظة",
+   "غزوة بني قريظة",
+   "حكم سعد بن معاذ"
+  ],
+  "era": "madinah",
+  "year_h": 5,
+  "year_note": "Dzulqa'dah-Dzulhijjah 5 H (Ibnu Ishaq/Thabari: tahun 4 H); pelanggaran piagam; vonis Sa'd bin Mu'adz; termasuk syair Khandaq-Quraizhah.",
+  "hisyam_pages": [
+   970,
+   992
+  ],
+  "tabari_pages": null,
+  "hisyam_titles": [
+   "غزوة بنى قريظة في سنة خمس",
+   "ما قيل من الشعر في أمر الخندق وبنى قريظة"
+  ],
+  "tabari_titles": []
+ },
+ {
+  "id": "maktal_sallam_abu_rafi",
+  "name_ar": "مقتل سلام بن أبي الحقيق",
+  "name_id": "Pembunuhan Salam bin Abi Al-Huqaiq (Abu Rafi')",
+  "aliases_ar": [
+   "سلام بن أبى الحقيق",
+   "أبو رافع اليهودي",
+   "سرية عبد الله بن عتيك"
+  ],
+  "era": "madinah",
+  "year_h": 6,
+  "year_note": "±akhir 5 H-awal 6 H (penempatan Ibnu Hisyam: sesudah Khandaq); dibunuh Abdullah bin Atiq di Khaibar atas permintaan Aus.",
+  "hisyam_pages": [
+   1010,
+   1011
+  ],
+  "tabari_pages": null,
+  "hisyam_titles": [
+   "مقتل سلام بن أبى الحقيق"
+  ],
+  "tabari_titles": []
+ },
+ {
+  "id": "ghazwah_lahyan",
+  "name_ar": "غزوة بني لحيان",
+  "name_id": "Ghazwah Bani Lihyan",
+  "aliases_ar": [
+   "غزوة بنى لحيان",
+   "غزوة الرجيع الثانية"
+  ],
+  "era": "madinah",
+  "year_h": 6,
+  "year_note": "Rabiul awal 6 H; balasan atas Ar-Raji'; menyamar lewat Syam; Lihyan lari ke puncak-puncak gunung.",
+  "hisyam_pages": [
+   1016,
+   1017
+  ],
+  "tabari_pages": null,
+  "hisyam_titles": [
+   "غزوة بنى لحيان"
+  ],
+  "tabari_titles": []
+ },
+ {
+  "id": "ghazwah_dzi_qarad",
+  "name_ar": "غزوة ذي قرد",
+  "name_id": "Ghazwah Dzul Qarad",
+  "aliases_ar": [
+   "ذي قرد",
+   "غزوة ذي قرد",
+   "السبق الأول لسلمة بن الأكوع"
+  ],
+  "era": "madinah",
+  "year_h": 6,
+  "year_note": "Rabiul awal 6 H; kuda Nabi (as-Sabghal) dicuri Bani Fazarah; Salamah bin Akwa' tampil; termasuk pengejaran Uyainah bin Hishn.",
+  "hisyam_pages": [
+   1018,
+   1019
+  ],
+  "tabari_pages": null,
+  "hisyam_titles": [
+   "غزوة ذي قرد"
+  ],
+  "tabari_titles": []
+ },
+ {
+  "id": "sariyyah_ummu_qirfah",
+  "name_ar": "سرية زيد بن حارثة إلى بني فزارة (مصاب أم قرفة)",
+  "name_id": "Sariyyah Bani Fazrah & Ummu Qirfah",
+  "aliases_ar": [
+   "أم قرفة",
+   "غزوة بني فزارة",
+   "سرية فزارة"
+  ],
+  "era": "madinah",
+  "year_h": 6,
+  "year_note": "±Rabiul akhir 6 H; balasan atas Dzul Qarad; Zaid bin Haritsah ke Idam; Ummu Qirfah (Fathimah binti Rabi'ah) dihukum.",
+  "hisyam_pages": [
+   1354,
+   1355
+  ],
+  "tabari_pages": null,
+  "hisyam_titles": [
+   "غزوة زيد بن حارثة بنى فزارة ومصاب أم قرفة"
+  ],
+  "tabari_titles": []
+ },
+ {
+  "id": "ghazwah_musthaliq",
+  "name_ar": "غزوة بني المصطلق",
+  "name_id": "Ghazwah Bani Mushthaliq (Al-Muraisi')",
+  "aliases_ar": [
+   "بني المصطلق",
+   "غزوة المريسيع",
+   "غزوة بني المصطلق"
+  ],
+  "era": "madinah",
+  "year_h": 6,
+  "year_note": "Sya'ban 6 H; Al-Harits bin Abi Dhirar; kejadian Jahjasy-Ghifar hampir memicu bentrok Muhajirin-Anshar.",
+  "hisyam_pages": [
+   1026,
+   1027
+  ],
+  "tabari_pages": null,
+  "hisyam_titles": [
+   "غزوة بنى المصطلق [٦]"
+  ],
+  "tabari_titles": []
+ },
+ {
+  "id": "ifk",
+  "name_ar": "حديث الإفك",
+  "name_id": "Peristiwa Ifk ( tuduhan kepada Aisyah)",
+  "aliases_ar": [
+   "حديث الإفك",
+   "الإفك",
+   "قصة الإفك",
+   "براءة عائشة"
+  ],
+  "era": "madinah",
+  "year_h": 6,
+  "year_note": "Sya'ban 6 H, dalam perjalanan pulang Mushthaliq; QS An-Nur 11-21; Shafwan bin Mu'aththal.",
+  "hisyam_pages": [
+   1034,
+   1035
+  ],
+  "tabari_pages": null,
+  "hisyam_titles": [
+   "خبر الإفك في غزوة بنى المصطلق (سنة ست) [١]"
+  ],
+  "tabari_titles": []
+ },
+ {
+  "id": "sariyyah_dumah_abdurrahman",
+  "name_ar": "سرية عبد الرحمن بن عوف إلى دومة الجندل",
+  "name_id": "Sariyyah Abdurrahman bin Auf ke Dumatul Jandal",
+  "aliases_ar": [
+   "سرية دومة الجندل",
+   "عبد الرحمن بن عوف إلى دومة"
+  ],
+  "era": "madinah",
+  "year_h": 6,
+  "year_note": "±Sya'ban 6 H; ke Kalb; Ashbagh bin Amr Al-Kalbi masuk Islam; pernikahan dengan putri Al-Ashbagh.",
+  "hisyam_pages": [
+   1368,
+   1369
+  ],
+  "tabari_pages": null,
+  "hisyam_titles": [
+   "غزوة عبد الرحمن بن عوف إلى دومة الجندل"
+  ],
+  "tabari_titles": []
+ },
+ {
+  "id": "sariyyah_usair",
+  "name_ar": "سرية عبد الله بن رواحة لقتل اليسير بن رزام",
+  "name_id": "Sariyyah pembunuhan Yusair bin Rizam",
+  "aliases_ar": [
+   "اليسير بن رزام",
+   "سرية اليسير بن رزام"
+  ],
+  "era": "madinah",
+  "year_h": 6,
+  "year_note": "±akhir 6 H-menyongsong Khaibar; Yusair diundang ke Madinah lalu berkhianat di Qarqaratul Kadr; Abdullah bin Rawahah.",
+  "hisyam_pages": [
+   1355,
+   1356
+  ],
+  "tabari_pages": null,
+  "hisyam_titles": [
+   "غزوة عبد الله بن رواحة لقتل اليسير بن رزام"
+  ],
+  "tabari_titles": []
+ },
+ {
+  "id": "hudaibiyah",
+  "name_ar": "صلح الحديبية وبيعة الرضوان",
+  "name_id": "Hudaibiyah: bai'atur Ridhwan & perjanjian damai",
+  "aliases_ar": [
+   "الحديبية",
+   "صلح الحديبية",
+   "بيعة الرضوان",
+   "بيعة الشجرة"
+  ],
+  "era": "madinah",
+  "year_h": 6,
+  "year_note": "Dzulqa'dah 6 H; 1400 sahabat; Utsman duta; bai'at Ridwan di bawah pohon; perjanjian 10 tahun dengan Suhail bin Amr; QS Al-Fath.",
+  "hisyam_pages": [
+   1045,
+   1063
+  ],
+  "tabari_pages": [
+   1220,
+   1283
+  ],
+  "hisyam_titles": [
+   "أمر الحديبية في آخر سنة ست، وذكر بيعة الرضوان والصلح بين رسول الله صلى الله عليه وسلم وبين سهيل بن عمرو",
+   "بيعة الرضوان",
+   "أمر الهدنة",
+   "ما جرى عليه أمر قوم من المستضعفين بعد الصلح",
+   "أمر المهاجرات بعد الهدنة"
+  ],
+  "tabari_titles": [
+   "سنه ست من الهجره"
+  ]
+ },
+ {
+  "id": "surat_kepada_raja",
+  "name_ar": "خروج رسول الله إلى الملوك (كتب الملوك)",
+  "name_id": "Surat-surat Nabi kepada raja-raja",
+  "aliases_ar": [
+   "كتب النبي إلى الملوك",
+   "كتاب النبي إلى هرقل",
+   "كتاب النبي إلى كسرى",
+   "كتاب النبي إلى المقوقس"
+  ],
+  "era": "madinah",
+  "year_h": 7,
+  "year_note": "±Muharram 7 H (jumhur: akhir 6 H, sesudah Hudaibiyah); Heraklius, Kisra, Muqawqis, Najasyi, Ghassan, Haudhah bin Ali.",
+  "hisyam_pages": [
+   1343,
+   1344
+  ],
+  "tabari_pages": null,
+  "hisyam_titles": [
+   "خروج رسول الله إلى الملوك"
+  ],
+  "tabari_titles": []
+ },
+ {
+  "id": "sariyyah_dzatissalasil",
+  "name_ar": "سرية عمرو بن العاص ذات السلاسل",
+  "name_id": "Sariyyah Dzatis Salasil",
+  "aliases_ar": [
+   "ذات السلاسل",
+   "غزوة ذات السلاسل",
+   "سرية ذات السلاسل"
+  ],
+  "era": "madinah",
+  "year_h": 7,
+  "year_note": "±Rabiul akhir 7 H; Amr bin Ash 300 orang ke Salasil; bala bantuan Abu Ubaidah-Abu Bakr-Umar; termasuk ghasf Dzatul Khabath (Thabari).",
+  "hisyam_pages": [
+   1360,
+   1361
+  ],
+  "tabari_pages": [
+   1306,
+   1308
+  ],
+  "hisyam_titles": [
+   "غزوة عمرو بن العاص ذات السلاسل"
+  ],
+  "tabari_titles": [
+   "غزوه ذات السلاسل",
+   "غزوه الخبط"
+  ]
+ },
+ {
+  "id": "ghazwah_khaibar",
+  "name_ar": "غزوة خيبر",
+  "name_id": "Perang Khaibar",
+  "aliases_ar": [
+   "خيبر",
+   "غزوة خيبر",
+   "يوم خيبر",
+   "فتح خيبر"
+  ],
+  "era": "madinah",
+  "year_h": 7,
+  "year_note": "Muharram 7 H (sebagian: Sya'ban); benteng Na'im & Qamus; Ali merobek pintu; Marhabah; ghanimah; Fadak & Wadil Qura termasuk.",
+  "hisyam_pages": [
+   1065,
+   1093
+  ],
+  "tabari_pages": [
+   1283,
+   1297
+  ],
+  "hisyam_titles": [
+   "ذكر المسير إلى خيبر في المحرم سنة سبع",
+   "بقية أمر خيبر",
+   "أمر الأسود الراعي في حديث خيبر",
+   "أمر الحجاج بن علاط السلمي",
+   "ذكر مقاسم خيبر وأموالها",
+   "أمر فدك في خبر خيبر",
+   "تسمية النفر الداريين الذين أوصى لهم رسول الله صلى الله عليه وسلم من خيبر"
+  ],
+  "tabari_titles": [
+   "غزوه خيبر",
+   "ذكر غزوه رسول الله ص وادي القرى",
+   "ذكر مقاسم خيبر وأموالها"
+  ]
+ },
+ {
+  "id": "jafar_kembali_habasyah",
+  "name_ar": "قدوم جعفر بن أبي طالب من الحبشة",
+  "name_id": "Kembalinya Ja'far & Ashabul Ukbad dari Habasyah",
+  "aliases_ar": [
+   "قدوم جعفر",
+   "أصحاب السفينة",
+   "العودة من الحبشة الثانية"
+  ],
+  "era": "madinah",
+  "year_h": 7,
+  "year_note": "±Jumadil akhir 7 H, sesudah Khaibar; rombongan Ja'far berlabuh (Ashabun Najasyi); \"Aku tidak tahu peristiwa mana yang lebih menggembirakan\".",
+  "hisyam_pages": [
+   1096,
+   1097
+  ],
+  "tabari_pages": null,
+  "hisyam_titles": [
+   "[١] ذكر قدوم جعفر بن أبى طالب من الحبشة وحديث المهاجرين إلى الحبشة"
+  ],
+  "tabari_titles": []
+ },
+ {
+  "id": "umratul_qada",
+  "name_ar": "عمرة القضاء",
+  "name_id": "Umratul Qadha' (mengganti)",
+  "aliases_ar": [
+   "عمرة القضاء",
+   "عمرة القضية",
+   "عمرة الحديبية الثانية"
+  ],
+  "era": "madinah",
+  "year_h": 7,
+  "year_note": "Dzulqa'dah 7 H; 3 hari; menikahi Maimunah binti Al-Harits (menurut riwayat masyhur).",
+  "hisyam_pages": [
+   1107,
+   1108
+  ],
+  "tabari_pages": [
+   1297,
+   1301
+  ],
+  "hisyam_titles": [
+   "عمرة القضاء في ذي القعدة سنة سبع"
+  ],
+  "tabari_titles": [
+   "عمره القضاء"
+  ]
+ },
+ {
+  "id": "islam_amr_khalid",
+  "name_ar": "إسلام عمرو بن العاص وخالد بن الوليد",
+  "name_id": "Islam Amr bin Ash & Khalid bin Walid",
+  "aliases_ar": [
+   "إسلام خالد بن الوليد",
+   "إسلام عمرو بن العاص",
+   "إسلام عثمان بن طلحة"
+  ],
+  "era": "madinah",
+  "year_h": 8,
+  "year_note": "Sya'ban-Shafar 8 H (jumhur; bab Ibnu Hisyam ditempatkan lebih awal); bersama Utsman bin Thalhah.",
+  "hisyam_pages": [
+   1013,
+   1014
+  ],
+  "tabari_pages": null,
+  "hisyam_titles": [
+   "إسلام عمرو بن العاص وخالد بن الوليد"
+  ],
+  "tabari_titles": []
+ },
+ {
+  "id": "sariyyah_banumulawwih",
+  "name_ar": "سرية غالب بن عبد الله إلى بني الملوح",
+  "name_id": "Sariyyah Ghalib bin Abdullah ke Bani Mulawwih",
+  "aliases_ar": [
+   "غزوة بني الملوح",
+   "سرية غالب بن عبد الله الليثي"
+  ],
+  "era": "madinah",
+  "year_h": 8,
+  "year_note": "±awal 8 H (Thabari membukanya di bagian tahun 8, sebelum Mu'tah); Ghalib bin Abdullah Al-Laitsi; Aus bin Haritsah gugur.",
+  "hisyam_pages": [
+   1346,
+   1347
+  ],
+  "tabari_pages": [
+   1301,
+   1305
+  ],
+  "hisyam_titles": [
+   "خبر غزوة غالب بن عبد الله الليثي بنى الملوح"
+  ],
+  "tabari_titles": [
+   "خبر غزوه غالب بن عبد الله الليثى بنى الملوح"
+  ]
+ },
+ {
+  "id": "ghazwah_mutah",
+  "name_ar": "غزوة مؤتة",
+  "name_id": "Perang Mu'tah",
+  "aliases_ar": [
+   "مؤتة",
+   "يوم مؤتة",
+   "وقعة مؤتة",
+   "غزوة مؤتة"
+  ],
+  "era": "madinah",
+  "year_h": 8,
+  "year_note": "Jumadil awal 8 H; 3000 pasukan; tiga panglima syahid (Zaid, Ja'far, Abdullah bin Rawahah); Khalid memegang komando; Nabi mengabarkan kesyahidan di Madinah.",
+  "hisyam_pages": [
+   1110,
+   1112
+  ],
+  "tabari_pages": [
+   1310,
+   1316
+  ],
+  "hisyam_titles": [
+   "ذكر غزوة مؤتة [١] في جمادى الأولى سنة ثمان، ومقتل جعفر وزيد وعبد الله بن رواحة"
+  ],
+  "tabari_titles": [
+   "ذكر الخبر عن غزوه مؤتة"
+  ]
+ },
+ {
+  "id": "fathu_makkah",
+  "name_ar": "فتح مكة",
+  "name_id": "Fathu Makkah",
+  "aliases_ar": [
+   "فتح مكة",
+   "دخول مكة",
+   "يوم الفتح",
+   "الفتح الأعظم"
+  ],
+  "era": "madinah",
+  "year_h": 8,
+  "year_note": "10/20 Ramadhan 8 H (630 M); 10.000 pasukan; pelanggaran perjanjian oleh Bani Bakr-Quraisy; Abu Sufyan masuk Islam; amnesti umum; Ka'bah dibersihkan.",
+  "hisyam_pages": [
+   1126,
+   1165
+  ],
+  "tabari_pages": [
+   1316,
+   1336
+  ],
+  "hisyam_titles": [
+   "ذكر الأسباب الموجبة المسير إلى مكة وذكر فتح مكة في شهر رمضان سنة ثمان",
+   "إسلام عباس بن مرداس"
+  ],
+  "tabari_titles": [
+   "ذكر الخبر عن فتح مكة"
+  ]
+ },
+ {
+  "id": "khalid_bani_judhaimah",
+  "name_ar": "مسير خالد إلى بني جذيمة",
+  "name_id": "Kesalahan Khalid di Bani Judzaimah",
+  "aliases_ar": [
+   "بني جذيمة",
+   "غزوة بني جذيمة",
+   "خطأ خالد بن الوليد"
+  ],
+  "era": "madinah",
+  "year_h": 8,
+  "year_note": "Pasca-fathu Makkah, sebelum Hunain; Khalid menumpas Bani Judzaimah (Kinanah) berlebihan; Ali diutus memperbaiki; Nabi membayar diyat.",
+  "hisyam_pages": [
+   1165,
+   1166
+  ],
+  "tabari_pages": [
+   1340,
+   1344
+  ],
+  "hisyam_titles": [
+   "مسير خالد بن الوليد بعد الفتح إلى بنى جذيمة [٤] من كنانة ومسير على لتلافي خطأ خالد"
+  ],
+  "tabari_titles": [
+   "مسير خالد بن الوليد إلى بنى جذيمة بن مالك"
+  ]
+ },
+ {
+  "id": "penghancuran_berhala",
+  "name_ar": "هدم الأصنام حول مكة",
+  "name_id": "Penghancuran berhala sekitar Makkah",
+  "aliases_ar": [
+   "هدم العزى",
+   "هدم سواع",
+   "هدم مناة",
+   "كسر الأصنام"
+  ],
+  "era": "madinah",
+  "year_h": 8,
+  "year_note": "Ramadhan-Syawal 8 H; Al-Uzza (Khalid bin Walid), Suwa' dan Manat dibongkar.",
+  "hisyam_pages": [
+   1173,
+   1174
+  ],
+  "tabari_pages": [
+   1339,
+   1340
+  ],
+  "hisyam_titles": [
+   "مسير خالد بن الوليد لهدم العزى"
+  ],
+  "tabari_titles": [
+   "وفيها هدم خالد بن الوليد العزى ببطن نخله،",
+   "وفيها هدم سواع،",
+   "وفيها هدم مناه بالمشلل،"
+  ]
+ },
+ {
+  "id": "ghazwah_hunain",
+  "name_ar": "غزوة حنين",
+  "name_id": "Perang Hunain",
+  "aliases_ar": [
+   "حنين",
+   "وادي حنين",
+   "وقعة حنين",
+   "يوم هوازن"
+  ],
+  "era": "madinah",
+  "year_h": 8,
+  "year_note": "Syawal 8 H, 16 hari sesudah fathu Makkah; 12.000 pasukan vs Hawazin-Tsaqif; awal kocak (lembah), lalu menang; Malik bin Auf.",
+  "hisyam_pages": [
+   1174,
+   1176
+  ],
+  "tabari_pages": [
+   1344,
+   1356
+  ],
+  "hisyam_titles": [
+   "غزوة حنين في سنة ثمان بعد الفتح"
+  ],
+  "tabari_titles": [
+   "ذكر الخبر عن غزوه رسول الله ص هوازن بحنين"
+  ]
+ },
+ {
+  "id": "ghazwah_thaif",
+  "name_ar": "غزوة الطائف",
+  "name_id": "Pengepungan Tha'if",
+  "aliases_ar": [
+   "حصار الطائف",
+   "غزوة الطائف",
+   "الطائف بعد حنين"
+  ],
+  "era": "madinah",
+  "year_h": 8,
+  "year_note": "Syawal-Dzulqa'dah 8 H; mengejar Tsaqif ke Tha'if; pengepungan ±18 hari; Urwah bin Mas'ud menyusul masuk Islam.",
+  "hisyam_pages": [
+   1215,
+   1218
+  ],
+  "tabari_pages": [
+   1356,
+   1360
+  ],
+  "hisyam_titles": [
+   "ذكر غزوة الطائف بعد حنين في سنة ثمان"
+  ],
+  "tabari_titles": [
+   "غزوه الطائف"
+  ]
+ },
+ {
+  "id": "ghanimah_hunain",
+  "name_ar": "أمر أموال هوازن وسباياها",
+  "name_id": "Pembagian ghanimah Hunain & sisa-sisanya",
+  "aliases_ar": [
+   "غنائم حنين",
+   "سبايا هوازن",
+   "عطايا المؤلفة قلوبهم",
+   "الجعرانة (تقسيم)"
+  ],
+  "era": "madinah",
+  "year_h": 8,
+  "year_note": "±Dzulqa'dah 8 H di Ji'ranah; tawanan Hawazin (±6000); 100 unta untuk muallaf (Abu Sufyan dkk.); rombongan Hawazin Islam & dibebaskan.",
+  "hisyam_pages": [
+   1225,
+   1228
+  ],
+  "tabari_pages": [
+   1360,
+   1368
+  ],
+  "hisyam_titles": [
+   "أمر أموال هوازن وسباياها، وعطايا المؤلفة قلوبهم منها وإنعام رسول الله صلى الله عليه وسلم فيها"
+  ],
+  "tabari_titles": [
+   "امر اموال هوازن وعطايا المؤلفه قلوبهم منها"
+  ]
+ },
+ {
+  "id": "umrah_jiranah",
+  "name_ar": "عمرة الجعرانة",
+  "name_id": "Umrah dari Ji'ranah",
+  "aliases_ar": [
+   "عمرة الجعرانة",
+   "الجعرانة"
+  ],
+  "era": "madinah",
+  "year_h": 8,
+  "year_note": "Dzulqa'dah 8 H; membagikan harta di Ji'ranah lalu umrah; Attab bin Usaid diangkat wali Makkah; Attab memimpin haji tahun itu.",
+  "hisyam_pages": [
+   1237,
+   1238
+  ],
+  "tabari_pages": [
+   1368,
+   1370
+  ],
+  "hisyam_titles": [
+   "عمرة الرسول من الجعرانة واستخلافه عتاب بن أسيد على مكة، وحج عتاب بالمسلمين سنة ثماني"
+  ],
+  "tabari_titles": [
+   "عمرة رسول الله من الجعرانة"
+  ]
+ },
+ {
+  "id": "islam_kaab_bin_zuhair",
+  "name_ar": "إسلام كعب بن زهير وبردته",
+  "name_id": "Islam Ka'b bin Zuhair (Burudah)",
+  "aliases_ar": [
+   "كعب بن زهير",
+   "بانت سعاد",
+   "بردة كعب بن زهير"
+  ],
+  "era": "madinah",
+  "year_h": 8,
+  "year_note": "±akhir 8 H, sesudah pengepungan Tha'if; menyampaikan qasidah \"Bânat Su'âd\"; diberi burdah.",
+  "hisyam_pages": [
+   1238,
+   1239
+  ],
+  "tabari_pages": null,
+  "hisyam_titles": [
+   "أمر كعب بن زهير بعد الانصراف عن الطائف"
+  ],
+  "tabari_titles": []
+ },
+ {
+  "id": "ghazwah_tabuk",
+  "name_ar": "غزوة تبوك",
+  "name_id": "Perang Tabuk",
+  "aliases_ar": [
+   "تبوك",
+   "غزوة تبوك",
+   "جيش العسرة",
+   "غزوة العسرة"
+  ],
+  "era": "madinah",
+  "year_h": 9,
+  "year_note": "Rajab 9 H; 30.000 \"Jaisyul Usrah\" ke perbatasan Syam; Heraklius mundur; termasuk urusan tiga orang yang ditinggalkan (QS At-Taubah 118).",
+  "hisyam_pages": [
+   1252,
+   1272
+  ],
+  "tabari_pages": [
+   1374,
+   1385
+  ],
+  "hisyam_titles": [
+   "غزوة تبوك في رجب سنة تسع",
+   "أمر الثلاثة الذين خلفوا وأمر المعذرين في غزوة تبوك"
+  ],
+  "tabari_titles": [
+   "ذكر الخبر عن غزوه تبوك"
+  ]
+ },
+ {
+  "id": "masjid_dhirar",
+  "name_ar": "أمر مسجد الضرار",
+  "name_id": "Masjid Dhirar dibongkar",
+  "aliases_ar": [
+   "مسجد الضرار",
+   "هدم مسجد الضرار"
+  ],
+  "era": "madinah",
+  "year_h": 9,
+  "year_note": "Dzulqa'dah 9 H, saat kembali dari Tabuk; dibongkar QS At-Taubah 107-110.",
+  "hisyam_pages": [
+   1266,
+   1267
+  ],
+  "tabari_pages": null,
+  "hisyam_titles": [
+   "أمر مسجد الضرار عند القفول من غزوة تبوك"
+  ],
+  "tabari_titles": []
+ },
+ {
+  "id": "islam_tsaqif",
+  "name_ar": "إسلام ثقيف (وفد الطائف)",
+  "name_id": "Masuk Islamnya Tsaqif",
+  "aliases_ar": [
+   "إسلام ثقيف",
+   "وفد ثقيف",
+   "قدوم وفد ثقيف"
+  ],
+  "era": "madinah",
+  "year_h": 9,
+  "year_note": "Ramadhan-Dzulqa'dah 9 H; rombongan Tsaqif tiba Madinah; diterima dengan syarat (shalat & zakat); Masjid dibangun Ats-Tsaqif.",
+  "hisyam_pages": [
+   1274,
+   1275
+  ],
+  "tabari_pages": [
+   1370,
+   1374
+  ],
+  "hisyam_titles": [
+   "أمر وفد ثقيف وإسلامها في شهر رمضان سنة تسع"
+  ],
+  "tabari_titles": [
+   "امر ثقيف وإسلامها"
+  ]
+ },
+ {
+  "id": "hajj_abu_bakr",
+  "name_ar": "حج أبي بكر وبراءة",
+  "name_id": "Haji Abu Bakr & Surah Bara'ah",
+  "aliases_ar": [
+   "حج أبي بكر بالناس",
+   "أول براءة",
+   "سورة براءة",
+   "بعث علي ببراءة"
+  ],
+  "era": "madinah",
+  "year_h": 9,
+  "year_note": "Dzulhijjah 9 H; Abu Bakr amir haji; Ali menyusul membawa QS At-Taubah; pernyataan bara'ah di Mina; kecaman & pemutusan perjanjian kaum musyrik.",
+  "hisyam_pages": [
+   1280,
+   1282
+  ],
+  "tabari_pages": null,
+  "hisyam_titles": [
+   "حج أبى بكر بالناس سنة تسع اختصاص النبي صلى الله عليه وسلم على بن أبى طالب رضوان الله عليه بتأدية أول براءة عنه، وذكر براءة والقصص في تفسيرها"
+  ],
+  "tabari_titles": []
+ },
+ {
+  "id": "sanah_wufud",
+  "name_ar": "سنة الوفود",
+  "name_id": "Tahun delegasi (Sanatul Wufud)",
+  "aliases_ar": [
+   "عام الوفود",
+   "سنة الوفود",
+   "وفود العرب"
+  ],
+  "era": "madinah",
+  "year_h": 9,
+  "year_note": "Tahun 9-10 H; ratusan delegasi kabilah masuk Islam; termasuk Tamim (QS Al-Hujurat), Hamir, Dhammam bin Tsa'labah, Bani Hanifah (Musalimah), Zaidul Khail, Adi bin Hatim, Kindah, Hamdan.",
+  "hisyam_pages": [
+   1296,
+   1335
+  ],
+  "tabari_pages": [
+   1389,
+   1400
+  ],
+  "hisyam_titles": [
+   "ذكر سنة تسع وتسميتها سنة الوفود ونزول سورة الفتح",
+   "قدوم وفد بنى تميم ونزول سورة الحجرات",
+   "قصة عامر بن الطفيل وأربد بن قيس في الوفادة عن بنى عامر",
+   "قدوم ضمام بن ثعلبة وافدا عن بنى سعد بن بكر",
+   "قدوم الجارود في وفد عبد القيس",
+   "قدوم وفد بنى حنيفة ومعهم مسيلمة الكذاب",
+   "قدوم زيد الخيل في وفد طيئ",
+   "أمر عدي بن حاتم",
+   "قدوم فروة بن مسيك المرادي",
+   "قدوم عمرو بن معديكرب في أناس من بنى زبيد",
+   "قدوم الأشعث بن قيس في وفد كندة",
+   "قدوم صرد بن عبد الله الأزدي",
+   "قدوم رسول ملوك حمير بكتابهم",
+   "قدوم رفاعة بن زيد الجذامي",
+   "قدوم وفد همدان"
+  ],
+  "tabari_titles": [
+   "قدوم وفد بنى تميم ونزول سورة الحجرات",
+   "قدوم رسول ملوك حمير على رسول الله بكتابهم",
+   "قدوم ضمام بن ثعلبه وافدا عن بنى سعد"
+  ]
+ },
+ {
+  "id": "mubahalah_najran",
+  "name_ar": "وفد نجران والمباهلة",
+  "name_id": "Delegasi Najran & Mubahalah",
+  "aliases_ar": [
+   "المباهلة",
+   "وفد نصارى نجران",
+   "السيد والعاقب",
+   "أهل نجران"
+  ],
+  "era": "madinah",
+  "year_h": 10,
+  "year_note": "±akhir 9 H / 10 H (bab Ibnu Hisyam ditempatkan lebih awal); Ashya (Said) & Akib; Mubahalah QS Ali Imran 61; perjanjian jizyah Najran.",
+  "hisyam_pages": [
+   596,
+   597
+  ],
+  "tabari_pages": null,
+  "hisyam_titles": [
+   "أمر السيد والعاقب وذكر المباهلة"
+  ],
+  "tabari_titles": []
+ },
+ {
+  "id": "nabi_palsu",
+  "name_ar": "ذكر الكذابين مسيلمة والأسود العنسي",
+  "name_id": "Nabi-nabi palsu: Musalimah & Al-Aswad",
+  "aliases_ar": [
+   "مسيلمة الكذاب",
+   "الأسود العنسي",
+   "كتاب مسيلمة",
+   "العنسي"
+  ],
+  "era": "madinah",
+  "year_h": 10,
+  "year_note": "Musalimah Al-Hanafi mengaku nabi (surat balasan Nabi); Al-Aswad Al-Ansi di Yaman dibunuh tepat malam wafat Nabi (12 Rabiul awal 11 H).",
+  "hisyam_pages": [
+   1336,
+   1338
+  ],
+  "tabari_pages": [
+   1420,
+   1421
+  ],
+  "hisyam_titles": [
+   "ذكر الكذابين مسيلمة الحنفي والأسود العنسي",
+   "كتاب مسيلمة إلى رسول الله والجواب عنه"
+  ],
+  "tabari_titles": [
+   "كتاب مسيلمه إلى رسول الله والجواب عنه"
+  ]
+ },
+ {
+  "id": "misi_muadz_khalid_yaman",
+  "name_ar": "وصية النبي لمعاذ حين بعثه إلى اليمن",
+  "name_id": "Misi Muadz bin Jabal & Khalid ke Yaman",
+  "aliases_ar": [
+   "بعث معاذ إلى اليمن",
+   "وصية معاذ",
+   "إسلام بنى الحارث بن كعب",
+   "سرية خالد إلى اليمن"
+  ],
+  "era": "madinah",
+  "year_h": 10,
+  "year_note": "Rajab 10 H; Muadz bin Jabal ke Yaman (Najran); Khalid bin Walid ke Bani Harits bin Ka'b; Ali bin Abi Thalib juga dikirim ke Yaman pada tahun itu.",
+  "hisyam_pages": [
+   1327,
+   1330
+  ],
+  "tabari_pages": [
+   1421,
+   1422
+  ],
+  "hisyam_titles": [
+   "وصية الرسول معاذا حين بعثه إلى اليمن",
+   "إسلام بنى الحارث بن كعب على يدي خالد بن الوليد لما سار إليهم"
+  ],
+  "tabari_titles": [
+   "خروج الأمراء والعمال على الصدقات"
+  ]
+ },
+ {
+  "id": "hajj_wada",
+  "name_ar": "حجة الوداع",
+  "name_id": "Haji Wada' (perpisahan)",
+  "aliases_ar": [
+   "حجة الوداع",
+   "حجة الوداعة",
+   "الحج الأكبر",
+   "خطبة الوداع"
+  ],
+  "era": "madinah",
+  "year_h": 10,
+  "year_note": "Dzulhijjah 10 H; khutbah Arafah terkenal; ±100-114 ribu jamaah; Ali menyusul dari Yaman.",
+  "hisyam_pages": [
+   1338,
+   1340
+  ],
+  "tabari_pages": [
+   1422,
+   1426
+  ],
+  "hisyam_titles": [
+   "حجة الوداع",
+   "موافاة على في قفوله من اليمن رسول الله في الحج"
+  ],
+  "tabari_titles": [
+   "حجه الوداع"
+  ]
+ },
+ {
+  "id": "sariyyah_usamah",
+  "name_ar": "بعث أسامة بن زيد إلى أرض فلسطين",
+  "name_id": "Pasukan Usamah bin Zaid ke Palestina",
+  "aliases_ar": [
+   "جيش أسامة",
+   "سرية أسامة بن زيد",
+   "بعث أسامة"
+  ],
+  "era": "madinah",
+  "year_h": 11,
+  "year_note": "Muharram-Shafar 11 H; perintah menyerang Ubna; tertunda karena sakitnya Nabi; akhirnya diberangkatkan oleh Abu Bakr.",
+  "hisyam_pages": [
+   1343,
+   1344
+  ],
+  "tabari_pages": null,
+  "hisyam_titles": [
+   "بعث أسامة بن زيد إلى أرض فلسطين"
+  ],
+  "tabari_titles": []
+ },
+ {
+  "id": "wafat_nabi",
+  "name_ar": "وفاة رسول الله صلى الله عليه وسلم",
+  "name_id": "Wafatnya Nabi",
+  "aliases_ar": [
+   "وفاة النبي",
+   "مرض النبي",
+   "وفاة الرسول",
+   "يوم الوفاة"
+  ],
+  "era": "madinah",
+  "year_h": 11,
+  "year_note": "Sakit ±13 hari; wafat Senin 12 Rabiul awal 11 H (8 Juni 632 M) usia 63 tahun; dimakamkan di kamar Aisyah; syair duka Hassan bin Tsabit.",
+  "hisyam_pages": [
+   1379,
+   1400
+  ],
+  "tabari_pages": [
+   1457,
+   1477
+  ],
+  "hisyam_titles": [
+   "ابتداء شكوى رسول الله صلى الله عليه وسلم",
+   "ذكر أزواجه صلى الله عليه وسلم أمهات المؤمنين",
+   "تمريض رسول الله في بيت عائشة",
+   "جهاز رسول الله صلى الله عليه وسلم ودفنه"
+  ],
+  "tabari_titles": [
+   "ذكر الخبر عن بدء مرض رسول الله الذى توفى فيه وما كان منه قبيل ذلك لما نعيت اليه نفسه ص",
+   "ذكر الاخبار الوارده باليوم الذى توفى فيه رسول الله ومبلغ سنه يوم وفاته"
+  ]
+ },
+ {
+  "id": "saqifah_bani_saidah",
+  "name_ar": "أمر سقيفة بني ساعدة",
+  "name_id": "Tsaqifah Bani Saidah & bai'at Abu Bakr",
+  "aliases_ar": [
+   "سقيفة بني ساعدة",
+   "يوم السقيفة",
+   "بيعة أبي بكر"
+  ],
+  "era": "khulafa",
+  "year_h": 11,
+  "year_note": "Hari wafat Nabi (12 Rabiul awal 11 H); perdebatan Anshar-Muhajirin; Abu Bakr dibai'at; Ali bai'at menyusul.",
+  "hisyam_pages": [
+   1393,
+   1394
+  ],
+  "tabari_pages": [
+   1458,
+   1473
+  ],
+  "hisyam_titles": [
+   "أمر سقيفة بنى ساعدة"
+  ],
+  "tabari_titles": [
+   "سنه احدى عشره",
+   "ذكر الاحداث التي كانت فيها"
+  ]
+ },
+ {
+  "id": "tahun_11_h",
+  "name_ar": "سنة إحدى عشرة للهجرة",
+  "name_id": "Ringkasan peristiwa tahun 11 H",
+  "aliases_ar": [
+   "سنة 11 هجرية",
+   "أحداث سنة إحدى عشرة"
+  ],
+  "era": "khulafa",
+  "year_h": 11,
+  "year_note": "Tahun wafat Nabi, bai'at Abu Bakr, dan dimulainya perang Riddah; pembatalan mut'ah (khutbah) & semacamnya.",
+  "hisyam_pages": null,
+  "tabari_pages": [
+   1458,
+   1473
+  ],
+  "hisyam_titles": [],
+  "tabari_titles": [
+   "سنه احدى عشره"
+  ]
+ },
+ {
+  "id": "riddah_yamamah",
+  "name_ar": "حروب الردة ووقعة اليمامة",
+  "name_id": "Perang Riddah & Yamamah",
+  "aliases_ar": [
+   "الردة",
+   "حروب الردة",
+   "اليمامة",
+   "وقعة العقربة",
+   "قتال مسيلمة"
+  ],
+  "era": "khulafa",
+  "year_h": 11,
+  "year_note": "11-12 H; nabi-nabi palsu (Musalimah, Thulaihah) & penolakan zakat; 11 pasukan Khalid dkk.; Yamamah/Aqraba 12 H - Musalimah dibunuh (Wahsyi & Anas bin Nadhr? - oleh Wahsyi bin Harb & Abdullah bin Zaid).",
+  "hisyam_pages": null,
+  "tabari_pages": [
+   1477,
+   1616
+  ],
+  "hisyam_titles": [],
+  "tabari_titles": [
+   "حوادث السنة الحادية العشرة بعد وفاة رسول الله"
+  ]
+ },
+ {
+  "id": "tahun_12_h",
+  "name_ar": "سنة اثنتي عشرة للهجرة",
+  "name_id": "Ringkasan peristiwa tahun 12 H",
+  "aliases_ar": [
+   "سنة 12 هجرية",
+   "أحداث سنة اثنتي عشرة"
+  ],
+  "era": "khulafa",
+  "year_h": 12,
+  "year_note": "Yamamah; ekspedisi Khalid ke Irak (shuluh Hirah, Al-Waljah, Ulaish); Abu Ubaid di Irak.",
+  "hisyam_pages": null,
+  "tabari_pages": [
+   1616,
+   1624
+  ],
+  "hisyam_titles": [],
+  "tabari_titles": [
+   "سنه اثنتى عشره من الهجره"
+  ]
+ },
+ {
+  "id": "fathu_hirah",
+  "name_ar": "مسير خالد إلى العراق وصلح الحيرة",
+  "name_id": "Khalid ke Irak & perjanjian Hirah",
+  "aliases_ar": [
+   "صلح الحيرة",
+   "فتح الحيرة",
+   "خالد في العراق"
+  ],
+  "era": "khulafa",
+  "year_h": 12,
+  "year_note": "±Muharram 12 H; Hirah (Bani Lakhm) menerima shuluh; awal futuh Irak.",
+  "hisyam_pages": null,
+  "tabari_pages": [
+   1616,
+   1624
+  ],
+  "hisyam_titles": [],
+  "tabari_titles": [
+   "مسير خالد إلى العراق وصلح الحيرة"
+  ]
+ },
+ {
+  "id": "tahun_13_h",
+  "name_ar": "سنة ثلاث عشرة للهجرة",
+  "name_id": "Ringkasan peristiwa tahun 13 H",
+  "aliases_ar": [
+   "سنة 13 هجرية",
+   "أحداث سنة ثلاث عشرة"
+  ],
+  "era": "khulafa",
+  "year_h": 13,
+  "year_note": "Riddah rampung; Ajnadayn & Yarmuk (versi Sayf); wafat Abu Bakr (Jumadil akhir); Abu Ubaid & perang Jisr.",
+  "hisyam_pages": null,
+  "tabari_pages": [
+   1660,
+   1667
+  ],
+  "hisyam_titles": [],
+  "tabari_titles": [
+   "سنه ثلاث عشره"
+  ]
+ },
+ {
+  "id": "ajnadayn",
+  "name_ar": "وقعة أجنادين",
+  "name_id": "Perang Ajnadayn",
+  "aliases_ar": [
+   "أجنادين",
+   "يوم أجنادين",
+   "غزوة أجنادين"
+  ],
+  "era": "khulafa",
+  "year_h": 13,
+  "year_note": "Jumadil awal 13 H (versi Sayf/Thabari; sebagian 12 H); kemenangan atas Byzantium di Palestina; Khalid & Amr bin Ash terlibat.",
+  "hisyam_pages": null,
+  "tabari_pages": [
+   1688,
+   1692
+  ],
+  "hisyam_titles": [],
+  "tabari_titles": [
+   "ذكر وقعة أجنادين"
+  ]
+ },
+ {
+  "id": "wafat_abu_bakr",
+  "name_ar": "وفاة أبي بكر الصديق",
+  "name_id": "Wafat Abu Bakr ash-Shiddiq",
+  "aliases_ar": [
+   "وفاة أبي بكر",
+   "مرض أبي بكر",
+   "استخلاف أبي بكر لعمر"
+  ],
+  "era": "khulafa",
+  "year_h": 13,
+  "year_note": "22 Jumadil akhir 13 H; khilafah ±2 tahun 3 bulan; mewasiatkan khilafah kepada Umar bin Khaththab.",
+  "hisyam_pages": null,
+  "tabari_pages": [
+   1692,
+   1704
+  ],
+  "hisyam_titles": [],
+  "tabari_titles": [
+   "ذكر مرض ابى بكر ووفاته",
+   "ذكر استخلافه عمر بن الخطاب"
+  ]
+ },
+ {
+  "id": "fathu_dimasyq",
+  "name_ar": "غزوة فحل وفتح دمشق",
+  "name_id": "Perang Fahl & penaklukan Damaskus",
+  "aliases_ar": [
+   "فتح دمشق",
+   "وقعة فحل",
+   "فحل ودمشق"
+  ],
+  "era": "khulafa",
+  "year_h": 14,
+  "year_note": "Fahl (Dzulhijjah 13 H) lalu Damaskus ditaklukkan Rajab 14 H; Abu Ubaidah, Khalid, Amr bin Ash mengepung.",
+  "hisyam_pages": null,
+  "tabari_pages": [
+   1707,
+   1716
+  ],
+  "hisyam_titles": [],
+  "tabari_titles": [
+   "ذكر غزوه فحل وفتح دمشق"
+  ]
+ },
+ {
+  "id": "qadisiyyah",
+  "name_ar": "وقعة القادسية",
+  "name_id": "Perang Qadisiyyah",
+  "aliases_ar": [
+   "القادسية",
+   "يوم القادسية",
+   "معركة القادسية",
+   "يوم الهرير الأول"
+  ],
+  "era": "khulafa",
+  "year_h": 14,
+  "year_note": "14 H menurut Thabari/Sayf (sebagian 15 H; setara ±636 M); Sa'd bin Abi Waqqash; Rustum gugur; jalur ke Madain terbuka; termasuk hari-hari Armath-Aghwats-'Amas.",
+  "hisyam_pages": null,
+  "tabari_pages": [
+   1752,
+   1851
+  ],
+  "hisyam_titles": [],
+  "tabari_titles": [
+   "ذكر ابتداء امر القادسية",
+   "يوم ارماث",
+   "يوم اغواث",
+   "يوم عماس",
+   "ليله القادسية"
+  ]
+ },
+ {
+  "id": "tahun_14_h",
+  "name_ar": "سنة أربع عشرة للهجرة",
+  "name_id": "Ringkasan peristiwa tahun 14 H",
+  "aliases_ar": [
+   "سنة 14 هجرية",
+   "أحداث سنة أربع عشرة"
+  ],
+  "era": "khulafa",
+  "year_h": 14,
+  "year_note": "Qadisiyyah, penaklukan Damaskus, penataan Irak; pendirian Bashrah (versi Sayf).",
+  "hisyam_pages": null,
+  "tabari_pages": [
+   1752,
+   1801
+  ],
+  "hisyam_titles": [],
+  "tabari_titles": [
+   "سنه اربع عشره"
+  ]
+ },
+ {
+  "id": "basrah_didirikan",
+  "name_ar": "بناء البصرة",
+  "name_id": "Pendirian kota Bashrah",
+  "aliases_ar": [
+   "بناء البصرة",
+   "تخطيط البصرة",
+   "أول من سكن البصرة"
+  ],
+  "era": "khulafa",
+  "year_h": 14,
+  "year_note": "Utbah bin Ghazwan; versi Sayf/Thabari: tahun 14 H (sebagian: 17 H); \"ibu kota misri Iraq\".",
+  "hisyam_pages": null,
+  "tabari_pages": [
+   1862,
+   1870
+  ],
+  "hisyam_titles": [],
+  "tabari_titles": [
+   "ذكر بناء البصره"
+  ]
+ },
+ {
+  "id": "tahun_15_h",
+  "name_ar": "سنة خمس عشرة للهجرة",
+  "name_id": "Ringkasan peristiwa tahun 15 H",
+  "aliases_ar": [
+   "سنة 15 هجرية",
+   "أحداث سنة خمس عشرة"
+  ],
+  "era": "khulafa",
+  "year_h": 15,
+  "year_note": "Marjusy-Syuyukh? (Marj), futuh Himsh, Qaisariyah; Umar menetapkan diwan & 'atha; versi Sayf: baitul maqdis & Yarmuk tahun ini.",
+  "hisyam_pages": null,
+  "tabari_pages": [
+   1870,
+   1871
+  ],
+  "hisyam_titles": [],
+  "tabari_titles": [
+   "سنه خمس عشره"
+  ]
+ },
+ {
+  "id": "diwan_umar",
+  "name_ar": "فرض العطاء وعمل الديوان",
+  "name_id": "Pendirian Diwan & penetapan 'atha oleh Umar",
+  "aliases_ar": [
+   "عمل الديوان",
+   "فرض العطاء",
+   "الديوان"
+  ],
+  "era": "khulafa",
+  "year_h": 15,
+  "year_note": "15 H; pembukuan jasa & pembagian 'atha bertingkat (ahlul badar 5000 dst.) atas usulan Walid bin Hisyam/Aqil.",
+  "hisyam_pages": null,
+  "tabari_pages": [
+   1885,
+   1891
+  ],
+  "hisyam_titles": [],
+  "tabari_titles": [
+   "ذكر فرض العطاء وعمل الديوان"
+  ]
+ },
+ {
+  "id": "yarmuk",
+  "name_ar": "وقعة اليرموك",
+  "name_id": "Perang Yarmuk",
+  "aliases_ar": [
+   "اليرموك",
+   "معركة اليرموك",
+   "يوم اليرموك"
+  ],
+  "era": "khulafa",
+  "year_h": 15,
+  "year_note": "Rajab 15 H (jumhur); riwayat Sayf/Thabari: Rajab 13 H; kemenangan penentu atas Byzantium; membuka seluruh Syam; 100.000? (angka bervariasi).",
+  "hisyam_pages": null,
+  "tabari_pages": [
+   1667,
+   1688
+  ],
+  "hisyam_titles": [],
+  "tabari_titles": [
+   "خبر اليرموك"
+  ]
+ },
+ {
+  "id": "tahun_16_h",
+  "name_ar": "سنة ست عشرة للهجرة",
+  "name_id": "Ringkasan peristiwa tahun 16 H",
+  "aliases_ar": [
+   "سنة 16 هجرية",
+   "أحداث سنة ست عشرة"
+  ],
+  "era": "khulafa",
+  "year_h": 16,
+  "year_note": "Fathu Madain, Jalula', penetapan penanggalan Hijriah; futuh Syam rampung (versi jumhur: baitul maqdis 16 H).",
+  "hisyam_pages": null,
+  "tabari_pages": [
+   1896,
+   1899
+  ],
+  "hisyam_titles": [],
+  "tabari_titles": [
+   "سنه ست عشره"
+  ]
+ },
+ {
+  "id": "fathu_madain",
+  "name_ar": "فتح المدائن",
+  "name_id": "Penaklukan Al-Madain",
+  "aliases_ar": [
+   "المدائن",
+   "فتح المدائن",
+   "قصر كسرى",
+   "إيوان كسرى"
+  ],
+  "era": "khulafa",
+  "year_h": 16,
+  "year_note": "Muharram-Safar 16 H; Sa'd bin Abi Waqqash; ghanimah istana Kisra; shalat syukur di Iwan.",
+  "hisyam_pages": null,
+  "tabari_pages": [
+   1899,
+   1911
+  ],
+  "hisyam_titles": [],
+  "tabari_titles": [
+   "حديث المدائن القصوى التي كان فيها منزل كسرى",
+   "ذكر ما جمع من فيء اهل المدائن"
+  ]
+ },
+ {
+  "id": "penetapan_kalender_hijriah",
+  "name_ar": "وضع التاريخ (التقويم الهجري)",
+  "name_id": "Penetapan penanggalan Hijriah",
+  "aliases_ar": [
+   "وضع التاريخ",
+   "التقويم الهجري",
+   "أول سنة هجرية"
+  ],
+  "era": "khulafa",
+  "year_h": 16,
+  "year_note": "Umar menetapkan penanggalan Islam; titik awal Muharram tahun hijrah Nabi (16 H menurut riwayat kuat; sebagian 17 H).",
+  "hisyam_pages": [
+   613,
+   614
+  ],
+  "tabari_pages": [
+   2100,
+   2100
+  ],
+  "hisyam_titles": [
+   "تاريخ الهجرة"
+  ],
+  "tabari_titles": [
+   "وضعه التاريخ"
+  ]
+ },
+ {
+  "id": "fathu_baitulmaqdis",
+  "name_ar": "فتح بيت المقدس",
+  "name_id": "Penaklukan Baitul Maqdis",
+  "aliases_ar": [
+   "فتح بيت المقدس",
+   "القدس",
+   "عمر في بيت المقدس",
+   "صحيفة عمرية"
+  ],
+  "era": "khulafa",
+  "year_h": 16,
+  "year_note": "Rabiul akhir 16 H (jumhur; Sayf/Thabari: 15 H); Umar datang menerima penyerahan dari patriarch (Shafruniyus); shalat di area masjid.",
+  "hisyam_pages": null,
+  "tabari_pages": [
+   1879,
+   1885
+  ],
+  "hisyam_titles": [],
+  "tabari_titles": [
+   "ذكر فتح بيت المقدس"
+  ]
+ },
+ {
+  "id": "jaula",
+  "name_ar": "وقعة جلولاء",
+  "name_id": "Perang Jalula'",
+  "aliases_ar": [
+   "جلولاء",
+   "وقعة جلولاء",
+   "فتح جلولاء"
+  ],
+  "era": "khulafa",
+  "year_h": 16,
+  "year_note": "Dzulqa'dah/Dzulhijjah 16 H (Sayf; sebagian 17 H); benteng benteng terakhir Persia di utara; Hasyim bin Uqbah menang.",
+  "hisyam_pages": null,
+  "tabari_pages": [
+   1915,
+   1926
+  ],
+  "hisyam_titles": [],
+  "tabari_titles": [
+   "ذكر الخبر عن وقعه جلولاء الوقيعه"
+  ]
+ },
+ {
+  "id": "tahun_17_h",
+  "name_ar": "سنة سبع عشرة للهجرة",
+  "name_id": "Ringkasan peristiwa tahun 17 H",
+  "aliases_ar": [
+   "سنة 17 هجرية",
+   "أحداث سنة سبع عشرة"
+  ],
+  "era": "khulafa",
+  "year_h": 17,
+  "year_note": "Pendirian Kufah; Umar ke Jabiyah-Syam; pencopotan Khalid; perluasan Masjidil Haram; futuh Jazirah & Ahwaz (versi Sayf).",
+  "hisyam_pages": null,
+  "tabari_pages": [
+   1931,
+   1940
+  ],
+  "hisyam_titles": [],
+  "tabari_titles": [
+   "سنه سبع عشره"
+  ]
+ },
+ {
+  "id": "kufah_didirikan",
+  "name_ar": "تخطيط الكوفة",
+  "name_id": "Pendirian kota Kufah",
+  "aliases_ar": [
+   "بناء الكوفة",
+   "تخطيط الكوفة",
+   "الكوفة"
+  ],
+  "era": "khulafa",
+  "year_h": 17,
+  "year_note": "Muharram 17 H (±638 M); Sa'd bin Abi Waqqash; pemukiman baru penghuni Madain di pinggir Hirah.",
+  "hisyam_pages": null,
+  "tabari_pages": [
+   1931,
+   1940
+  ],
+  "hisyam_titles": [],
+  "tabari_titles": [
+   "ذكر سبب تحول من تحول من المسلمين من المدائن إلى الكوفه وسبب اختطاطهم الكوفه في روايه سيف"
+  ]
+ },
+ {
+  "id": "fathu_jazirah",
+  "name_ar": "فتح الجزيرة",
+  "name_id": "Penaklukan Jazirah",
+  "aliases_ar": [
+   "فتح الجزيرة",
+   "غزو الجزيرة",
+   "الجزيرة الفراتية"
+  ],
+  "era": "khulafa",
+  "year_h": 17,
+  "year_note": "17-18 H; Iyad bin Ghanm; Qarqisiya, Ar-Ruha, Amid; koordinasi dengan Syam.",
+  "hisyam_pages": null,
+  "tabari_pages": [
+   1944,
+   1947
+  ],
+  "hisyam_titles": [],
+  "tabari_titles": [
+   "ذكر فتح الجزيرة"
+  ]
+ },
+ {
+  "id": "umar_ke_syam",
+  "name_ar": "خروج عمر إلى الشام (الجابية)",
+  "name_id": "Perjalanan Umar ke Syam (Jabiyah)",
+  "aliases_ar": [
+   "خروج عمر إلى الشام",
+   "عمر في الجابية"
+  ],
+  "era": "khulafa",
+  "year_h": 17,
+  "year_note": "Jumadil akhir 17 H (±638 M); menata Syam, menghindari wabah yang menjelang, menerima penyerahan kota-kota.",
+  "hisyam_pages": null,
+  "tabari_pages": [
+   1947,
+   1954
+  ],
+  "hisyam_titles": [],
+  "tabari_titles": [
+   "خروج عمر بن الخطاب إلى الشام"
+  ]
+ },
+ {
+  "id": "khalid_dicopot",
+  "name_ar": "عزل خالد بن الوليد",
+  "name_id": "Khalid bin Walid dicopot dari komando",
+  "aliases_ar": [
+   "عزل خالد",
+   "عزل خالد بن الوليد عن قنسرين"
+  ],
+  "era": "khulafa",
+  "year_h": 17,
+  "year_note": "17 H; Umar memecat Khalid (dari Himsh/Qinnasrin); \"demi Allah tidak dicopot karena kemarahan\".",
+  "hisyam_pages": null,
+  "tabari_pages": [
+   1957,
+   1959
+  ],
+  "hisyam_titles": [],
+  "tabari_titles": [
+   "ذكر خبر عزل خالد بن الوليد"
+  ]
+ },
+ {
+  "id": "masjid_haram_diperluas",
+  "name_ar": "تجديد المسجد الحرام وتوسعته",
+  "name_id": "Renovasi & perluasan Masjidil Haram",
+  "aliases_ar": [
+   "توسعة المسجد الحرام",
+   "تجديد المسجد الحرام"
+  ],
+  "era": "khulafa",
+  "year_h": 17,
+  "year_note": "17 H; Umar memperluas Masjidil Haram; membeli rumah-rumah sekitar; pertama membangun pasar di Makkah.",
+  "hisyam_pages": null,
+  "tabari_pages": [
+   1959,
+   1960
+  ],
+  "hisyam_titles": [],
+  "tabari_titles": [
+   "ذكر تجديد المسجد الحرام والتوسعه فيه"
+  ]
+ },
+ {
+  "id": "tahun_18_h",
+  "name_ar": "سنة ثمان عشرة للهجرة",
+  "name_id": "Ringkasan peristiwa tahun 18 H",
+  "aliases_ar": [
+   "سنة 18 هجرية",
+   "أحداث سنة ثمان عشرة"
+  ],
+  "era": "khulafa",
+  "year_h": 18,
+  "year_note": "Tha'un Amwas di Syam; ±25.000 korban termasuk Abu Ubaidah, Muadz bin Jabal, Syurahbil bin Hasanah.",
+  "hisyam_pages": null,
+  "tabari_pages": [
+   1987,
+   1993
+  ],
+  "hisyam_titles": [],
+  "tabari_titles": [
+   "سنه ثمان عشره"
+  ]
+ },
+ {
+  "id": "tahun_19_h",
+  "name_ar": "سنة تسع عشرة للهجرة",
+  "name_id": "Ringkasan peristiwa tahun 19 H",
+  "aliases_ar": [
+   "سنة 19 هجرية",
+   "أحداث سنة تسع عشرة"
+  ],
+  "era": "khulafa",
+  "year_h": 19,
+  "year_note": "Futuh Persia barat lanjutan (Ahwaz-Ramhurmuz); jumhur menempatkan futuh Tustar tahun 19-20 H.",
+  "hisyam_pages": null,
+  "tabari_pages": [
+   1993,
+   1995
+  ],
+  "hisyam_titles": [],
+  "tabari_titles": [
+   "سنه تسع عشره"
+  ]
+ },
+ {
+  "id": "fathu_ahwaz_tustar",
+  "name_ar": "فتح الأهواز وتستر",
+  "name_id": "Penaklukan Ahwaz & Tustar",
+  "aliases_ar": [
+   "فتح تستر",
+   "تستر",
+   "الأهواز",
+   "هرمزان"
+  ],
+  "era": "khulafa",
+  "year_h": 19,
+  "year_note": "Sayf/Thabari menempatkannya dalam bagian tahun 17 H; jumhur: Tustar 19-20 H; Abu Musa Al-Asy'ari; Hurmuzan tertawan.",
+  "hisyam_pages": null,
+  "tabari_pages": [
+   1963,
+   1970
+  ],
+  "hisyam_titles": [],
+  "tabari_titles": [
+   "فتح سوق الاهواز ومناذر ونهر تيرى",
+   "فتح تستر"
+  ]
+ },
+ {
+  "id": "tahun_20_h",
+  "name_ar": "سنة عشرين للهجرة",
+  "name_id": "Ringkasan peristiwa tahun 20 H",
+  "aliases_ar": [
+   "سنة 20 هجرية",
+   "أحداث سنة عشرين"
+  ],
+  "era": "khulafa",
+  "year_h": 20,
+  "year_note": "Futuh Mishr (Mesir) oleh Amr bin Ash; Hanzhalah; penataan Syam pasca-wabah.",
+  "hisyam_pages": null,
+  "tabari_pages": [
+   1995,
+   2003
+  ],
+  "hisyam_titles": [],
+  "tabari_titles": [
+   "سنه عشرين"
+  ]
+ },
+ {
+  "id": "fathu_mishr",
+  "name_ar": "فتح مصر",
+  "name_id": "Penaklukan Mesir",
+  "aliases_ar": [
+   "فتح مصر",
+   "عمرو بن العاص في مصر",
+   "حصن بابليون",
+   "الإسكندرية"
+  ],
+  "era": "khulafa",
+  "year_h": 20,
+  "year_note": "20 H; Amr bin Ash; benteng Babilun (20 H), 'Ainusy Syams; Iskandariyah menyerah 20-21 H; Fustath didirikan.",
+  "hisyam_pages": null,
+  "tabari_pages": [
+   1995,
+   2005
+  ],
+  "hisyam_titles": [],
+  "tabari_titles": [
+   "ذكر الخبر عما كان فيها من مغازي المسلمين وغير ذلك من أمورهم"
+  ]
+ },
+ {
+  "id": "tahun_21_h",
+  "name_ar": "سنة إحدى وعشرين للهجرة",
+  "name_id": "Ringkasan peristiwa tahun 21 H",
+  "aliases_ar": [
+   "سنة 21 هجرية",
+   "أحداث سنة إحدى وعشرين"
+  ],
+  "era": "khulafa",
+  "year_h": 21,
+  "year_note": "Nihawand; futuh Isfahan lanjutan; Iskandariyah rampung (21 H).",
+  "hisyam_pages": null,
+  "tabari_pages": [
+   2005,
+   2030
+  ],
+  "hisyam_titles": [],
+  "tabari_titles": [
+   "سنه احدى وعشرين"
+  ]
+ },
+ {
+  "id": "nihawand",
+  "name_ar": "وقعة نهاوند",
+  "name_id": "Perang Nihawand",
+  "aliases_ar": [
+   "نهاوند",
+   "يوم نهاوند",
+   "فتح الفتوح",
+   "معركة نهاوند"
+  ],
+  "era": "khulafa",
+  "year_h": 21,
+  "year_note": "Dzulqa'dah/Dzulhijjah 21 H (±642 M); Nu'man bin Muqarrin gugur; \"fathul futuh\"; kekalahan besar terakhir Persia.",
+  "hisyam_pages": null,
+  "tabari_pages": [
+   2005,
+   2030
+  ],
+  "hisyam_titles": [],
+  "tabari_titles": [
+   "ذكر الخبر عن وقعه المسلمين والفرس بنهاوند"
+  ]
+ },
+ {
+  "id": "tahun_22_h",
+  "name_ar": "سنة اثنتين وعشرين للهجرة",
+  "name_id": "Ringkasan peristiwa tahun 22 H",
+  "aliases_ar": [
+   "سنة 22 هجرية",
+   "أحداث سنة اثنتين وعشرين"
+  ],
+  "era": "khulafa",
+  "year_h": 22,
+  "year_note": "Futuh Jibal: Hamadan, Ray, Qumis, Jurjan, Thabaristan, Azerbaijan, Bab (Derbend).",
+  "hisyam_pages": null,
+  "tabari_pages": [
+   2037,
+   2041
+  ],
+  "hisyam_titles": [],
+  "tabari_titles": [
+   "سنه اثنتين وعشرين"
+  ]
+ },
+ {
+  "id": "futuh_jibal",
+  "name_ar": "فتح الديلم وقومس والري وأذربيجان والباب",
+  "name_id": "Futuh Jibal- Azerbaijan-Bab",
+  "aliases_ar": [
+   "فتح الري",
+   "فتح أذربيجان",
+   "فتح الباب",
+   "فتح طبرستان",
+   "فتح جرجان"
+  ],
+  "era": "khulafa",
+  "year_h": 22,
+  "year_note": "21-22 H; koordinasi pasukan Kufah-Bashrah; Azerbaijan ditaklukkan berulang kali; Bab (Derbend) dibuka.",
+  "hisyam_pages": null,
+  "tabari_pages": [
+   2037,
+   2051
+  ],
+  "hisyam_titles": [],
+  "tabari_titles": [
+   "ذكر فتح همذان",
+   "فتح الري",
+   "فتح قومس",
+   "فتح جرجان",
+   "فتح طبرستان",
+   "فتح اذربيجان",
+   "فتح الباب"
+  ]
+ },
+ {
+  "id": "tahun_23_h",
+  "name_ar": "سنة ثلاث وعشرين للهجرة",
+  "name_id": "Ringkasan peristiwa tahun 23 H",
+  "aliases_ar": [
+   "سنة 23 هجرية",
+   "أحداث سنة ثلاث وعشرين"
+  ],
+  "era": "khulafa",
+  "year_h": 23,
+  "year_note": "Futuh Fars, Kirman, Sijistan, Makran; wafat Umar di akhir tahun (Dzulhijjah).",
+  "hisyam_pages": null,
+  "tabari_pages": [
+   2065,
+   2066
+  ],
+  "hisyam_titles": [],
+  "tabari_titles": [
+   "سنه ثلاث وعشرين"
+  ]
+ },
+ {
+  "id": "futuh_fars_selatan",
+  "name_ar": "فتح فارس وكرمان وسجستان ومكران",
+  "name_id": "Futuh Fars, Kirman, Sijistan & Makran",
+  "aliases_ar": [
+   "فتح أصطخر",
+   "فتح فسا",
+   "فتح كرمان",
+   "فتح سجستان",
+   "فتح مكران"
+  ],
+  "era": "khulafa",
+  "year_h": 23,
+  "year_note": "23 H dan seterusnya (bertahap hingga 29 H); Istakhr, Fasa-Darabjird, Kirman, Sijistan, Makran; Utsman bin Abil Ash & lainnya.",
+  "hisyam_pages": null,
+  "tabari_pages": [
+   2065,
+   2074
+  ],
+  "hisyam_titles": [],
+  "tabari_titles": [
+   "ذكر الخبر عن فتح توج",
+   "فتح اصطخر",
+   "ذكر فتح فسا ودارابجرد",
+   "ذكر فتح كرمان",
+   "ذكر فتح سجستان",
+   "فتح مكران"
+  ]
+ },
+ {
+  "id": "wafat_umar",
+  "name_ar": "وفاة عمر بن الخطاب",
+  "name_id": "Wafat Umar bin Khaththab",
+  "aliases_ar": [
+   "مقتل عمر",
+   "طعن عمر",
+   "أبو لؤلؤة",
+   "وفاة الفاروق"
+  ],
+  "era": "khulafa",
+  "year_h": 23,
+  "year_note": "Ditikam Abu Lu'lu'ah (Fairuz) 26 Dzulhijjah saat shalat subuh; wafat 29/30 Dzulhijjah 23 H (sebagian: 1 Muharram 24 H); khilafah ±10 tahun 6 bulan.",
+  "hisyam_pages": null,
+  "tabari_pages": [
+   2081,
+   2086
+  ],
+  "hisyam_titles": [],
+  "tabari_titles": [
+   "ذكر الخبر عن وفاه عمر"
+  ]
+ },
+ {
+  "id": "syura_6_sahabat",
+  "name_ar": "قصة الشورى",
+  "name_id": "Syura enam sahabat & terpilihnya Utsman",
+  "aliases_ar": [
+   "الشورى",
+   "أهل الشورى",
+   "بيعة عثمان"
+  ],
+  "era": "khulafa",
+  "year_h": 23,
+  "year_note": "Enam kandidat (Ali, Utsman, Thalhah, Zubair, Abdurrahman bin Auf, Sa'd); ±3 hari; Abdurrahman bin Auf memilih Utsman bin Affan.",
+  "hisyam_pages": null,
+  "tabari_pages": [
+   2118,
+   2132
+  ],
+  "hisyam_titles": [],
+  "tabari_titles": [
+   "قصه الشورى"
+  ]
+ },
+ {
+  "id": "tahun_24_h",
+  "name_ar": "سنة أربع وعشرين للهجرة",
+  "name_id": "Ringkasan peristiwa tahun 24 H",
+  "aliases_ar": [
+   "سنة 24 هجرية",
+   "أحداث سنة أربع وعشرين"
+  ],
+  "era": "khulafa",
+  "year_h": 24,
+  "year_note": "Awal khilafah Utsman; futuh Azerbaijan-Armenia; Ubaidillah bin Umar membunuh Hurmuzan (peristiwa kontroversial).",
+  "hisyam_pages": null,
+  "tabari_pages": [
+   2133,
+   2134
+  ],
+  "hisyam_titles": [],
+  "tabari_titles": [
+   "سنه اربع وعشرين"
+  ]
+ },
+ {
+  "id": "tahun_25_h",
+  "name_ar": "سنة خمس وعشرين للهجرة",
+  "name_id": "Ringkasan peristiwa tahun 25 H",
+  "aliases_ar": [
+   "سنة 25 هجرية",
+   "أحداث سنة خمس وعشرين"
+  ],
+  "era": "khulafa",
+  "year_h": 25,
+  "year_note": "Kampanye Armenia (Dabil/Dvin berdamai); upaya Romawi di Azerbaijan.",
+  "hisyam_pages": null,
+  "tabari_pages": [
+   2141,
+   2142
+  ],
+  "hisyam_titles": [],
+  "tabari_titles": [
+   "سنه خمس وعشرين"
+  ]
+ },
+ {
+  "id": "tahun_26_h",
+  "name_ar": "سنة ست وعشرين للهجرة",
+  "name_id": "Ringkasan peristiwa tahun 26 H",
+  "aliases_ar": [
+   "سنة 26 هجرية",
+   "أحداث سنة ست وعشرين"
+  ],
+  "era": "khulafa",
+  "year_h": 26,
+  "year_note": "Sa'd bin Abi Waqqash dicopot dari Kufah, al-Walid bin Uqbah menggantikan; futuh Khurasan lanjutan.",
+  "hisyam_pages": null,
+  "tabari_pages": [
+   2142,
+   2143
+  ],
+  "hisyam_titles": [],
+  "tabari_titles": [
+   "سنه ست وعشرين"
+  ]
+ },
+ {
+  "id": "tahun_27_h",
+  "name_ar": "سنة سبع وعشرين للهجرة",
+  "name_id": "Ringkasan peristiwa tahun 27 H",
+  "aliases_ar": [
+   "سنة 27 هجرية",
+   "أحداث سنة سبع وعشرين"
+  ],
+  "era": "khulafa",
+  "year_h": 27,
+  "year_note": "Ekspedisi Aran-Azerbaijan; pembukaan Armenia lanjutan.",
+  "hisyam_pages": null,
+  "tabari_pages": [
+   2143,
+   2147
+  ],
+  "hisyam_titles": [],
+  "tabari_titles": [
+   "سنه سبع وعشرين"
+  ]
+ },
+ {
+  "id": "tahun_28_h",
+  "name_ar": "سنة ثمان وعشرين للهجرة",
+  "name_id": "Ringkasan peristiwa tahun 28 H",
+  "aliases_ar": [
+   "سنة 28 هجرية",
+   "أحداث سنة ثمان وعشرين"
+  ],
+  "era": "khulafa",
+  "year_h": 28,
+  "year_note": "Futuh Armenia & Azerbaijan lanjutan (Tiflis); pasukan Habasyah di Mesir; kemakmuran awal masa Utsman.",
+  "hisyam_pages": null,
+  "tabari_pages": [
+   2147,
+   2153
+  ],
+  "hisyam_titles": [],
+  "tabari_titles": [
+   "سنه ثمان وعشرين"
+  ]
+ },
+ {
+  "id": "tahun_29_h",
+  "name_ar": "سنة تسع وعشرين للهجرة",
+  "name_id": "Ringkasan peristiwa tahun 29 H",
+  "aliases_ar": [
+   "سنة 29 هجرية",
+   "أحداث سنة تسع وعشرين"
+  ],
+  "era": "khulafa",
+  "year_h": 29,
+  "year_note": "Abdullah bin Amir menjadi gubernur Bashrah (menggantikan Abu Musa); futuh Sijistan-Kirman lanjutan.",
+  "hisyam_pages": null,
+  "tabari_pages": [
+   2153,
+   2156
+  ],
+  "hisyam_titles": [],
+  "tabari_titles": [
+   "سنه تسع وعشرين"
+  ]
+ },
+ {
+  "id": "tahun_30_h",
+  "name_ar": "سنة ثلاثين للهجرة",
+  "name_id": "Ringkasan peristiwa tahun 30 H",
+  "aliases_ar": [
+   "سنة 30 هجرية",
+   "أحداث سنة ثلاثين"
+  ],
+  "era": "khulafa",
+  "year_h": 30,
+  "year_note": "Perluasan Masjid Nabawi oleh Utsman; futuh Azerbaijan-Armenia berlanjut.",
+  "hisyam_pages": null,
+  "tabari_pages": [
+   2158,
+   2160
+  ],
+  "hisyam_titles": [],
+  "tabari_titles": [
+   "سنه ثلاثين"
+  ]
+ },
+ {
+  "id": "tahun_31_h",
+  "name_ar": "سنة إحدى وثلاثين للهجرة",
+  "name_id": "Ringkasan peristiwa tahun 31 H",
+  "aliases_ar": [
+   "سنة 31 هجرية",
+   "أحداث سنة إحدى وثلاثين"
+  ],
+  "era": "khulafa",
+  "year_h": 31,
+  "year_note": "Dzatush Shawari; kematian Yazdajird; futuh Khurasan besar-besaran (Abdullah bin Amir).",
+  "hisyam_pages": null,
+  "tabari_pages": [
+   2177,
+   2182
+  ],
+  "hisyam_titles": [],
+  "tabari_titles": [
+   "سنه احدى وثلاثين"
+  ]
+ },
+ {
+  "id": "ghazwah_dzussawari",
+  "name_ar": "غزوة الصواري (ذات الصواري)",
+  "name_id": "Perang Dzatush Shawari (laut)",
+  "aliases_ar": [
+   "ذات الصواري",
+   "معركة الصواري",
+   "أول معركة بحرية"
+  ],
+  "era": "khulafa",
+  "year_h": 31,
+  "year_note": "±Dzulhijjah 31 H; pertempuran laut besar dekat Iskandariyah; Abdullah bin Abi Sarah vs Manuil; awal kekuatan laut muslimin.",
+  "hisyam_pages": null,
+  "tabari_pages": [
+   2177,
+   2182
+  ],
+  "hisyam_titles": [],
+  "tabari_titles": [
+   "غزوه الصواري"
+  ]
+ },
+ {
+  "id": "akhir_sasanide",
+  "name_ar": "مقتل يزدجرد ملك الفرس",
+  "name_id": "Terbunuhnya Yazdajird - berakhirnya Sasanide",
+  "aliases_ar": [
+   "يزدجرد",
+   "نهاية الدولة الساسانية",
+   "مقتل يزدجرد الثالث"
+  ],
+  "era": "khulafa",
+  "year_h": 31,
+  "year_note": "Yazdajird III terbunuh di Marw (31 H / 651 M); akhir dinasti Sasaniyah; Abdullah bin Amir menaklukkan Khurasan.",
+  "hisyam_pages": null,
+  "tabari_pages": [
+   2182,
+   2193
+  ],
+  "hisyam_titles": [],
+  "tabari_titles": [
+   "ذكر الخبر عن مقتل يزدجرد ملك فارس",
+   "شخوص عبد الله بن عامر إلى خراسان وما قام به من فتوح"
+  ]
+ },
+ {
+  "id": "tahun_32_h",
+  "name_ar": "سنة اثنتين وثلاثين للهجرة",
+  "name_id": "Ringkasan peristiwa tahun 32 H",
+  "aliases_ar": [
+   "سنة 32 هجرية",
+   "أحداث سنة اثنتين وثلاثين"
+  ],
+  "era": "khulafa",
+  "year_h": 32,
+  "year_note": "Wafat Abu Dzar di Rabadzah; futuh Khurasan (Marw Ar-Rudz, Thaliqan, Faryab, Juzjan, Thukharistan); shuluh Balkh oleh Al-Ahnaf.",
+  "hisyam_pages": null,
+  "tabari_pages": [
+   2193,
+   2197
+  ],
+  "hisyam_titles": [],
+  "tabari_titles": [
+   "سنه اثنتين وثلاثين"
+  ]
+ },
+ {
+  "id": "wafat_abu_dzar",
+  "name_ar": "وفاة أبي ذر الغفاري",
+  "name_id": "Wafat Abu Dzar Al-Ghifari",
+  "aliases_ar": [
+   "وفاة أبي ذر",
+   "أبو ذر في الربذة"
+  ],
+  "era": "khulafa",
+  "year_h": 32,
+  "year_note": "±32 H (sebagian 30/31 H); sahabat zuhud; wafat di Rabadzah bersama istrinya & hamba.",
+  "hisyam_pages": null,
+  "tabari_pages": [
+   2197,
+   2198
+  ],
+  "hisyam_titles": [],
+  "tabari_titles": [
+   "ذكر الخبر عن وفاه ابى ذر"
+  ]
+ },
+ {
+  "id": "tahun_33_h",
+  "name_ar": "سنة ثلاث وثلاثين للهجرة",
+  "name_id": "Ringkasan peristiwa tahun 33 H",
+  "aliases_ar": [
+   "سنة 33 هجرية",
+   "أحداث سنة ثلاث وثلاثين"
+  ],
+  "era": "khulafa",
+  "year_h": 33,
+  "year_note": "Utsman memindahkan sebagian tokoh Kufah (termasuk menindak Ibnu Mas'ud) - awal ketegangan politik.",
+  "hisyam_pages": null,
+  "tabari_pages": [
+   2206,
+   2215
+  ],
+  "hisyam_titles": [],
+  "tabari_titles": [
+   "سنه ثلاث وثلاثين"
+  ]
+ },
+ {
+  "id": "tahun_34_h",
+  "name_ar": "سنة أربع وثلاثين للهجرة",
+  "name_id": "Ringkasan peristiwa tahun 34 H",
+  "aliases_ar": [
+   "سنة 34 هجرية",
+   "أحداث سنة أربع وثلاثين"
+  ],
+  "era": "khulafa",
+  "year_h": 34,
+  "year_note": "Awal fitnah: protes terhadap pejabat; gerakan Mesir-Kufah; Utsman mengepung (mulai Dzulhijjah 34 H).",
+  "hisyam_pages": null,
+  "tabari_pages": [
+   2219,
+   2229
+  ],
+  "hisyam_titles": [],
+  "tabari_titles": [
+   "سنه اربع وثلاثين"
+  ]
+ },
+ {
+  "id": "pengepungan_utsman",
+  "name_ar": "اجتماع المنحرفين على عثمان وحصاره",
+  "name_id": "Pengepungan terhadap Utsman",
+  "aliases_ar": [
+   "حصار عثمان",
+   "الثوار على عثمان",
+   "قصة الدار"
+  ],
+  "era": "khulafa",
+  "year_h": 34,
+  "year_note": "Dzulhijjah 34 H - Dzulhijjah 35 H; para pembangkang dari Mesir, Kufah & Bashrah mengepung rumah Utsman; Malik Al-Asytar terlibat.",
+  "hisyam_pages": null,
+  "tabari_pages": [
+   2219,
+   2229
+  ],
+  "hisyam_titles": [],
+  "tabari_titles": [
+   "ذكر خبر اجتماع المنحرفين على عثمان"
+  ]
+ },
+ {
+  "id": "tahun_35_h",
+  "name_ar": "سنة خمس وثلاثين للهجرة",
+  "name_id": "Ringkasan peristiwa tahun 35 H",
+  "aliases_ar": [
+   "سنة 35 هجرية",
+   "أحداث سنة خمس وثلاثين"
+  ],
+  "era": "khulafa",
+  "year_h": 35,
+  "year_note": "Pembunuhan Utsman (18 Dzulhijjah); bai'at Ali; Byzantium bergerak (menurut Thabari); awal fitnah besar.",
+  "hisyam_pages": null,
+  "tabari_pages": [
+   2229,
+   2234
+  ],
+  "hisyam_titles": [],
+  "tabari_titles": [
+   "سنه خمس وثلاثين"
+  ]
+ },
+ {
+  "id": "utsman_syahid",
+  "name_ar": "قتل عثمان بن عفان",
+  "name_id": "Pembunuhan Utsman bin Affan",
+  "aliases_ar": [
+   "مقتل عثمان",
+   "شهادة عثمان",
+   "يوم الدار"
+  ],
+  "era": "khulafa",
+  "year_h": 35,
+  "year_note": "18 Dzulhijjah 35 H (±17 Juni 656 M); khilafah ±12 tahun; pengepungan memuncak; Naila & Ummu Aban menyaksikan.",
+  "hisyam_pages": null,
+  "tabari_pages": [
+   2254,
+   2285
+  ],
+  "hisyam_titles": [],
+  "tabari_titles": [
+   "ذكر الخبر عن قتل عثمان رضى الله عنه"
+  ]
+ },
+ {
+  "id": "baiat_ali",
+  "name_ar": "خلافة علي بن أبي طالب وبيعته",
+  "name_id": "Bai'at Ali bin Abi Thalib",
+  "aliases_ar": [
+   "بيعة علي",
+   "خلافة أمير المؤمنين علي",
+   "أول خلافة علي"
+  ],
+  "era": "khulafa",
+  "year_h": 35,
+  "year_note": "Dzulhijjah 35 H; dibai'at di Madinah; Thalhah & Zubair menyusul lalu ke Makkah; penataan para gubernur.",
+  "hisyam_pages": null,
+  "tabari_pages": [
+   2316,
+   2330
+  ],
+  "hisyam_titles": [],
+  "tabari_titles": [
+   "خلافه امير المؤمنين على بن ابى طالب",
+   "اتساق الأمر في البيعه لعلى بن ابى طالب ع"
+  ]
+ },
+ {
+  "id": "tahun_36_h",
+  "name_ar": "سنة ست وثلاثين للهجرة",
+  "name_id": "Ringkasan peristiwa tahun 36 H",
+  "aliases_ar": [
+   "سنة 36 هجرية",
+   "أحداث سنة ست وثلاثين"
+  ],
+  "era": "khulafa",
+  "year_h": 36,
+  "year_note": "Perang Jamal; Muawiyah menolak bai'at; persiapan Shiffin; serangan Byzantium ke Jazirah (versi Thabari).",
+  "hisyam_pages": null,
+  "tabari_pages": [
+   2331,
+   2333
+  ],
+  "hisyam_titles": [],
+  "tabari_titles": [
+   "سنه ست وثلاثين"
+  ]
+ },
+ {
+  "id": "perang_jamal",
+  "name_ar": "وقعة الجمل",
+  "name_id": "Perang Jamal",
+  "aliases_ar": [
+   "الجمل",
+   "يوم الجمل",
+   "معركة الجمل",
+   "وقعة البصرة"
+  ],
+  "era": "khulafa",
+  "year_h": 36,
+  "year_note": "Jumadil akhir 36 H (±10 atau 15 Jumadil) di Bashrah; Aisyah, Thalhah & Zubair \"menuntut darah Utsman\"; Ali menang; Thalhah & Zubair gugur; Ka'ab Al-Ahbar menyaksikan; Haudh Khamrah (anjing Hauab).",
+  "hisyam_pages": null,
+  "tabari_pages": [
+   2333,
+   2424
+  ],
+  "hisyam_titles": [],
+  "tabari_titles": [
+   "استئذان طلحه والزبير عليا",
+   "خروج على إلى الربذة يريد البصره",
+   "شراء الجمل لعائشة رضى الله عنها، وخبر كلاب الحوأب",
+   "قول عائشة رضى الله عنها: والله لاطلبن بدم عثمان وخروجها وطلحه والزبير فيمن تبعهم إلى البصره",
+   "دخولهم البصره والحرب بينهم وبين عثمان بن حنيف",
+   "ذكر الخبر عن مسير على بن ابى طالب نحو البصره",
+   "امر القتال",
+   "خبر وقعه الجمل من روايه اخرى",
+   "شده القتال يوم الجمل وخبر اعين بن ضبيعه واطلاعه في الهودج",
+   "مقتل الزبير بن العوام رضى الله عنه"
+  ]
+ },
+ {
+  "id": "tahun_37_h",
+  "name_ar": "سنة سبع وثلاثين للهجرة",
+  "name_id": "Ringkasan peristiwa tahun 37 H",
+  "aliases_ar": [
+   "سنة 37 هجرية",
+   "أحداث سنة سبع وثلاثين"
+  ],
+  "era": "khulafa",
+  "year_h": 37,
+  "year_note": "Shiffin (Safar 37 H); pengangkatan dua hakim; munculnya Khawarij.",
+  "hisyam_pages": null,
+  "tabari_pages": [
+   2466,
+   2471
+  ],
+  "hisyam_titles": [],
+  "tabari_titles": [
+   "سنه سبع وثلاثين"
+  ]
+ },
+ {
+  "id": "perang_shiffin",
+  "name_ar": "وقعة صفين",
+  "name_id": "Perang Shiffin",
+  "aliases_ar": [
+   "صفين",
+   "معركة صفين",
+   "يوم صفين",
+   "ليلة الهرير"
+  ],
+  "era": "khulafa",
+  "year_h": 37,
+  "year_note": "Dzulhijjah 36 H - Safar 37 H (peperangan sengit/laulatul harir Safar 37 H); Ammar bin Yasir syahid; pasukan Ali unggul; mushaf diangkat; berakhir tanpa penyelesaian.",
+  "hisyam_pages": null,
+  "tabari_pages": [
+   2452,
+   2524
+  ],
+  "hisyam_titles": [],
+  "tabari_titles": [
+   "خروج على بن ابى طالب إلى صفين",
+   "سنه سبع وثلاثين",
+   "تكتيب الكتائب وتعبئه الناس للقتال",
+   "الجد في الحرب والقتال",
+   "مقتل عمار بن ياسر",
+   "خبر هاشم بن عتبة المرقال وذكر ليله الهرير",
+   "ما روى من رفعهم المصاحف ودعائهم إلى الحكومة"
+  ]
+ },
+ {
+  "id": "tahkim",
+  "name_ar": "قضية التحكيم (يوم الحكمين)",
+  "name_id": "Peristiwa Tahkim (dua hakim)",
+  "aliases_ar": [
+   "التحكيم",
+   "يوم الحكمين",
+   "الحكمين",
+   "دومة الجندل (التحكيم)"
+  ],
+  "era": "khulafa",
+  "year_h": 37,
+  "year_note": "Kesepakatan pengangkatan Abu Musa Al-Asy'ari & Amr bin Ash (Safar 37 H); pertemuan Dumatul Jandal Ramadhan 37 H; putusan ditolak sebagian (Muharram 38 H).",
+  "hisyam_pages": null,
+  "tabari_pages": [
+   2528,
+   2533
+  ],
+  "hisyam_titles": [],
+  "tabari_titles": [
+   "اجتماع الحكمين بدومه الجندل"
+  ]
+ },
+ {
+  "id": "tahun_38_h",
+  "name_ar": "سنة ثمان وثلاثين للهجرة",
+  "name_id": "Ringkasan peristiwa tahun 38 H",
+  "aliases_ar": [
+   "سنة 38 هجرية",
+   "أحداث سنة ثمان وثلاثين"
+  ],
+  "era": "khulafa",
+  "year_h": 38,
+  "year_note": "Pascat ahkim; kekacauan Mesir (pembunuhan Muhammad bin Abi Hudzaifah); pemberontakan Khawarij menebar; serangan Ma'awiyah ke pinggiran.",
+  "hisyam_pages": null,
+  "tabari_pages": [
+   2555,
+   2566
+  ],
+  "hisyam_titles": [],
+  "tabari_titles": [
+   "سنه ثمان وثلاثين"
+  ]
+ },
+ {
+  "id": "nahrawan",
+  "name_ar": "يوم النهروان",
+  "name_id": "Perang Nahrawan",
+  "aliases_ar": [
+   "النهروان",
+   "يوم النهروان",
+   "وقعة النهروان",
+   "قتال الخوارج"
+  ],
+  "era": "khulafa",
+  "year_h": 38,
+  "year_note": "9 Shafar 38 H (penanggalan umum; Thabari memuatnya dalam bagian tahun 37 H); Ali menghancurkan Khawarij; Abdullah bin Wahb Ar-Rasyib gugur; ±12 ribu? - hanya sedikit korban pihak Ali.",
+  "hisyam_pages": null,
+  "tabari_pages": [
+   2533,
+   2555
+  ],
+  "hisyam_titles": [],
+  "tabari_titles": [
+   "ذكر ما كان من خبر الخوارج عند توجيه على الحكم للحكومة وخبر يوم النهر"
+  ]
+ },
+ {
+  "id": "tahun_39_h",
+  "name_ar": "سنة تسع وثلاثين للهجرة",
+  "name_id": "Ringkasan peristiwa tahun 39 H",
+  "aliases_ar": [
+   "سنة 39 هجرية",
+   "أحداث سنة تسع وثلاثين"
+  ],
+  "era": "khulafa",
+  "year_h": 39,
+  "year_note": "Ma'awiyah mengerahkan pasukan menyerang Mesir, Anbar & pinggiran wilayah Ali; serangan Busr bin Abi Artah.",
+  "hisyam_pages": null,
+  "tabari_pages": [
+   2594,
+   2600
+  ],
+  "hisyam_titles": [],
+  "tabari_titles": [
+   "سنه تسع وثلاثين"
+  ]
+ },
+ {
+  "id": "tahun_40_h",
+  "name_ar": "سنة أربعين للهجرة",
+  "name_id": "Ringkasan peristiwa tahun 40 H",
+  "aliases_ar": [
+   "سنة 40 هجرية",
+   "أحداث سنة أربعين"
+  ],
+  "era": "khulafa",
+  "year_h": 40,
+  "year_note": "Ibnu Abbas pindah ke Makkah; pembunuhan Ali (21 Ramadhan 40 H); bai'at Hasan; kubu Ma'awiyah-Hasan bersiap.",
+  "hisyam_pages": null,
+  "tabari_pages": [
+   2600,
+   2602
+  ],
+  "hisyam_titles": [],
+  "tabari_titles": [
+   "سنه اربعين"
+  ]
+ },
+ {
+  "id": "syahid_ali",
+  "name_ar": "مقتل علي بن أبي طالب",
+  "name_id": "Syahidnya Ali bin Abi Thalib",
+  "aliases_ar": [
+   "مقتل علي",
+   "استشهاد علي",
+   "عبد الرحمن بن ملجم",
+   "ليلة التاسع عشر من رمضان"
+  ],
+  "era": "khulafa",
+  "year_h": 40,
+  "year_note": "21 Ramadhan 40 H (±27 Januari 661 M); ditikam Ibnul Muljam (Khawarij) saat memimpin subuh; khilafah ±4 tahun 9 bulan; dimakamkan Kufah (Najaf).",
+  "hisyam_pages": null,
+  "tabari_pages": [
+   2604,
+   2613
+  ],
+  "hisyam_titles": [],
+  "tabari_titles": [
+   "ذكر الخبر عن مقتل على بن ابى طالب"
+  ]
+ },
+ {
+  "id": "baiat_hasan",
+  "name_ar": "بيعة الحسن بن على",
+  "name_id": "Bai'at Hasan bin Ali (akhir khilafah Rasyidah)",
+  "aliases_ar": [
+   "بيعة الحسن",
+   "خلافة الحسن",
+   "صلح الحسن ومعاوية",
+   "عام الجماعة"
+  ],
+  "era": "khulafa",
+  "year_h": 40,
+  "year_note": "Dibai'at keesokan wafatnya Ali; khilafah ±6-7 bulan; berdamai dengan Ma'awiyah (menyerahkan kekhalifahan, Rabiul awal 41 H) - \"amul jama'ah\".",
+  "hisyam_pages": null,
+  "tabari_pages": [
+   2619,
+   2623
+  ],
+  "hisyam_titles": [],
+  "tabari_titles": [
+   "ذكر بيعه الحسن بن على"
+  ]
+ }
+]
