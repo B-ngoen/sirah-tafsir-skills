@@ -2,8 +2,9 @@
 
 Semua jalur Claude membaca basis data langsung lewat `lookup.py` → hasil paling akurat (verbatim + juz/halaman).
 
-## Claude Desktop / claude.ai (web & HP) — sudah diuji pemilik repo
-1. Unduh berkas skill (klik langsung):
+## Claude Desktop / claude.ai — sudah diuji pemilik repo
+Pemasangan hanya bisa dari **PC** (claude.ai di browser atau aplikasi desktop); aplikasi HP belum punya menu unggah skill. Setelah terpasang, skill ikut tersedia saat Anda bertanya dari aplikasi HP.
+1. Di PC, unduh berkas skill (klik langsung):
    - [tafsir-lookup.skill](https://github.com/B-ngoen/sirah-tafsir-skills/raw/main/release/tafsir-lookup.skill)
    - [sirah-lookup.skill](https://github.com/B-ngoen/sirah-tafsir-skills/raw/main/release/sirah-lookup.skill)
 2. **Settings → Capabilities → Skills → Upload skill** → pilih berkas (ulangi untuk skill kedua).

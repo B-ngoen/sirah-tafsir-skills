@@ -11,8 +11,9 @@ ChatGPT bisa menjalankan program pencari basis data (lewat fitur *Code Interpret
 
 (Klik kanan → *Save link as* bila browser menampilkan isinya alih-alih mengunduh.)
 
-## Cara termudah — aplikasi ChatGPT → "Work" (Project)
-1. Buka aplikasi ChatGPT (desktop/HP) atau chatgpt.com → klik **Work** / **Projects** → **Project baru**, beri nama "Sirah Verbatim" (atau "Tafsir Verbatim").
+## Cara termudah — ChatGPT → "Work" (Project)
+Siapkan dari **PC** (chatgpt.com di browser atau aplikasi desktop) — aplikasi HP belum bisa membuat Project dengan berkas; setelah jadi, Project-nya bisa dipakai dari HP.
+1. Di PC, buka chatgpt.com atau aplikasi ChatGPT desktop → klik **Work** / **Projects** → **Project baru**, beri nama "Sirah Verbatim" (atau "Tafsir Verbatim").
 2. **Files** → unggah dua berkas: `lookup.py` dan `*_full.db.xz` yang sesuai.
 3. **Instructions** → tempel seluruh isi `instructions.md` yang sesuai.
 4. Mulai chat **di dalam Project**, bertanya biasa: *"Kisah Perang Badar menurut Ibnu Hisyam, teks Arabnya"*. Pemakaian pertama tiap sesi butuh ±1 menit (ChatGPT mengekstrak basis data).
