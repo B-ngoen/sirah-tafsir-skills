@@ -1,38 +1,23 @@
-# ChatGPT — mode Work (termudah), Project, atau Custom GPT
+# ChatGPT — hanya lewat mode **Work** (aplikasi desktop)
 
-ChatGPT bisa menjalankan program pencari basis data, jadi hasilnya sama akuratnya dengan Claude: teks Arab apa adanya + juz/halaman.
+Skill ini perlu menjalankan program pencari (Python) dan membaca basis data lokal. Di ChatGPT, kemampuan itu hanya ada di **mode Work** pada aplikasi desktop (Windows/macOS), yang punya akses terminal ke komputer Anda (berbasis Codex). **Chat biasa — di web, di aplikasi desktop, maupun di HP — tidak bisa** menjalankannya walau skill sudah terpasang; ChatGPT akan menjawab "tidak bisa". Jadi: pasang **dan** pakai keduanya di Work.
 
-## Cara 1 — mode Work (aplikasi ChatGPT desktop): satu kalimat
-Mode **Work** punya akses terminal ke komputer Anda (berbasis Codex; skill dibaca dari `~/.agents/skills/`). Cukup tempel:
+## Cara 1 — satu kalimat di Work (termudah)
+1. Buka aplikasi ChatGPT desktop → **Work** → thread baru.
+2. Tempel:
+   > **Tolong pelajari https://github.com/B-ngoen/sirah-tafsir-skills dan install sebagai skill.**
+3. ChatGPT membaca [INSTALL.md](../INSTALL.md), menjalankan pemasang (`python install.py --target chatgpt` → skill ke `~/.agents/skills/`), mengunduh basis data (±17–18 MB per skill, sekali, ke cache permanen), lalu memverifikasi. Setujui perintah yang diminta.
+4. Buka **thread baru** agar skill terbaca, lalu bertanya biasa: *"Kisah Perang Badar menurut Ibnu Hisyam, teks Arabnya"*.
 
-> **Tolong pelajari https://github.com/B-ngoen/sirah-tafsir-skills dan install sebagai skill.**
+## Cara 2 — sebagai plugin Codex (bisa dinonaktifkan/diperbarui dari menu)
+Repo ini menyertakan plugin siap pasang di folder `codex-plugin/` (struktur mengikuti skill resmi `plugin-creator`). Di Work, tempel:
+> Tolong unduh https://github.com/B-ngoen/sirah-tafsir-skills, pasang plugin dari folder `codex-plugin`-nya (`codex plugin marketplace add <folder codex-plugin>` lalu `codex plugin add tafsir-sirah-lookup@sirah-tafsir-skills`), kemudian jalankan `python install.py --target chatgpt` untuk mengunduh basis datanya.
 
-ChatGPT membaca [INSTALL.md](../INSTALL.md), menjalankan pemasang (`python install.py --target chatgpt`), mengunduh basis data (±17–18 MB per skill, sekali saja), lalu siap. Setujui perintah yang diminta saat muncul. Setelah itu bertanya biasa: *"Kisah Perang Badar menurut Ibnu Hisyam, teks Arabnya"*.
+Atau minta ChatGPT membuat plugin sendiri dari skill yang sudah terpasang lewat Cara 1: *"Ubah skill tafsir-lookup dan sirah-lookup menjadi plugin dengan `$plugin-creator`."* Hasilnya setara.
 
-Manual (tanpa AI): `python install.py --target chatgpt` dari folder repo yang diunduh.
-
-## Cara 2 — Project atau Custom GPT (tanpa mode Work; Plus/Team)
-## Yang perlu diunduh (sekali)
-| | Tafsir | Sirah & Shahabat |
-|---|---|---|
-| Program pencari | [lookup.py](https://github.com/B-ngoen/sirah-tafsir-skills/raw/main/chatgpt/lookup.py) | [lookup.py](https://github.com/B-ngoen/sirah-tafsir-skills/raw/main/chatgpt/sirah/lookup.py) |
-| Basis data | [tafsir_full.db.xz](https://github.com/B-ngoen/sirah-tafsir-skills/releases/download/tafsir-v1/tafsir_full.db.xz) (18 MB) | [sirah_full.db.xz](https://github.com/B-ngoen/sirah-tafsir-skills/releases/download/sirah-v1/sirah_full.db.xz) (17 MB) |
-| Teks petunjuk | [instructions.md](https://github.com/B-ngoen/sirah-tafsir-skills/raw/main/chatgpt/instructions.md) | [instructions.md](https://github.com/B-ngoen/sirah-tafsir-skills/raw/main/chatgpt/sirah/instructions.md) |
-
-(Klik kanan → *Save link as* bila browser menampilkan isinya alih-alih mengunduh.)
-
-### Project
-Siapkan dari PC (chatgpt.com atau aplikasi desktop); setelah jadi, Project-nya bisa dipakai dari HP.
-1. **Projects** → **Project baru**, beri nama "Sirah Verbatim" (atau "Tafsir Verbatim").
-2. **Files** → unggah dua berkas: `lookup.py` dan `*_full.db.xz` yang sesuai.
-3. **Instructions** → tempel seluruh isi `instructions.md` yang sesuai.
-4. Mulai chat **di dalam Project**, bertanya biasa: *"Kisah Perang Badar menurut Ibnu Hisyam, teks Arabnya"*. Pemakaian pertama tiap sesi butuh ±1 menit (ChatGPT mengekstrak basis data).
-
-Buat dua Project terpisah bila ingin keduanya (tafsir & sirah).
-
-### Custom GPT (bisa dibagikan lewat tautan)
-Panduan langkah-per-langkah: [chatgpt/README-GPT.md](../chatgpt/README-GPT.md). Isinya sama (dua berkas ke *Knowledge*, petunjuk ke *Instructions*, nyalakan *Code Interpreter*, matikan *Web Search*).
+## Cara 3 — Project / Custom GPT (tanpa Work; belum diuji penuh)
+Unggah `chatgpt/lookup.py` (atau `chatgpt/sirah/lookup.py`) + `*_full.db.xz` ke *Files/Knowledge*, tempel `instructions.md` yang sesuai, nyalakan *Code Interpreter*. Panduan: [chatgpt/README-GPT.md](../chatgpt/README-GPT.md). Perlu paket Plus/Team; sandbox tanpa internet sehingga basis data harus diunggah.
 
 ## Catatan
-- Sandbox ChatGPT tidak punya internet — basis data harus diunggah, tidak bisa diunduh otomatis.
-- Materi panjang dikirim per bagian ≤8.000 karakter; ketik **lanjut** untuk bagian berikutnya.
+- Basis data disimpan di cache permanen (`%LOCALAPPDATA%\tafsir-lookup\`, `%LOCALAPPDATA%\sirah-lookup\` di Windows) agar tidak ikut terhapus saat skill/plugin diperbarui.
+- Materi panjang dikirim per bagian; ketik **lanjut** untuk bagian berikutnya.

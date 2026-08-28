@@ -1,0 +1,19 @@
+{
+  "name": "tafsir-sirah-lookup",
+  "version": "1.0.0",
+  "description": "Kutipan verbatim tafsir (5 kitab) dan sirah/shahabat (10 kitab) dari Maktabah Syamilah, dengan juz/halaman.",
+  "author": {
+    "name": "B-ngoen",
+    "url": "https://github.com/B-ngoen/sirah-tafsir-skills"
+  },
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Tafsir & Sirah Lookup",
+    "shortDescription": "Teks Arab verbatim tafsir & sirah dengan sitasi juz/halaman.",
+    "longDescription": "Memasang skill tafsir-lookup (Thabari, Ibnu Katsir 2 edisi, Maraghi, Shabuni) dan sirah-lookup (Ibnu Hisyam 2 edisi, Ibnu Ishaq, Thabaqat, Tarikh Thabari, Ishabah, Usud al-Ghabah 2 edisi, Isti'ab). Basis data diunduh otomatis saat pertama dipakai. Wakaf non-komersial.",
+    "developerName": "B-ngoen",
+    "category": "Productivity",
+    "capabilities": [],
+    "defaultPrompt": "Tafsir QS 2:255 menurut Thabari, teks Arabnya."
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "name": "sirah-tafsir-skills",
+  "interface": {
+    "displayName": "Sirah & Tafsir Skills"
+  },
+  "plugins": [
+    {
+      "name": "tafsir-sirah-lookup",
+      "source": {
+        "source": "local",
+        "path": "./plugins/tafsir-sirah-lookup"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}
