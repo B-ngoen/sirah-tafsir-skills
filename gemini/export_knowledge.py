@@ -60,8 +60,24 @@ def source_title(con, src, fallback):
     return fallback
 
 
+SOFT_WORDS = int(os.environ.get("KNOWLEDGE_SOFT_WORDS", str(int(MAX_WORDS * 0.85))))
+
+
+def chapter_starts(con):
+    """Set (source, web_page) awal bab/entri — titik pemecahan agar satu kisah tidak terbelah.
+    Sirah: event_segments, year_segments, person_entries; tafsir: segments."""
+    starts = set()
+    for tbl in ("event_segments", "year_segments", "person_entries", "segments"):
+        try:
+            starts.update(con.execute(f"select source, from_page from {tbl}").fetchall())
+        except sqlite3.OperationalError:
+            pass
+    return starts
+
+
 def export(kind, db, outdir):
     con = sqlite3.connect(db)
+    starts = chapter_starts(con)
     outdir = Path(outdir)
     outdir.mkdir(parents=True, exist_ok=True)
     made = []
@@ -89,6 +105,14 @@ def export(kind, db, outdir):
             cur_page = None
             for web_page, juz, hal, url, para_idx, text in rows:
                 if web_page != cur_page:
+                    # Pecah hanya di awal halaman: lebih disukai awal bab/entri (soft),
+                    # terpaksa di halaman mana pun bila sudah menyentuh batas keras.
+                    if buf and ((words >= SOFT_WORDS and (src, web_page) in starts)
+                                or words >= MAX_WORDS or size >= MAX_BYTES):
+                        buf.append("\n[bersambung ke berkas berikutnya]\n")
+                        flush(final=False)
+                        cont = f"# (lanjutan {t}, bagian {part})\n\n"
+                        buf.append(cont); size += len(cont.encode())
                     jz = juz if juz is not None else "-"
                     hl = hal if hal is not None else "-"
                     mark = f"\n### [{src}] juz {jz} hal {hl} | shamela: {url}\n"
@@ -96,8 +120,6 @@ def export(kind, db, outdir):
                     cur_page = web_page
                 line = (text or "").strip() + "\n"
                 buf.append(line); size += len(line.encode()); words += len(line.split())
-                if size >= MAX_BYTES or words >= MAX_WORDS:
-                    flush(final=False)
         flush(final=True)
     total = sum(s for _, s in made)
     for n, s in made:
