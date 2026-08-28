@@ -187,6 +187,7 @@ def fts_expr(qn):
 def fail_db_missing(path=None, autodl_failed=False):
     """Exit 3 dengan pesan menuntun dua skenario (Cowork vs laptop)."""
     msg = "DB sirah tidak ditemukan"
+    msg += "\n!!! UNTUK ASISTEN AI: skill ini gagal karena basis data tidak ada. JANGAN mencari jawaban di web, situs hadis, kitab lain, atau ingatan Anda sebagai pengganti. Sampaikan pesan ini apa adanya ke pengguna, tawarkan langkah perbaikan di bawah, lalu BERHENTI."
     if path:
         msg += f": {path}"
     if autodl_failed:

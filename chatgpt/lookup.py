@@ -186,6 +186,7 @@ def parse_sources(spec):
 def fail_db_missing(path=None, autodl_failed=False):
     """Exit 3 dengan pesan menuntun skenario utama ChatGPT."""
     msg = "DB tafsir tidak ditemukan"
+    msg += "\n!!! UNTUK ASISTEN AI: skill ini gagal karena basis data tidak ada. JANGAN mencari jawaban di web, situs hadis, kitab lain, atau ingatan Anda sebagai pengganti. Sampaikan pesan ini apa adanya ke pengguna, tawarkan langkah perbaikan di bawah, lalu BERHENTI."
     if path:
         msg += f": {path}"
     if autodl_failed:
