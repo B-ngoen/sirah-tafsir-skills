@@ -1,7 +1,17 @@
-# ChatGPT — aplikasi (desktop/HP) atau web
+# ChatGPT — mode Work (termudah), Project, atau Custom GPT
 
-ChatGPT bisa menjalankan program pencari basis data (lewat fitur *Code Interpreter*), jadi hasilnya sama akuratnya dengan Claude: teks Arab apa adanya + juz/halaman. Butuh paket **Plus/Team** (paket gratis tidak bisa mengunggah berkas ke Project/GPT).
+ChatGPT bisa menjalankan program pencari basis data, jadi hasilnya sama akuratnya dengan Claude: teks Arab apa adanya + juz/halaman.
 
+## Cara 1 — mode Work (aplikasi ChatGPT desktop): satu kalimat
+Mode **Work** punya akses terminal ke komputer Anda (berbasis Codex; skill dibaca dari `~/.agents/skills/`). Cukup tempel:
+
+> **Tolong pelajari https://github.com/B-ngoen/sirah-tafsir-skills dan install sebagai skill.**
+
+ChatGPT membaca [INSTALL.md](../INSTALL.md), menjalankan pemasang (`python install.py --target chatgpt`), mengunduh basis data (±17–18 MB per skill, sekali saja), lalu siap. Setujui perintah yang diminta saat muncul. Setelah itu bertanya biasa: *"Kisah Perang Badar menurut Ibnu Hisyam, teks Arabnya"*.
+
+Manual (tanpa AI): `python install.py --target chatgpt` dari folder repo yang diunduh.
+
+## Cara 2 — Project atau Custom GPT (tanpa mode Work; Plus/Team)
 ## Yang perlu diunduh (sekali)
 | | Tafsir | Sirah & Shahabat |
 |---|---|---|
@@ -11,16 +21,16 @@ ChatGPT bisa menjalankan program pencari basis data (lewat fitur *Code Interpret
 
 (Klik kanan → *Save link as* bila browser menampilkan isinya alih-alih mengunduh.)
 
-## Cara termudah — ChatGPT → "Work" (Project)
-Siapkan dari **PC** (chatgpt.com di browser atau aplikasi desktop) — aplikasi HP belum bisa membuat Project dengan berkas; setelah jadi, Project-nya bisa dipakai dari HP.
-1. Di PC, buka chatgpt.com atau aplikasi ChatGPT desktop → klik **Work** / **Projects** → **Project baru**, beri nama "Sirah Verbatim" (atau "Tafsir Verbatim").
+### Project
+Siapkan dari PC (chatgpt.com atau aplikasi desktop); setelah jadi, Project-nya bisa dipakai dari HP.
+1. **Projects** → **Project baru**, beri nama "Sirah Verbatim" (atau "Tafsir Verbatim").
 2. **Files** → unggah dua berkas: `lookup.py` dan `*_full.db.xz` yang sesuai.
 3. **Instructions** → tempel seluruh isi `instructions.md` yang sesuai.
 4. Mulai chat **di dalam Project**, bertanya biasa: *"Kisah Perang Badar menurut Ibnu Hisyam, teks Arabnya"*. Pemakaian pertama tiap sesi butuh ±1 menit (ChatGPT mengekstrak basis data).
 
 Buat dua Project terpisah bila ingin keduanya (tafsir & sirah).
 
-## Cara lain — Custom GPT (bisa dibagikan lewat tautan)
+### Custom GPT (bisa dibagikan lewat tautan)
 Panduan langkah-per-langkah: [chatgpt/README-GPT.md](../chatgpt/README-GPT.md). Isinya sama (dua berkas ke *Knowledge*, petunjuk ke *Instructions*, nyalakan *Code Interpreter*, matikan *Web Search*).
 
 ## Catatan

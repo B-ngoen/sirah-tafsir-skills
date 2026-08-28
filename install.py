@@ -4,7 +4,7 @@
 
     python install.py                 # pasang semua skill yang tersedia ke folder skill agen yang terdeteksi
     python install.py tafsir          # hanya tafsir-lookup
-    python install.py --target claude # paksa target: claude | codex | pi | hermes | gemini | dir:<folder>
+    python install.py --target claude # paksa target: claude | chatgpt | codex | pi | hermes | gemini | dir:<folder>
     python install.py --no-db         # jangan pra-unduh basis data (akan diunduh saat pertama dipakai)
 
 Yang dilakukan:
@@ -50,7 +50,8 @@ def detect_targets(force=None):
     home = Path.home()
     known = {
         "claude": ("Claude Code", home / ".claude" / "skills"),
-        "codex": ("Codex", home / ".codex" / "skills"),
+        "chatgpt": ("ChatGPT Work / Codex", home / ".agents" / "skills"),
+        "codex": ("Codex (lama)", home / ".codex" / "skills"),
         "pi": ("pi", home / ".pi" / "agent" / "skills"),
         "hermes": ("Hermes", home / ".hermes" / "skills"),
         "gemini": ("Gemini CLI", home / ".gemini" / "skills"),
@@ -63,7 +64,8 @@ def detect_targets(force=None):
         sys.exit(f"target tidak dikenal: {force} (pilihan: {', '.join(known)}, dir:<folder>)")
     out = []
     for key, (label, path) in known.items():
-        if path.parent.is_dir() if key == "pi" else (home / f".{key}").is_dir():
+        probe = {"pi": path.parent, "chatgpt": home / ".agents", "codex": home / ".codex"}.get(key, home / f".{key}")
+        if probe.is_dir():
             out.append((label, path))
     if not out:  # default: Claude Code (folder dibuat)
         out.append(("Claude Code", home / ".claude" / "skills"))
@@ -102,8 +104,8 @@ def install_skill(name, targets, want_db):
             p.parent.mkdir(parents=True, exist_ok=True)
             io.open(p, "w", encoding="utf-8", newline="\n").write(content)
         print(f"  OK {name} dipasang ke {label}: {dst}")
-        if label == "Codex":
-            agents = Path.home() / ".codex" / "AGENTS.md"
+        if label.startswith("Codex") or label.startswith("ChatGPT"):
+            agents = Path.home() / (".codex" if label.startswith("Codex") else ".agents") / "AGENTS.md"
             note = f"\n\n## Skill {name}\nBaca dan ikuti `{dst / 'SKILL.md'}` setiap kali pengguna bertanya topik terkait; jalankan `python {dst / 'scripts' / 'lookup.py'} ...`.\n"
             try:
                 cur = io.open(agents, encoding="utf-8").read() if agents.exists() else ""
@@ -136,7 +138,7 @@ def install_skill(name, targets, want_db):
 def main():
     ap = argparse.ArgumentParser(description="Pasang skill tafsir-lookup / sirah-lookup.")
     ap.add_argument("skills", nargs="*", help="tafsir | sirah (kosong = semua yang tersedia)")
-    ap.add_argument("--target", help="claude | codex | pi | hermes | gemini | dir:<folder>")
+    ap.add_argument("--target", help="claude | chatgpt | codex | pi | hermes | gemini | dir:<folder>")
     ap.add_argument("--no-db", action="store_true")
     a = ap.parse_args()
     names = [ALIAS.get(s, s) for s in a.skills] or [n for n, m in SKILLS.items() if m.get("released", True)]
