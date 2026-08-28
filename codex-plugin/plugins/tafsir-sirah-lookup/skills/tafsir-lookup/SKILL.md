@@ -81,6 +81,8 @@ Kalau ragu, ambil jalur di bawahnya — lebih baik dua bagian rapi daripada satu
 
 `# <QS S:A — judul>` → **Ringkasan (parafrase saya, bukan kutipan)** 3–5 baris → `## <kitab>` per sumber: baris segmen/label, paragraf verbatim utuh (jangan disingkat dengan `…`/`[...]` di tengah paragraf; kurangi jumlah paragraf, bukan memotongnya), `— Sumber: juz X hal Y · URL`; sumber absen satu baris "tidak tersedia di sumber ini" → **Catatan** (label rentang, potongan, saran `--max-chars 0`). Tanpa tabel perbandingan/glosarium kecuali diminta.
 
+**Baris Cakupan (wajib di setiap jawaban, tepat sebelum Catatan):** sebutkan KELIMA kitab dengan status masing-masing — `dikutip` / `ada, belum dikutip (N paragraf; minta "lengkap" atau sebut kitabnya)` / `tidak ada di sumber ini`. Alasan: keluaran script yang terpotong atau panjang membuat model diam-diam melewatkan kitab yang sebenarnya ada (kejadian nyata: An-Nasr — Maraghi dan dua Ibnu Katsir tidak dikutip tanpa keterangan sampai pengguna bertanya). Baris Cakupan membuat kelalaian itu terlihat sebelum dikirim. Pertanyaan pendek pun tetap wajib memuatnya (satu baris).
+
 ## Aturan Mutlak Anti-Halusinasi
 
 1. **Kutip hanya output script, verbatim.** Teks Arab/Inggris tidak boleh diubah satu karakter pun — termasuk tanpa "perbaikan" ejaan atau tanda baca.

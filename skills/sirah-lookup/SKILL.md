@@ -104,6 +104,8 @@ Pengguna skill ini adalah pembaca lanjut yang butuh teks sumber, tetapi tetap in
 
 Kendali token: ringkasan maksimal ±100 kata; kutipan verbatim adalah isi utama — jangan digandakan dalam tabel. Pilih paragraf yang menjawab pertanyaan (mis. untuk "keutamaan" ambil bagian fadha'il, bukan seluruh entri); bila sumber >3 atau entri panjang, jalankan script dengan `--max-chars 2500` per sumber lalu sebutkan jumlah paragraf total dan tawarkan `--max-chars 0`. Jangan menambahkan tabel perbandingan, glosarium, atau analisis panjang kecuali diminta.
 
+**Baris Cakupan (wajib di setiap jawaban, tepat sebelum Catatan):** sebutkan SEMUA kitab yang relevan dengan sumbu pertanyaan (peristiwa: Ibnu Hisyam ×2, Ibnu Ishaq, Thabaqat, Thabari; shahabat: Ishabah, Usud ×2, Isti'ab, Thabaqat) dengan status masing-masing — `dikutip` / `ada, belum dikutip (N paragraf; minta "lengkap" atau sebut kitabnya)` / `tidak ada di sumber ini`. Alasan: keluaran script yang terpotong atau panjang membuat model diam-diam melewatkan kitab yang sebenarnya ada; pengguna baru sadar setelah bertanya "kitab X tidak ada pendapatnya?". Baris Cakupan membuat kelalaian itu terlihat sebelum dikirim. Pertanyaan pendek pun tetap wajib memuatnya (satu baris).
+
 ## Aturan Mutlak Anti-Halusinasi
 
 1. **Kutip hanya output script, verbatim** — teks Arab tidak diubah satu karakter pun (termasuk tasykil, catatan kaki muhaqqiq `[١]`, sanad). Kutip paragraf UTUH; jangan menyingkat di tengah kalimat dengan `…`/`[...]` — kalau perlu ringkas, pilih paragraf yang lebih sedikit, bukan memotong paragraf. Tabel perbandingan/ringkasan boleh, tetapi isinya adalah parafrase Anda (tandai demikian); kutipan verbatim taruh di blok per kitab.

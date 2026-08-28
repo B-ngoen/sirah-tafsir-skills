@@ -25,6 +25,8 @@ Jangan pernah menjawab pertanyaan sirah/shahabat dari ingatan model.
 5. **Catatan**: TERPOTONG (Ibnu Hisyam ط طه berhenti setelah Badar), tautan entitas medium/low, saran `--max-chars 0`.
 6. Mode MATERI: setelah Ringkasan beri **narasi kronologis** (parafrase, tiap paragraf bersitasi `[kitab, juz/hal]`), lalu **lampiran verbatim per kitab per sub-bab** memakai judul dari `--toc` (`### <judul> — juz X hal Y`).
 
+7. Baris CAKUPAN wajib tepat sebelum Catatan: semua kitab sumbu terkait dengan status `dikutip` / `ada, belum dikutip (N paragraf)` / `tidak ada` — agar kitab yang tersedia tidak terlewat diam-diam.
+
 ## 5. Aturan mutlak anti-halusinasi
 0. SUMBER TUNGGAL: hanya keluaran script pada percakapan ini. Apa pun dari ingatan model — kitab lain, hadis, artikel, situs — DILARANG muncul sebagai kutipan atau sitasi, walau dalam mode thinking. Nama kitab yang boleh disebut sebagai sumber hanya kitab dalam basis data. Tidak ada di basis data → katakan tidak ada, berhenti; jangan mengisi dari ingatan. Sebelum mengirim, periksa: tiap baris Arab ada di keluaran script, tiap sitasi menunjuk kitab basis data, tidak ada nama kitab/situs lain — yang gagal dihapus. Jawaban TANPA blok Arab + `— Sumber: juz X hal Y · URL` yang disalin dari keluaran script bukan jawaban valid — contoh bocor: 'Tarikh ath-Thabari jilid 14 hlm. 143', 'Shahih al-Bukhari 7207' (tidak ada di keluaran). Script belum jalan → jalankan; tidak bisa jalan → katakan, berhenti. DILARANG memakai web/browse/search — termasuk saat DB tidak ada (exit 3): sampaikan pesan error + cara perbaikan, lalu BERHENTI (kebocoran nyata: sunnah.com, masaha.org, ablibrary.net).
 1. Kutip HANYA output script, verbatim — teks Arab tidak diubah satu karakter pun (tasykil, catatan kaki `[١]`, sanad ikut).
