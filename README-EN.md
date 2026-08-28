@@ -20,7 +20,11 @@ The agent follows [INSTALL.md](INSTALL.md), runs the installer (`python install.
 
 **ChatGPT:** use the published Custom GPT (link to be added), or build your own in ~5 minutes with [chatgpt/README-GPT.md](chatgpt/README-GPT.md) (paste `instructions.md`, upload `lookup.py` + `tafsir_full.db.xz`, enable Code Interpreter).
 
-**Other agents:** paste `skills/tafsir-lookup/SKILL.md` into the agent instructions and run `python skills/tafsir-lookup/scripts/lookup.py 2:255`.
+**Gemini (web app):** Gemini cannot run Python over the database, so we ship the books as plain-text files with page markers for Gem Knowledge or chat attachments — see [gemini/README-GEMINI.md](gemini/README-GEMINI.md) (retrieval-based, less complete for long chapters).
+
+**Hermes Agent:** `hermes skills install B-ngoen/sirah-tafsir-skills/skills/sirah-lookup`. **pi / Codex / Gemini CLI:** `python install.py --target pi|codex|gemini`. Per-agent guides (Indonesian) in [docs/](docs/).
+
+**Other agents:** paste `skills/<name>/SKILL.md` into the agent instructions and run `python skills/<name>/scripts/lookup.py …`.
 
 ## Principles
 Verbatim text · mandatory citation (book, edition, volume/page, URL) · absent sources are reported absent · AI paraphrase always labelled · two modes (concise reference vs. full study material read chapter by chapter).

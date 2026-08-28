@@ -4,7 +4,7 @@
 
     python install.py                 # pasang semua skill yang tersedia ke folder skill agen yang terdeteksi
     python install.py tafsir          # hanya tafsir-lookup
-    python install.py --target claude # paksa target: claude | codex | dir:<folder>
+    python install.py --target claude # paksa target: claude | codex | pi | hermes | gemini | dir:<folder>
     python install.py --no-db         # jangan pra-unduh basis data (akan diunduh saat pertama dipakai)
 
 Yang dilakukan:
@@ -48,19 +48,23 @@ def fetch(url, binary=False):
 
 def detect_targets(force=None):
     home = Path.home()
+    known = {
+        "claude": ("Claude Code", home / ".claude" / "skills"),
+        "codex": ("Codex", home / ".codex" / "skills"),
+        "pi": ("pi", home / ".pi" / "agent" / "skills"),
+        "hermes": ("Hermes", home / ".hermes" / "skills"),
+        "gemini": ("Gemini CLI", home / ".gemini" / "skills"),
+    }
     if force:
-        if force == "claude":
-            return [("Claude Code", home / ".claude" / "skills")]
-        if force == "codex":
-            return [("Codex", home / ".codex" / "skills")]
+        if force in known:
+            return [known[force]]
         if force.startswith("dir:"):
             return [("Folder", Path(force[4:]))]
-        sys.exit(f"target tidak dikenal: {force}")
+        sys.exit(f"target tidak dikenal: {force} (pilihan: {', '.join(known)}, dir:<folder>)")
     out = []
-    if (home / ".claude").is_dir():
-        out.append(("Claude Code", home / ".claude" / "skills"))
-    if (home / ".codex").is_dir():
-        out.append(("Codex", home / ".codex" / "skills"))
+    for key, (label, path) in known.items():
+        if path.parent.is_dir() if key == "pi" else (home / f".{key}").is_dir():
+            out.append((label, path))
     if not out:  # default: Claude Code (folder dibuat)
         out.append(("Claude Code", home / ".claude" / "skills"))
     return out
@@ -132,7 +136,7 @@ def install_skill(name, targets, want_db):
 def main():
     ap = argparse.ArgumentParser(description="Pasang skill tafsir-lookup / sirah-lookup.")
     ap.add_argument("skills", nargs="*", help="tafsir | sirah (kosong = semua yang tersedia)")
-    ap.add_argument("--target", help="claude | codex | dir:<folder>")
+    ap.add_argument("--target", help="claude | codex | pi | hermes | gemini | dir:<folder>")
     ap.add_argument("--no-db", action="store_true")
     a = ap.parse_args()
     names = [ALIAS.get(s, s) for s in a.skills] or [n for n, m in SKILLS.items() if m.get("released", True)]

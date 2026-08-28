@@ -15,7 +15,7 @@ Paket ini berisi tiga file:
 
 3. **Knowledge — unggah 2 file:**
    - `lookup.py` (dari folder ini);
-   - `tafsir_full.db.xz` (18,7 MB) — unduh dari GitHub Release: `https://github.com/B-ngoen/sirah-tafsir-skills/releases/download/v1/tafsir_full.db.xz`, lalu unggah hasil unduhannya.
+   - `tafsir_full.db.xz` (18,7 MB) — unduh dari GitHub Release: `https://github.com/B-ngoen/sirah-tafsir-skills/releases/download/tafsir-v1/tafsir_full.db.xz`, lalu unggah hasil unduhannya.
    - Setelah keduanya masuk, kolom Knowledge harus menampilkan dua file. File inilah yang dimount Code Interpreter di `/mnt/data/`.
 
 4. **Instructions.** Buka `instructions.md`, salin SELURUH isinya, tempel ke field besar **Instructions** di tab Configure. (±5.000 karakter — jauh di bawah batas 8.000.)
@@ -47,3 +47,15 @@ Paket ini berisi tiga file:
 - **Ekstraksi ±1 menit pertama kali per sesi** — isi `/tmp` tidak persisten antar percakapan, jadi run pertama tiap sesi baru mengekstrak ulang; run berikutnya dalam sesi yang sama memakai cache `/tmp/tafsir-lookup/`.
 - **Percakapan baru setelah mengganti file Knowledge** — GPT kadang masih memakai salinan lama dalam percakapan yang sudah berjalan.
 - Jumlah maksimum file Knowledge 20 — paket ini hanya 2.
+
+## GPT kedua: "Sirah & Shahabat Verbatim 10 Kitab"
+
+Langkah sama persis, hanya berkasnya berbeda:
+- Name: `Sirah & Shahabat Verbatim 10 Kitab`
+- Knowledge: `chatgpt/sirah/lookup.py` + `sirah_full.db.xz` (17 MB) — unduh dari `https://github.com/B-ngoen/sirah-tafsir-skills/releases/download/sirah-v1/sirah_full.db.xz`
+- Instructions: seluruh isi `chatgpt/sirah/instructions.md`
+- Conversation starters: `Kisah Perang Badar menurut Ibnu Hisyam` · `Siapa Abu Bakar menurut al-Ishabah` · `Materi lengkap wafat Nabi dan Saqifah`
+- Uji: `kisah Perang Badar menurut Ibnu Hisyam` → GPT menjalankan `python /mnt/data/lookup.py search بدر` lalu `event ghazwah_badr_kubra -s hisyam_saqqa`.
+
+## Alternatif: Project (bukan GPT)
+Sidebar → Projects → New project → unggah dua berkas yang sama ke *Files*, tempel `instructions.md` ke *Instructions*, lalu chat di dalam Project. Cocok bila tidak ingin membagikan GPT.

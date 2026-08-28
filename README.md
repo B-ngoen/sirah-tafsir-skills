@@ -11,35 +11,25 @@ Skill agar asisten AI (Claude, ChatGPT, dan agen lain) **mengutip teks Arab asli
 
 ---
 
-## Cara pasang (pilih yang paling mudah untuk Anda)
+## Cara pasang — pilih asisten AI yang Anda pakai
 
-### 1) Cukup satu kalimat — untuk Claude Code, Codex, dan asisten ber-terminal lain
-Buka asisten Anda, tempel kalimat ini:
+| Asisten | Cara | Akurasi | Panduan |
+|---|---|---|---|
+| **Claude** Desktop / claude.ai (web & HP) — gratis pun bisa | unduh [tafsir-lookup.skill](https://github.com/B-ngoen/sirah-tafsir-skills/raw/main/release/tafsir-lookup.skill) · [sirah-lookup.skill](https://github.com/B-ngoen/sirah-tafsir-skills/raw/main/release/sirah-lookup.skill) → Settings → Capabilities → Skills → Upload | ★★★ baca basis data langsung | [docs/claude.md](docs/claude.md) |
+| **Claude Code** (terminal) | tempel: *"Tolong pelajari https://github.com/B-ngoen/sirah-tafsir-skills dan install sebagai skill."* | ★★★ | [docs/claude.md](docs/claude.md) |
+| **ChatGPT** (Plus/Team) — Custom GPT atau Project | unggah `lookup.py` + `*.db.xz`, tempel instruksi, nyalakan Code Interpreter | ★★★ | [docs/chatgpt.md](docs/chatgpt.md) |
+| **Gemini** web/HP — Gem (AI Pro) atau lampiran chat (gratis) | unduh paket teks kitab [gemini-v1](https://github.com/B-ngoen/sirah-tafsir-skills/releases/tag/gemini-v1), tempel instruksi Gem | ★★ retrieval teks (bisa tidak utuh untuk bab panjang) | [docs/gemini.md](docs/gemini.md) |
+| **Hermes Agent** | `hermes skills install B-ngoen/sirah-tafsir-skills/skills/sirah-lookup` (dan `.../tafsir-lookup`) | ★★★ | [docs/hermes.md](docs/hermes.md) |
+| **pi** / Codex / Gemini CLI / agen ber-terminal lain | kalimat yang sama seperti Claude Code, atau `python install.py --target pi|codex|gemini` | ★★★ | [docs/pi.md](docs/pi.md) |
 
-> **Tolong pelajari https://github.com/B-ngoen/sirah-tafsir-skills dan install sebagai skill.**
-
-Asisten akan membaca [INSTALL.md](INSTALL.md), menjalankan pemasang, mengunduh basis data (±18 MB per skill, sekali saja), lalu memberi tahu Anda sudah siap. Setelah itu tinggal bertanya biasa, contoh:
+Setelah terpasang tinggal bertanya biasa, contoh:
 - "Tafsir QS Al-Baqarah 255 menurut Thabari dan Ibnu Katsir, teks Arabnya."
 - "Buatkan materi kajian tafsir QS Al-Fatihah yang lengkap dari semua kitab."
 - "Kisah Perang Badar menurut Ibnu Hisyam dan Thabari, teks Arabnya."
 - "Siapa Abu Bakar ash-Shiddiq menurut al-Ishabah dan Usud al-Ghabah?"
 - "Buatkan materi lengkap wafatnya Nabi ﷺ dan Saqifah dari semua kitab."
 
-Ingin tanpa AI? Jalankan sendiri: `python install.py` (unduh berkasnya dari repo ini) — tidak perlu git.
-
-### 2) claude.ai (web) dan aplikasi Claude
-1. Unduh berkas skill (klik langsung): **[tafsir-lookup.skill](https://github.com/B-ngoen/sirah-tafsir-skills/raw/main/release/tafsir-lookup.skill)** · **[sirah-lookup.skill](https://github.com/B-ngoen/sirah-tafsir-skills/raw/main/release/sirah-lookup.skill)** (juga tersedia di halaman [Releases](https://github.com/B-ngoen/sirah-tafsir-skills/releases)).
-2. Di claude.ai: **Settings → Capabilities → Skills → Upload skill**, pilih berkas itu (ulangi untuk skill kedua).
-3. Mulai percakapan baru dan bertanya seperti biasa. Basis data diunduh otomatis di dalam sandbox Claude saat pertama dipakai (±1 menit).
-
-Belum bisa lewat satu kalimat di sini karena Claude web tidak bisa memasang skill dari dalam percakapan; tetapi Anda bisa menempel tautan repo ini di chat dan berkata "pelajari dan pakai untuk percakapan ini" — Claude akan memakainya sementara.
-
-### 3) ChatGPT
-Cara termudah: pakai **Custom GPT** yang sudah jadi (tautan akan dicantumkan di sini setelah diterbitkan).  
-Ingin membuat sendiri? Ikuti panduan bergambar-langkah di [chatgpt/README-GPT.md](chatgpt/README-GPT.md): tempel `instructions.md`, unggah `lookup.py` + `tafsir_full.db.xz`, nyalakan *Code Interpreter*. ±5 menit. (Paket ChatGPT untuk sirah menyusul.)
-
-### 4) Agen lain (pi, opencode, dsb.)
-Tempel isi `skills/tafsir-lookup/SKILL.md` / `skills/sirah-lookup/SKILL.md` ke instruksi agen (mis. `AGENTS.md`) dan jalankan `python skills/tafsir-lookup/scripts/lookup.py 2:255` atau `python skills/sirah-lookup/scripts/lookup.py search بدر`.
+Basis data (±17–18 MB per skill) diunduh sekali saat pertama dipakai. Ingin tanpa AI? `python install.py` (unduh berkasnya dari repo ini) — tidak perlu git.
 
 ---
 
