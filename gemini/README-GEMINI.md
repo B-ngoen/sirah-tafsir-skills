@@ -36,3 +36,6 @@ pip install patchright && patchright install chromium
 python gemini/txt_to_pdf.py out/sirah out/sirah-pdf
 ```
 NotebookLM: notebook baru → unggah semua PDF → tempel `instructions-*.md` sebagai pesan pertama → bertanya dengan kata kunci Arab (mis. «غزوة بدر», «سقيفة بني ساعدة») agar pencarian menemukan teks.
+
+## Alur yang terbukti: NotebookLM → Gem
+Gem membatasi 10 berkas, NotebookLM 50 sumber. Unggah semua `.txt` ke satu notebook NotebookLM, lalu di Gem pilih sumber **Gemini Notebook** yang menunjuk notebook itu (kerja dua kali, tetapi lolos batas 10). Instruksi Gem sudah memuat aturan bahasa: hanya Bahasa Indonesia kecuali pengguna meminta bahasa lain.
