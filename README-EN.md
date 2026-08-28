@@ -9,28 +9,24 @@ Skills that let AI assistants (Claude, ChatGPT, and other agents) quote classica
 | **tafsir-lookup** | ✅ ready | Tafsīr al-Ṭabarī · al-Marāghī · Ṣafwat al-Tafāsīr (al-Ṣābūnī) · Ibn Kathīr (2 editions) — 6,236/6,236 verses |
 | **sirah-lookup** | ✅ ready | Ibn Hishām (2 eds.) · Ibn Isḥāq · Ṭabaqāt Ibn Saʿd · Tārīkh al-Ṭabarī · al-Iṣābah · Usd al-Ghābah (2 eds.) · al-Istīʿāb — 175 events/years & ~9,700 Companions |
 
-## Install
+## Install — pick your assistant
 
-**One sentence (Claude Code, Codex, any agent with a terminal):**
-> Please study https://github.com/B-ngoen/sirah-tafsir-skills and install it as a skill.
+| Assistant | What to do | Accuracy | Guide (ID) |
+|---|---|---|---|
+| **Claude** desktop / mobile / claude.ai (free tier works) | Download [tafsir-lookup.skill](https://github.com/B-ngoen/sirah-tafsir-skills/raw/main/release/tafsir-lookup.skill) and/or [sirah-lookup.skill](https://github.com/B-ngoen/sirah-tafsir-skills/raw/main/release/sirah-lookup.skill) → Settings → Capabilities → Skills → Upload. The database downloads automatically on Claude's side on first use — same on phone or desktop. | ★★★ reads the database directly | [docs/claude.md](docs/claude.md) |
+| **Claude Code** (terminal) | Paste: *"Please study https://github.com/B-ngoen/sirah-tafsir-skills and install it as a skill."* | ★★★ | [docs/claude.md](docs/claude.md) |
+| **ChatGPT** app / web (Plus/Team) | **Work/Projects** → new Project → upload 2 files (lookup script + database) → paste the instructions. | ★★★ | [docs/chatgpt.md](docs/chatgpt.md) |
+| **Gemini** via **NotebookLM** (free), optionally a Gem | Upload the plain-text book package to NotebookLM → paste the instructions → ask. For the Gemini app, create a Gem whose source is that notebook. | ★★ text retrieval (long chapters may come back incomplete) | [docs/gemini.md](docs/gemini.md) |
+| **Hermes Agent** | `hermes skills install B-ngoen/sirah-tafsir-skills/skills/sirah-lookup` (and `.../tafsir-lookup`) | ★★★ | [docs/hermes.md](docs/hermes.md) |
+| **pi**, Codex, Gemini CLI, other terminal agents | Same sentence as Claude Code, or `python install.py --target pi` / `codex` / `gemini` | ★★★ | [docs/pi.md](docs/pi.md) |
 
-The agent follows [INSTALL.md](INSTALL.md), runs the installer (`python install.py`, no git needed), downloads the database once (~18 MB), and you simply ask, e.g. "Tafsīr of Q 2:255 according to al-Ṭabarī, Arabic text with page citation."
-
-**claude.ai / Claude apps:** download [tafsir-lookup.skill](https://github.com/B-ngoen/sirah-tafsir-skills/raw/main/release/tafsir-lookup.skill) and/or [sirah-lookup.skill](https://github.com/B-ngoen/sirah-tafsir-skills/raw/main/release/sirah-lookup.skill) → Settings → Capabilities → Skills → Upload. The database downloads automatically inside Claude's sandbox on first use.
-
-**ChatGPT:** use the published Custom GPT (link to be added), or build your own in ~5 minutes with [chatgpt/README-GPT.md](chatgpt/README-GPT.md) (paste `instructions.md`, upload `lookup.py` + `tafsir_full.db.xz`, enable Code Interpreter).
-
-**Gemini (web app):** Gemini cannot run Python over the database, so we ship the books as plain-text files with page markers for Gem Knowledge or chat attachments — see [gemini/README-GEMINI.md](gemini/README-GEMINI.md) (retrieval-based, less complete for long chapters).
-
-**Hermes Agent:** `hermes skills install B-ngoen/sirah-tafsir-skills/skills/sirah-lookup`. **pi / Codex / Gemini CLI:** `python install.py --target pi|codex|gemini`. Per-agent guides (Indonesian) in [docs/](docs/).
-
-**Other agents:** paste `skills/<name>/SKILL.md` into the agent instructions and run `python skills/<name>/scripts/lookup.py …`.
+Then just ask, e.g. "Tafsīr of Q 2:255 according to al-Ṭabarī, Arabic text with page citation" or "The battle of Badr according to Ibn Hishām, Arabic text".
 
 ## Principles
 Verbatim text · mandatory citation (book, edition, volume/page, URL) · absent sources are reported absent · AI paraphrase always labelled · two modes (concise reference vs. full study material read chapter by chapter).
 
 ## Sources, attribution, licence
-Texts from **Maktabah Shamela (shamela.ws)**, fetched page by page (tafsīr 18 Aug 2026, sīrah 26 Aug 2026) with the printed volume/page numbers of the editions Shamela uses. Classical texts are public domain; editors' footnotes are kept for fidelity — rights holders who object may open an Issue and the material will be removed in the next release. The public edition excludes modern copyrighted works (e.g. Dorar EN). Code: MIT. Database: non-commercial waqf, not for sale.
+Texts from **Maktabah Shamela (shamela.ws)**, fetched page by page (tafsīr 18 Aug 2026, sīrah 26 Aug 2026) with the printed volume/page numbers of the editions Shamela uses. Classical texts are public domain; editors' footnotes are kept for fidelity — rights holders who object may open an Issue and the material will be removed in the next release. Code: MIT. Database: non-commercial waqf, not for sale.
 
 ## Known limitations
 Ṣafwat al-Tafāsīr electronic edition is truncated (sūrah 114 missing); Ibn Kathīr (Ibn al-Jawzī ed.) truncated at the end (113–114 only a joint introduction). Segment boundaries come from headings (rules + LLM); range labels are explained in the output. Sīrah: event registry still a draft (corrections welcome); Ibn Hishām (Ṭāhā ed.) electronic edition truncated at Badr (flagged); cross-dictionary Companion links ~78 % (status stored per entry).

@@ -1,25 +1,27 @@
-# ChatGPT — Custom GPT atau Project (aplikasi & web)
+# ChatGPT — aplikasi (desktop/HP) atau web
 
-ChatGPT bisa menjalankan `lookup.py` lewat **Code Interpreter** (Python), jadi hasilnya verbatim + juz/halaman seperti di Claude. Syarat: paket Plus/Team/Enterprise (paket gratis tidak bisa membuat GPT/Project dengan berkas).
+ChatGPT bisa menjalankan program pencari basis data (lewat fitur *Code Interpreter*), jadi hasilnya sama akuratnya dengan Claude: teks Arab apa adanya + juz/halaman. Butuh paket **Plus/Team** (paket gratis tidak bisa mengunggah berkas ke Project/GPT).
 
-## Cara 1 — Custom GPT (dibagikan lewat tautan)
-Panduan langkah-per-langkah: [chatgpt/README-GPT.md](../chatgpt/README-GPT.md).
-Ringkasnya, untuk tiap skill buat satu GPT:
-
-| | Tafsir | Sirah |
+## Yang perlu diunduh (sekali)
+| | Tafsir | Sirah & Shahabat |
 |---|---|---|
-| Instructions | `chatgpt/instructions.md` | `chatgpt/sirah/instructions.md` |
-| Knowledge (2 berkas) | `chatgpt/lookup.py` + `tafsir_full.db.xz` ([unduh](https://github.com/B-ngoen/sirah-tafsir-skills/releases/download/tafsir-v1/tafsir_full.db.xz)) | `chatgpt/sirah/lookup.py` + `sirah_full.db.xz` ([unduh](https://github.com/B-ngoen/sirah-tafsir-skills/releases/download/sirah-v1/sirah_full.db.xz)) |
-| Capabilities | ✅ Code Interpreter; matikan Web Search | sama |
+| Program pencari | [lookup.py](https://github.com/B-ngoen/sirah-tafsir-skills/raw/main/chatgpt/lookup.py) | [lookup.py](https://github.com/B-ngoen/sirah-tafsir-skills/raw/main/chatgpt/sirah/lookup.py) |
+| Basis data | [tafsir_full.db.xz](https://github.com/B-ngoen/sirah-tafsir-skills/releases/download/tafsir-v1/tafsir_full.db.xz) (18 MB) | [sirah_full.db.xz](https://github.com/B-ngoen/sirah-tafsir-skills/releases/download/sirah-v1/sirah_full.db.xz) (17 MB) |
+| Teks petunjuk | [instructions.md](https://github.com/B-ngoen/sirah-tafsir-skills/raw/main/chatgpt/instructions.md) | [instructions.md](https://github.com/B-ngoen/sirah-tafsir-skills/raw/main/chatgpt/sirah/instructions.md) |
 
-Tautan Custom GPT publik akan dicantumkan di README utama setelah diterbitkan.
+(Klik kanan → *Save link as* bila browser menampilkan isinya alih-alih mengunduh.)
 
-## Cara 2 — Project (mode kerja di aplikasi ChatGPT)
-1. Sidebar → **Projects → New project** → beri nama.
-2. **Files**: unggah `lookup.py` (versi ChatGPT, folder `chatgpt/` atau `chatgpt/sirah/`) dan `*_full.db.xz`.
-3. **Instructions**: tempel isi `instructions.md` yang sesuai.
-4. Mulai chat di dalam Project; ChatGPT menjalankan `python /mnt/data/lookup.py …` sendiri. Eksekusi pertama tiap sesi mengekstrak DB (±1 menit).
+## Cara termudah — aplikasi ChatGPT → "Work" (Project)
+1. Buka aplikasi ChatGPT (desktop/HP) atau chatgpt.com → klik **Work** / **Projects** → **Project baru**, beri nama "Sirah Verbatim" (atau "Tafsir Verbatim").
+2. **Files** → unggah dua berkas: `lookup.py` dan `*_full.db.xz` yang sesuai.
+3. **Instructions** → tempel seluruh isi `instructions.md` yang sesuai.
+4. Mulai chat **di dalam Project**, bertanya biasa: *"Kisah Perang Badar menurut Ibnu Hisyam, teks Arabnya"*. Pemakaian pertama tiap sesi butuh ±1 menit (ChatGPT mengekstrak basis data).
+
+Buat dua Project terpisah bila ingin keduanya (tafsir & sirah).
+
+## Cara lain — Custom GPT (bisa dibagikan lewat tautan)
+Panduan langkah-per-langkah: [chatgpt/README-GPT.md](../chatgpt/README-GPT.md). Isinya sama (dua berkas ke *Knowledge*, petunjuk ke *Instructions*, nyalakan *Code Interpreter*, matikan *Web Search*).
 
 ## Catatan
-- Sandbox ChatGPT biasanya tanpa internet — DB harus diunggah, tidak bisa diunduh otomatis.
-- Materi panjang dikirim per bagian ≤8.000 karakter; ketik **lanjut**.
+- Sandbox ChatGPT tidak punya internet — basis data harus diunggah, tidak bisa diunduh otomatis.
+- Materi panjang dikirim per bagian ≤8.000 karakter; ketik **lanjut** untuk bagian berikutnya.

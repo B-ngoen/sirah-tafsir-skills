@@ -13,14 +13,14 @@ Skill agar asisten AI (Claude, ChatGPT, dan agen lain) **mengutip teks Arab asli
 
 ## Cara pasang — pilih asisten AI yang Anda pakai
 
-| Asisten | Cara | Akurasi | Panduan |
+| Asisten | Yang dilakukan | Akurasi | Panduan |
 |---|---|---|---|
-| **Claude** Desktop / claude.ai (web & HP) — gratis pun bisa | unduh [tafsir-lookup.skill](https://github.com/B-ngoen/sirah-tafsir-skills/raw/main/release/tafsir-lookup.skill) · [sirah-lookup.skill](https://github.com/B-ngoen/sirah-tafsir-skills/raw/main/release/sirah-lookup.skill) → Settings → Capabilities → Skills → Upload | ★★★ baca basis data langsung | [docs/claude.md](docs/claude.md) |
-| **Claude Code** (terminal) | tempel: *"Tolong pelajari https://github.com/B-ngoen/sirah-tafsir-skills dan install sebagai skill."* | ★★★ | [docs/claude.md](docs/claude.md) |
-| **ChatGPT** (Plus/Team) — Custom GPT atau Project | unggah `lookup.py` + `*.db.xz`, tempel instruksi, nyalakan Code Interpreter | ★★★ | [docs/chatgpt.md](docs/chatgpt.md) |
-| **Gemini** web/HP — Gem (AI Pro) atau lampiran chat (gratis) | unduh paket teks kitab [gemini-v1](https://github.com/B-ngoen/sirah-tafsir-skills/releases/tag/gemini-v1), tempel instruksi Gem | ★★ retrieval teks (bisa tidak utuh untuk bab panjang) | [docs/gemini.md](docs/gemini.md) |
+| **Claude** — aplikasi desktop, HP, atau claude.ai (paket gratis pun bisa) | Unduh [tafsir-lookup.skill](https://github.com/B-ngoen/sirah-tafsir-skills/raw/main/release/tafsir-lookup.skill) dan/atau [sirah-lookup.skill](https://github.com/B-ngoen/sirah-tafsir-skills/raw/main/release/sirah-lookup.skill) → *Settings → Capabilities → Skills → Upload skill*. Basis data diunduh otomatis di sisi Claude saat pertama dipakai — sama saja di HP maupun desktop. | ★★★ membaca basis data langsung | [docs/claude.md](docs/claude.md) |
+| **Claude Code** (terminal) | Tempel: *"Tolong pelajari https://github.com/B-ngoen/sirah-tafsir-skills dan install sebagai skill."* | ★★★ | [docs/claude.md](docs/claude.md) |
+| **ChatGPT** — aplikasi desktop/HP atau web (Plus/Team) | Klik **Work/Projects** → Project baru → unggah 2 berkas (program pencari + basis data) → tempel petunjuk. | ★★★ | [docs/chatgpt.md](docs/chatgpt.md) |
+| **Gemini** — lewat **NotebookLM** (gratis), lalu Gem bila mau | Unggah paket teks kitab ke NotebookLM → tempel petunjuk → bertanya. Ingin di aplikasi Gemini: buat Gem yang sumbernya notebook itu. | ★★ pencarian teks (bab panjang bisa tidak utuh) | [docs/gemini.md](docs/gemini.md) |
 | **Hermes Agent** | `hermes skills install B-ngoen/sirah-tafsir-skills/skills/sirah-lookup` (dan `.../tafsir-lookup`) | ★★★ | [docs/hermes.md](docs/hermes.md) |
-| **pi** / Codex / Gemini CLI / agen ber-terminal lain | kalimat yang sama seperti Claude Code, atau `python install.py --target pi|codex|gemini` | ★★★ | [docs/pi.md](docs/pi.md) |
+| **pi**, Codex, Gemini CLI, agen ber-terminal lain | Kalimat yang sama seperti Claude Code, atau `python install.py --target pi` / `codex` / `gemini` | ★★★ | [docs/pi.md](docs/pi.md) |
 
 Setelah terpasang tinggal bertanya biasa, contoh:
 - "Tafsir QS Al-Baqarah 255 menurut Thabari dan Ibnu Katsir, teks Arabnya."
@@ -46,7 +46,6 @@ Basis data (±17–18 MB per skill) diunduh sekali saat pertama dipakai. Ingin t
 
 - Teks bersumber dari **Maktabah Syamilah (shamela.ws)**, diambil halaman demi halaman beserta nomor juz/halaman edisi cetak yang dipakai Syamilah. Tafsir (18 Agustus 2026): Tafsir ath-Thabari (ط دار التربية والتراث) · Tafsir al-Maraghi · Shafwat at-Tafasir · Tafsir Ibnu Katsir (ط أولاد الشيخ) · Tafsir Ibnu Katsir (ط دار ابن الجوزي). Sirah (26 Agustus 2026): Sirah Ibnu Hisyam (ط السقا & ط طه) · Sirah Ibnu Ishaq · ath-Thabaqat al-Kubra (Ibnu Sa'd) · Tarikh ath-Thabari · al-Ishabah · Usud al-Ghabah (2 edisi) · al-Isti'ab. Jazahumullah khairan para muhaqqiq dan tim Syamilah.
 - **Teks kitab klasik adalah milik umum.** Catatan kaki muhaqqiq disertakan apa adanya demi keaslian edisi; bila pemegang hak suatu edisi berkeberatan, sampaikan lewat *Issues* — bagian itu akan dihapus pada rilis berikutnya.
-- Edisi publik **tidak memuat** karya modern berhak cipta (mis. terjemah Dorar EN).
 - Kode (skrip, skill): **MIT** — lihat [LICENSE](LICENSE). Basis data: wakaf non-komersial; dilarang diperjualbelikan.
 
 ## Keterbatasan
