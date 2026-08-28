@@ -7,6 +7,15 @@ description: Look up VERBATIM Arabic source text on the Prophet's biography (Sir
 
 Query teks klasik **verbatim** langsung dari SQLite DB hasil scrape shamela.ws (26.123 halaman, 10 kitab) — bukan dari ingatan model. Dua sumbu: **peristiwa/tahun** (registry 175 peristiwa, kunci `event_id`) dan **shahabat** (kunci kanonik = nomor entri Al-Ishabah; entri Usud/Isti'ab/Thabaqat ditautkan ke sana).
 
+## Sumber Tunggal — tidak ada sumber lain
+
+Satu-satunya sumber jawaban adalah **keluaran `scripts/lookup.py` pada percakapan ini**. Ini berlaku juga untuk model dengan mode *thinking/reasoning*: apa pun yang Anda "ingat" dari kitab lain, hadis, artikel, situs, atau terjemahan **tidak boleh** masuk ke jawaban — bukan sebagai kutipan, bukan sebagai sitasi, bukan sebagai "tambahan untuk konteks". Alasannya: pengguna memakai skill ini justru karena ingatan model sering keliru dan tidak bisa diverifikasi; satu sitasi luar yang salah merusak kepercayaan pada seluruh jawaban.
+
+- Nama kitab yang boleh muncul sebagai sumber hanya 10 kitab di bagian **Sumber** (Ibnu Hisyam 2 edisi, Ibnu Ishaq, Thabaqat Ibnu Sa'd, Tarikh ath-Thabari, al-Ishabah, Usud al-Ghabah 2 edisi, al-Isti'ab). Nama lain (Shahih Bukhari, Muslim, ar-Rahiq al-Makhtum, Zadul Ma'ad, tafsir lain, Wikipedia, dorar.net, dsb.) **dilarang** muncul sebagai sumber.
+- Tidak ada pencarian web, tidak ada pembacaan berkas lain, tidak ada "menurut riwayat yang masyhur" tanpa kutipan dari script.
+- Bila pengguna bertanya sesuatu yang tidak ada di basis data, jawab: *"Tidak ada dalam 10 kitab basis data ini"* — lalu berhenti. Jangan mengisi kekosongan dari ingatan. Hanya bila pengguna **secara eksplisit** meminta pendapat/pengetahuan umum, boleh menjawab di bagian terpisah berjudul **"Di luar basis data (dari ingatan model, tidak terverifikasi)"** — tanpa kutipan Arab dan tanpa sitasi juz/halaman.
+- **Pemeriksaan sebelum mengirim** (lakukan diam-diam): (1) setiap baris Arab yang dikutip ada persis di keluaran script; (2) setiap sitasi menunjuk kitab dari daftar Sumber dengan juz/hal yang tercetak di keluaran; (3) tidak ada nama kitab/situs lain di mana pun dalam jawaban; (4) parafrase Anda ditandai. Ada yang gagal → hapus bagian itu, jangan diperhalus.
+
 ## Cara Pakai
 
 SELALU jalankan script; JANGAN menjawab pertanyaan sirah/shahabat dari ingatan model:

@@ -7,6 +7,15 @@ description: Look up VERBATIM classical tafsir (Quranic exegesis) for any ayah f
 
 Query tafsir klasik **verbatim** langsung dari SQLite DB hasil scrape — bukan dari ingatan model.
 
+## Sumber Tunggal — tidak ada sumber lain
+
+Satu-satunya sumber jawaban adalah **keluaran `scripts/lookup.py` pada percakapan ini**. Ini berlaku juga untuk model dengan mode *thinking/reasoning*: apa pun yang Anda "ingat" dari kitab lain, hadis, artikel, situs, atau terjemahan **tidak boleh** masuk ke jawaban — bukan sebagai kutipan, bukan sebagai sitasi, bukan sebagai "tambahan untuk konteks". Alasannya: pengguna memakai skill ini justru karena ingatan model sering keliru dan tidak bisa diverifikasi; satu sitasi luar yang salah merusak kepercayaan pada seluruh jawaban.
+
+- Nama kitab yang boleh muncul sebagai sumber hanya 5 kitab di bagian **Sumber** (Tafsir ath-Thabari, Ibnu Katsir 2 edisi, al-Maraghi, Shafwat at-Tafasir). Nama lain (Shahih Bukhari, Muslim, ar-Rahiq al-Makhtum, Zadul Ma'ad, tafsir lain, Wikipedia, dorar.net, dsb.) **dilarang** muncul sebagai sumber.
+- Tidak ada pencarian web, tidak ada pembacaan berkas lain, tidak ada "menurut riwayat yang masyhur" tanpa kutipan dari script.
+- Bila pengguna bertanya sesuatu yang tidak ada di basis data, jawab: *"Tidak ada dalam 5 kitab basis data ini"* — lalu berhenti. Jangan mengisi kekosongan dari ingatan. Hanya bila pengguna **secara eksplisit** meminta pendapat/pengetahuan umum, boleh menjawab di bagian terpisah berjudul **"Di luar basis data (dari ingatan model, tidak terverifikasi)"** — tanpa kutipan Arab dan tanpa sitasi juz/halaman.
+- **Pemeriksaan sebelum mengirim** (lakukan diam-diam): (1) setiap baris Arab yang dikutip ada persis di keluaran script; (2) setiap sitasi menunjuk kitab dari daftar Sumber dengan juz/hal yang tercetak di keluaran; (3) tidak ada nama kitab/situs lain di mana pun dalam jawaban; (4) parafrase Anda ditandai. Ada yang gagal → hapus bagian itu, jangan diperhalus.
+
 ## Cara Pakai
 
 SELALU jalankan script, JANGAN PERNAH menjawab pertanyaan tafsir dari ingatan model:

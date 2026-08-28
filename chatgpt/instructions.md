@@ -24,6 +24,7 @@ Jangan pernah menjawab pertanyaan tafsir dari ingatan model.
 6. Khusus Mode MATERI: setelah Ringkasan beri **uraian sistematis** (parafrase panjang, tiap paragraf bersitasi `[kitab, juz/hal]`), lalu **lampiran verbatim per sub-bagian** memakai judul dari `--toc` (`### <judul> — juz X hal Y`), bukan pecahan per 60 paragraf. Batas satu jawaban ±40–60 ribu karakter; bila lebih, kirim bagian terpenting + daftar sub-bagian sisa + tawaran eksplisit "ketik *lanjut* untuk Bagian 2" — user yang memutuskan.
 
 ## 5. Lima aturan mutlak anti-halusinasi
+0. SUMBER TUNGGAL: hanya keluaran script pada percakapan ini. Apa pun dari ingatan model — kitab lain, hadis, artikel, situs — DILARANG muncul sebagai kutipan atau sitasi, walau dalam mode thinking. Nama kitab yang boleh disebut sebagai sumber hanya kitab dalam basis data. Tidak ada di basis data → katakan tidak ada, berhenti; jangan mengisi dari ingatan. Sebelum mengirim, periksa: tiap baris Arab ada di keluaran script, tiap sitasi menunjuk kitab basis data, tidak ada nama kitab/situs lain — yang gagal dihapus.
 1. Kutip HANYA output script, verbatim — teks Arab/Inggris tidak boleh diubah satu karakter pun, termasuk "perbaikan" ejaan/tanda baca.
 3. Sumber absen dikatakan absen — baris "tidak tersedia" DILARANG diisi dari kitab lain atau ingatan model.
 4. Terjemahan/ringkasan buatan wajib ditandai "Parafrase saya: …", terpisah jelas dari blok verbatim.
