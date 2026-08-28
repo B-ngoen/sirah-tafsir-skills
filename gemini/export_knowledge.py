@@ -10,13 +10,15 @@ sehingga AI dapat mengutip verbatim DAN menyebut juz/halaman.
     python export_knowledge.py sirah  sirah_full.db  out/sirah
     python export_knowledge.py tafsir tafsir_full.db out/tafsir
 
-Batas per berkas ±25 MB (dipecah _1, _2 bila lebih); ≤10 berkas per paket agar
-muat batas Gemini (10 lampiran/Knowledge). Stdlib saja.
+Batas per berkas: env KNOWLEDGE_MAX_MB (default 25) dan KNOWLEDGE_MAX_WORDS (default
+450000 — NotebookLM menolak sumber >500 ribu kata); dipecah _1, _2, … Stdlib saja.
 """
 import io, os, sqlite3, sys
 from pathlib import Path
 
 MAX_BYTES = int(float(os.environ.get("KNOWLEDGE_MAX_MB", "25")) * 1024 * 1024)
+# NotebookLM menolak sumber >500 ribu kata; Gem tampak memakai batas serupa.
+MAX_WORDS = int(os.environ.get("KNOWLEDGE_MAX_WORDS", "450000"))
 
 # nama berkas (tanpa ekstensi) -> daftar source di DB (kitab kecil digabung)
 GROUPS = {
@@ -64,18 +66,18 @@ def export(kind, db, outdir):
     outdir.mkdir(parents=True, exist_ok=True)
     made = []
     for fname, sources, title in GROUPS[kind]:
-        part, buf, size = 1, [], 0
+        part, buf, size, words = 1, [], 0, 0
         path = outdir / f"{fname}.txt"
 
         def flush(final):
-            nonlocal part, buf, size
+            nonlocal part, buf, size, words
             if not buf:
                 return
             p = path if (final and part == 1) else outdir / f"{fname}_{part}.txt"
             io.open(p, "w", encoding="utf-8", newline="\n").write("".join(buf))
             made.append((p.name, os.path.getsize(p)))
             part += 1
-            buf, size = [], 0
+            buf, size, words = [], 0, 0
 
         for src in sources:
             t = source_title(con, src, title)
@@ -93,8 +95,8 @@ def export(kind, db, outdir):
                     buf.append(mark); size += len(mark.encode())
                     cur_page = web_page
                 line = (text or "").strip() + "\n"
-                buf.append(line); size += len(line.encode())
-                if size >= MAX_BYTES:
+                buf.append(line); size += len(line.encode()); words += len(line.split())
+                if size >= MAX_BYTES or words >= MAX_WORDS:
                     flush(final=False)
         flush(final=True)
     total = sum(s for _, s in made)
