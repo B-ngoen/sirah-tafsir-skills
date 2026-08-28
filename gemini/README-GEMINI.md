@@ -28,3 +28,11 @@ Berkas hanya berlaku untuk percakapan itu.
 
 ## Membuat sendiri paket teks (opsional)
 `python gemini/export_knowledge.py sirah sirah_full.db out/sirah` — berkas dipecah otomatis ±25 MB, ≤10 berkas. Basis data `.db` didapat dengan mengekstrak `*.db.xz` dari Releases.
+
+## Versi PDF & NotebookLM
+Bila unggah `.txt` ke Gem gagal, ubah menjadi PDF Arab (RTL, font Amiri) yang dipecah ≤3 juta karakter per berkas — aman juga untuk **NotebookLM** (batas ±500 ribu kata & 200 MB per sumber, 50 sumber per notebook):
+```
+pip install patchright && patchright install chromium
+python gemini/txt_to_pdf.py out/sirah out/sirah-pdf
+```
+NotebookLM: notebook baru → unggah semua PDF → tempel `instructions-*.md` sebagai pesan pertama → bertanya dengan kata kunci Arab (mis. «غزوة بدر», «سقيفة بني ساعدة») agar pencarian menemukan teks.
