@@ -16,7 +16,7 @@ muat batas Gemini (10 lampiran/Knowledge). Stdlib saja.
 import io, os, sqlite3, sys
 from pathlib import Path
 
-MAX_BYTES = 25 * 1024 * 1024
+MAX_BYTES = int(float(os.environ.get("KNOWLEDGE_MAX_MB", "25")) * 1024 * 1024)
 
 # nama berkas (tanpa ekstensi) -> daftar source di DB (kitab kecil digabung)
 GROUPS = {
