@@ -132,6 +132,23 @@ def install_skill(name, targets, want_db):
                 print(f"  OK basis data siap: {db} ({db.stat().st_size / 1e6:.0f} MB)")
             except Exception as e:
                 print(f"  ! unduh DB gagal ({type(e).__name__}); skill tetap terpasang dan akan mengunduh saat pertama dipakai")
+        # ChatGPT Work / Codex menjalankan script di sandbox yang sering tidak bisa membaca
+        # cache pengguna maupun internet -> salin DB ke <skill>/assets/ (dicek lookup.py paling dulu).
+        if db.exists():
+            for label, root in targets:
+                if not (label.startswith("ChatGPT") or label.startswith("Codex")):
+                    continue
+                adir = root / name / "assets"
+                adst = adir / meta["db_name"]
+                if adst.exists() and adst.stat().st_size == db.stat().st_size:
+                    continue
+                try:
+                    adir.mkdir(parents=True, exist_ok=True)
+                    import shutil
+                    shutil.copyfile(db, adst)
+                    print(f"  OK salinan DB untuk sandbox {label}: {adst}")
+                except OSError as e:
+                    print(f"  ! gagal menyalin DB ke {adst}: {e}")
     return True
 
 
