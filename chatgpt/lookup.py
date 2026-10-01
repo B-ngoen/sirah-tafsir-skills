@@ -411,12 +411,14 @@ def fetch_paragraphs_raw(cur, source, seg):
     ).fetchall()
     paras = []
     for web_page, para_idx, text in rows:
-        inside = (
-            (from_page < web_page < to_page)
-            or (web_page == from_page and web_page == to_page and from_para <= para_idx <= to_para)
-            or (web_page == from_page and para_idx >= from_para)
-            or (web_page == to_page and para_idx <= to_para)
-        )
+        if from_page == to_page:
+            inside = from_para <= para_idx <= to_para
+        else:
+            inside = (
+                (from_page < web_page < to_page)
+                or (web_page == from_page and para_idx >= from_para)
+                or (web_page == to_page and para_idx <= to_para)
+            )
         if inside and text and text.strip():
             paras.append((web_page, text))
     return paras
