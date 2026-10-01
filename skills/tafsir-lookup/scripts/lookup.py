@@ -76,10 +76,13 @@ def _cache_dir() -> Path:
 
 
 CACHE_DIR = _cache_dir()
-ZIP_CACHE_DB = CACHE_DIR / "tafsir_full.db"
+# Nama cache bernama versi: DB v1 (tanpa Asbabun Nuzul) yang sudah ter-cache
+# tidak boleh dipakai ulang oleh skill v2 -> v2 mengunduh DB-nya sendiri.
+DB_VERSION = "v2"
+ZIP_CACHE_DB = CACHE_DIR / f"tafsir_full_{DB_VERSION}.db"
 
 # Migrasi sekali jalan: cache lama di Temp dipindahkan, bukan diunduh ulang.
-_LEGACY_DB = Path(tempfile.gettempdir()) / "tafsir-lookup" / "tafsir_full.db"
+_LEGACY_DB = Path(tempfile.gettempdir()) / "tafsir-lookup" / f"tafsir_full_{DB_VERSION}.db"
 if _LEGACY_DB != ZIP_CACHE_DB and _LEGACY_DB.exists() and not ZIP_CACHE_DB.exists():
     try:
         os.replace(_LEGACY_DB, ZIP_CACHE_DB)
@@ -92,11 +95,11 @@ CACHE_MIN_BYTES = 100 * 1024 * 1024  # cache hasil ekstrak dianggap valid bila >
 # (fallback). URL TIDAK boleh dicetak ke pesan error/log — cukup sebut
 # "sumber unduhan 1/2".
 AUTO_DL_URLS = (
-    "https://github.com/B-ngoen/sirah-tafsir-skills/releases/download/tafsir-v1/tafsir_full.db.xz",
-    "https://github.com/B-ngoen/refdb/releases/download/v1/tafsir_full.db.xz",
+    "https://github.com/B-ngoen/sirah-tafsir-skills/releases/download/tafsir-v2/tafsir_full.db.xz",
+    "https://github.com/B-ngoen/refdb/releases/download/v1/tafsir_full_v2.db.xz",
 )
 AUTO_DL_TIMEOUT = 15  # detik, timeout koneksi
-AUTO_DL_XZ = CACHE_DIR / "tafsir_full.db.xz"  # unduhan sementara (dihapus usai ekstrak)
+AUTO_DL_XZ = CACHE_DIR / f"tafsir_full_{DB_VERSION}.db.xz"  # unduhan sementara (dihapus usai ekstrak)
 
 # Jumlah ayat per surah (riwayat Hafs) — 114 surah, total 6236.
 AYAT_COUNT = {
@@ -122,7 +125,17 @@ BOOKS = {
     "shabuni": "Shafwat at-Tafasir (ash-Shabuni)",
     "ibnkathir_awlad": "Tafsir Ibnu Katsir, ed. Awlad asy-Syaikh",
     "ibnkathir_jawzi": "Tafsir Ibnu Katsir, ed. Dar Ibnul Jauzi",
+    "asbab_suyuti": "Lubab an-Nuqul fi Asbab an-Nuzul (as-Suyuthi), ed. Dar al-Kutub al-'Ilmiyyah",
 }
+
+# Alias nama sumber (mis. `-s asbab`).
+SOURCE_ALIASES = {
+    "asbab": "asbab_suyuti", "asbabun": "asbab_suyuti", "asbabunnuzul": "asbab_suyuti",
+    "suyuti": "asbab_suyuti", "lubab": "asbab_suyuti", "lubabunnuqul": "asbab_suyuti",
+}
+
+ASBAB = "asbab_suyuti"
+ASBAB_NONE = "tidak ada riwayat asbabun nuzul untuk ayat ini di Lubab an-Nuqul"
 
 VALID_SOURCES = set(BOOKS)
 
@@ -160,7 +173,7 @@ def parse_ref(ref):
 def parse_sources(spec):
     if not spec:
         return list(BOOKS)
-    chosen = [s.strip() for s in spec.split(",") if s.strip()]
+    chosen = [SOURCE_ALIASES.get(s.strip().lower(), s.strip()) for s in spec.split(",") if s.strip()]
     if not chosen:
         raise InputError("daftar sumber kosong")
     unknown = [s for s in chosen if s not in VALID_SOURCES]
@@ -426,8 +439,17 @@ def truncate(paras, budget):
     return kept, len(paras), True
 
 
-def range_note(label, ayah):
+def range_note(label, ayah, source=None):
     """Penjelasan bila label berupa rentang blok ayat."""
+    if label.startswith("~"):
+        return (f"Label {label}: entri ini TIDAK dicocokkan ke satu ayat (frasa pembukanya tidak cocok ke ayat kanonik "
+                f"secara unik); posisinya hanya diinterpolasi di antara entri tetangga yang cocok, jadi ayat yang "
+                f"diminta MUNGKIN bukan topik entri ini — baca teksnya sebelum menyimpulkan.")
+    if source == ASBAB and "," in label:
+        return (f"Entri ini cocok ke beberapa ayat kandidat ({label}) yang diawali kata yang sama dan teksnya tidak "
+                f"membedakan — ayat yang diminta MUNGKIN bukan satu-satunya; baca teksnya sebelum menyimpulkan.")
+    if source == ASBAB and "-" in label:
+        return f"Entri asbabun nuzul ini mencakup ayat {label} (ayat yang diminta berada di dalamnya)."
     if "-" in label:
         return f"Segmen ini mencakup ayat {label} (tafsir ayat diminta berada di dalamnya)."
     if ayah is not None and label != str(ayah):
@@ -447,7 +469,7 @@ def build_result(cur, source, seg, ayah, budget):
         "seg_id": seg_id,
         "label": label,
         "section": section,
-        "note": range_note(label, ayah),
+        "note": range_note(label, ayah, source),
         "paragraphs": kept,
         "para_count_total": total,
         "truncated": truncated,
@@ -462,7 +484,31 @@ def citation_line(r):
         return "— (halaman sumber tidak tercatat di DB)"
     if r["source"] == "dorar_en":
         return r["url"]
+    if r["printed_juz"] is None:  # kitab satu jilid (mis. Lubab an-Nuqul)
+        return f"hal {r['printed_page']} · {r['url']}"
     return f"juz {r['printed_juz']} hal {r['printed_page']} · {r['url']}"
+
+
+ASBAB_HINT = {}  # diisi cmd_ayah: surah -> jumlah segmen intro asbab
+DB_HAS_ASBAB = None  # diisi cmd_ayah: False bila DB versi lama (v1) tanpa Lubab an-Nuqul
+ASBAB_OLD_DB = ("DB tafsir yang terpasang adalah VERSI LAMA (v1) yang belum memuat Lubab an-Nuqul — "
+                "status asbabun nuzul ayat ini TIDAK DIKETAHUI (bukan berarti tidak ada). "
+                "Unggah/letakkan tafsir_full.db.xz versi v2 (GitHub Release tafsir-v2) lalu jalankan ulang.")
+
+
+def asbab_missing_text(query_desc):
+    """Baris jujur untuk ayat tanpa entri asbab (normal: sebagian besar ayat memang tak punya)."""
+    if "Intro" in (query_desc or "") or "intro" in (query_desc or ""):
+        return "tidak ada segmen tingkat-surah (intro) asbabun nuzul untuk surah ini di Lubab an-Nuqul."
+    if DB_HAS_ASBAB is False:
+        return ASBAB_OLD_DB
+    msg = ASBAB_NONE + "."
+    m = re.search(r"QS (\d+):", query_desc or "")
+    if m and ASBAB_HINT.get(int(m.group(1))):
+        n = ASBAB_HINT[int(m.group(1))]
+        msg += (f" (Surah ini punya {n} segmen tingkat-surah di Lubab an-Nuqul yang tidak terikat ke ayat tertentu — "
+                f"lihat: lookup.py {m.group(1)} --intro -s asbab)")
+    return msg
 
 
 def render_markdown(query_desc, results, missing, budget):
@@ -483,7 +529,10 @@ def render_markdown(query_desc, results, missing, budget):
         lines.append("")
     for source in missing:
         lines.append(f"## {BOOKS[source]}")
-        lines.append("tidak tersedia di sumber ini (keterbatasan edisi/situs).")
+        if source == ASBAB:
+            lines.append(asbab_missing_text(query_desc))
+        else:
+            lines.append("tidak tersedia di sumber ini (keterbatasan edisi/situs).")
         lines.append("")
     if budget > 0:
         lines.append(f"(Batas potong per sumber: {budget} karakter — gunakan --max-chars 0 untuk teks penuh.)")
@@ -596,7 +645,10 @@ def cmd_toc(cur, surah, ayah, sources, fmt):
         lines.append("")
     for source in missing:
         lines.append(f"## {BOOKS[source]}")
-        lines.append("tidak tersedia di sumber ini (keterbatasan edisi/situs).")
+        if source == ASBAB:
+            lines.append(asbab_missing_text(desc))
+        else:
+            lines.append("tidak tersedia di sumber ini (keterbatasan edisi/situs).")
         lines.append("")
     lines.append(
         "(Sub-heading ditulis 'indeks judul' — indeks paragraf relatif dari awal segmen;"
@@ -612,6 +664,8 @@ def page_marker(source, meta):
         return "— halaman: (halaman sumber tidak tercatat di DB)"
     if source == "dorar_en":
         return f"— halaman: {url}"
+    if juz is None:
+        return f"— halaman: hal {page} ({url})"
     return f"— halaman: juz {juz} hal {page} ({url})"
 
 
@@ -705,6 +759,12 @@ def cmd_segment(cur, surah, ayah, intro_mode, sources, seg_id, fmt, paras):
 def cmd_ayah(cur, surah, ayah, sources, fmt, budget):
     results, missing = [], []
     remaining = budget
+    global DB_HAS_ASBAB
+    if ASBAB in sources:
+        DB_HAS_ASBAB = cur.execute(
+            "SELECT 1 FROM segments WHERE source = ? LIMIT 1", (ASBAB,)
+        ).fetchone() is not None
+        ASBAB_HINT[surah] = len(get_intro_segments(cur, ASBAB, surah))
     for source in sources:
         segs = get_segments_for_ayah(cur, source, surah, ayah)
         if not segs:
@@ -721,6 +781,8 @@ def cmd_ayah(cur, surah, ayah, sources, fmt, budget):
             "results": results,
             "missing_sources": missing,
         }
+        if ASBAB in missing:
+            payload["notes"] = {ASBAB: asbab_missing_text(f"QS {surah}:{ayah}")}
         print(render_json(payload), end="")
     else:
         desc = f"Tafsir QS {surah}:{ayah}"
@@ -737,7 +799,9 @@ def cmd_intro(cur, surah, sources, fmt, budget):
             continue
         for seg in segs:
             r = build_result(cur, source, seg, None, remaining)
-            r["note"] = "Segmen intro/pembuka surah."
+            r["note"] = ("Riwayat tingkat-surah (Lubab an-Nuqul): teks di bawah judul surah yang tidak dapat "
+                         "dikaitkan ke satu ayat tertentu melalui pencocokan frasa kanonik — bukan muqaddimah."
+                         if source == ASBAB else "Segmen intro/pembuka surah.")
             results.append(r)
             if budget > 0:
                 remaining = max(0, remaining - sum(len(p) for p in r["paragraphs"]))

@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""install.py — pasang skill tafsir-lookup / sirah-lookup dengan SATU perintah (tanpa git).
+"""install.py — pasang skill tafsir-lookup / sirah-lookup / hadith-lookup dengan SATU perintah (tanpa git).
 
     python install.py                 # pasang semua skill yang tersedia ke folder skill agen yang terdeteksi
-    python install.py tafsir          # hanya tafsir-lookup
+    python install.py tafsir          # hanya tafsir-lookup (juga: sirah, hadits)
     python install.py --target claude # paksa target: claude | chatgpt | codex | pi | hermes | gemini | dir:<folder>
     python install.py --no-db         # jangan pra-unduh basis data (akan diunduh saat pertama dipakai)
 
@@ -26,16 +26,25 @@ BRANCH = "main"
 SKILLS = {
     "tafsir-lookup": {
         "files": ["SKILL.md", "scripts/lookup.py"],
-        "db_url": f"https://github.com/{REPO}/releases/download/tafsir-v1/tafsir_full.db.xz",
+        "db_url": f"https://github.com/{REPO}/releases/download/tafsir-v2/tafsir_full.db.xz",
         "db_name": "tafsir_full.db", "cache": "tafsir-lookup",
+        "cache_file": "tafsir_full_v2.db",  # = nama cache bernama versi di lookup.py
     },
     "sirah-lookup": {
         "files": ["SKILL.md", "scripts/lookup.py"],
         "db_url": f"https://github.com/{REPO}/releases/download/sirah-v1/sirah_full.db.xz",
         "db_name": "sirah_full.db", "cache": "sirah-lookup",
     },
+    "hadith-lookup": {
+        "files": ["SKILL.md", "scripts/lookup.py"],
+        "db_url": f"https://github.com/{REPO}/releases/download/hadith-v1/hadith_full.db.xz",
+        "db_name": "hadith_full.db", "cache": "hadith-lookup",
+        "cache_file": "hadith_full_v1.db",  # = nama cache bernama versi di lookup.py
+        "db_mb": 41,
+    },
 }
-ALIAS = {"tafsir": "tafsir-lookup", "sirah": "sirah-lookup"}
+ALIAS = {"tafsir": "tafsir-lookup", "sirah": "sirah-lookup",
+         "hadith": "hadith-lookup", "hadits": "hadith-lookup", "hadis": "hadith-lookup"}
 UA = {"User-Agent": "sirah-tafsir-skills-installer/1"}
 
 
@@ -116,11 +125,11 @@ def install_skill(name, targets, want_db):
                 pass
     if want_db:
         cdir = cache_dir(meta["cache"])
-        db = cdir / meta["db_name"]
+        db = cdir / meta.get("cache_file", meta["db_name"])
         if db.exists() and db.stat().st_size > 50 * 1024 * 1024:
             print(f"  OK basis data sudah ada: {db}")
         else:
-            print(f"  ... mengunduh basis data (±17 MB) ke {cdir} — sekali saja")
+            print(f"  ... mengunduh basis data (±{meta.get('db_mb', 17)} MB) ke {cdir} — sekali saja")
             try:
                 raw = fetch(meta["db_url"], binary=True)
                 with lzma.open(io.BytesIO(raw)) as src, open(db, "wb") as out:
@@ -153,8 +162,8 @@ def install_skill(name, targets, want_db):
 
 
 def main():
-    ap = argparse.ArgumentParser(description="Pasang skill tafsir-lookup / sirah-lookup.")
-    ap.add_argument("skills", nargs="*", help="tafsir | sirah (kosong = semua yang tersedia)")
+    ap = argparse.ArgumentParser(description="Pasang skill tafsir-lookup / sirah-lookup / hadith-lookup.")
+    ap.add_argument("skills", nargs="*", help="tafsir | sirah | hadits (kosong = semua yang tersedia)")
     ap.add_argument("--target", help="claude | chatgpt | codex | pi | hermes | gemini | dir:<folder>")
     ap.add_argument("--no-db", action="store_true")
     a = ap.parse_args()
