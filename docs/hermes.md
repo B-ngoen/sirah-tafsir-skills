@@ -4,6 +4,7 @@ Hermes punya pemasang skill bawaan (repo ini sudah terindeks di skills.sh):
 ```
 hermes skills install B-ngoen/sirah-tafsir-skills/skills/sirah-lookup
 hermes skills install B-ngoen/sirah-tafsir-skills/skills/tafsir-lookup
+hermes skills install B-ngoen/sirah-tafsir-skills/skills/hadith-lookup
 ```
 Pratinjau dulu tanpa memasang: `hermes skills inspect B-ngoen/sirah-tafsir-skills/skills/sirah-lookup`.
 

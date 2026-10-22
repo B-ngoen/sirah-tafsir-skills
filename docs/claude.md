@@ -7,10 +7,11 @@ Pemasangan hanya bisa dari **PC** (claude.ai di browser atau aplikasi desktop); 
 1. Di PC, unduh berkas skill (klik langsung):
    - [tafsir-lookup.skill](https://github.com/B-ngoen/sirah-tafsir-skills/raw/main/release/tafsir-lookup.skill)
    - [sirah-lookup.skill](https://github.com/B-ngoen/sirah-tafsir-skills/raw/main/release/sirah-lookup.skill)
-2. **Settings → Capabilities → Skills → Upload skill** → pilih berkas (ulangi untuk skill kedua).
-3. Percakapan baru → bertanya biasa. Pemakaian pertama mengunduh basis data (17–18 MB) ke sandbox di sisi Claude (±1 menit) — berjalan di server, jadi sama saja dipakai dari HP Android/iPhone, desktop, atau web. Paket gratis tetap bisa; materi panjang dikirim per bagian (ketik **lanjut**).
+   - [hadith-lookup.skill](https://github.com/B-ngoen/sirah-tafsir-skills/raw/main/release/hadith-lookup.skill)
+2. **Settings → Capabilities → Skills → Upload skill** → pilih berkas (ulangi untuk tiap skill).
+3. Percakapan baru → bertanya biasa. Pemakaian pertama mengunduh basis data (17–18 MB; hadits ±41 MB) ke sandbox di sisi Claude (±1 menit) — berjalan di server, jadi sama saja dipakai dari HP Android/iPhone, desktop, atau web. Paket gratis tetap bisa; materi panjang dikirim per bagian (ketik **lanjut**).
 
-Contoh: *"Tafsir QS 2:255 menurut Thabari dan Ibnu Katsir, teks Arabnya"* · *"Kisah Perang Uhud lengkap dari semua kitab"* · *"Siapa Abu Bakar menurut al-Ishabah?"*
+Contoh: *"Tafsir QS 2:255 menurut Thabari dan Ibnu Katsir, teks Arabnya"* · *"Kisah Perang Uhud lengkap dari semua kitab"* · *"Siapa Abu Bakar menurut al-Ishabah?"* · *"HR. Muslim no. 8 dengan teks Arabnya"*
 
 ## Claude Desktop — mode Cowork / Code (satu kalimat)
 Claude Desktop punya mode **Cowork** (atau *Code*) yang bisa menjalankan perintah di komputer Anda. Buka mode itu, lalu tempel:
