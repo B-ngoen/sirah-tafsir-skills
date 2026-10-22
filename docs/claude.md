@@ -8,7 +8,8 @@ Pemasangan hanya bisa dari **PC** (claude.ai di browser atau aplikasi desktop); 
    - [tafsir-lookup.skill](https://github.com/B-ngoen/sirah-tafsir-skills/raw/main/release/tafsir-lookup.skill)
    - [sirah-lookup.skill](https://github.com/B-ngoen/sirah-tafsir-skills/raw/main/release/sirah-lookup.skill)
    - [hadith-lookup.skill](https://github.com/B-ngoen/sirah-tafsir-skills/raw/main/release/hadith-lookup.skill)
-2. **Settings → Capabilities → Skills → Upload skill** → pilih berkas (ulangi untuk tiap skill).
+2. **Settings → Skills** (di bagian *Customize*, panel kiri) → tombol **+ Add** → **Upload skill** → seret/pilih berkas `.skill` (boleh ketiganya sekaligus) → **Upload**. Unggahan melewati pemindaian keamanan otomatis.
+   - Sudah punya `tafsir-lookup` versi lama (di daftar *Created by you*)? Hapus dulu lewat menu **⋮** di barisnya, lalu unggah versi baru.
 3. Percakapan baru → bertanya biasa. Pemakaian pertama mengunduh basis data (17–18 MB; hadits ±41 MB) ke sandbox di sisi Claude (±1 menit) — berjalan di server, jadi sama saja dipakai dari HP Android/iPhone, desktop, atau web. Paket gratis tetap bisa; materi panjang dikirim per bagian (ketik **lanjut**).
 
 Contoh: *"Tafsir QS 2:255 menurut Thabari dan Ibnu Katsir, teks Arabnya"* · *"Kisah Perang Uhud lengkap dari semua kitab"* · *"Siapa Abu Bakar menurut al-Ishabah?"* · *"HR. Muslim no. 8 dengan teks Arabnya"*
